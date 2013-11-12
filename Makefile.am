@@ -307,7 +307,6 @@ EXTRA_DIST = \
 	src/icons/hicolor/32x32/apps/archlinux-wm-wmaker.png \
 	src/icons/hicolor/32x32/apps/archlinux-wm-xfce.png \
 	src/icons/hicolor/32x32/apps/archlinux-wm-xmonad.png \
-	src/icons/hicolor/32x32/apps/arch-logo.png \
 	src/icons/hicolor/32x32/apps/blackbox.png \
 	src/icons/hicolor/32x32/apps/blackbox.xpm \
 	src/icons/hicolor/32x32/apps/ctwm.png \
@@ -618,7 +617,6 @@ EXTRA_DIST = \
 	src/icons/hicolor/scalable/apps/archlinux-wm-wmaker.svg \
 	src/icons/hicolor/scalable/apps/archlinux-wm-xfce.svg \
 	src/icons/hicolor/scalable/apps/archlinux-wm-xmonad.svg \
-	src/icons/hicolor/scalable/apps/arch-logo.svg \
 	src/icons/hicolor/scalable/apps/blackbox.svg \
 	src/icons/hicolor/scalable/apps/ctwm.svg \
 	src/icons/hicolor/scalable/apps/fluxbox.svg \
