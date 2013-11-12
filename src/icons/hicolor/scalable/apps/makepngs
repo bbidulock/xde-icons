@@ -1,0 +1,10 @@
+#!/bin/bash
+
+files=$1
+[ -n "$files" ] || files="*.svg"
+for f in $files ; do
+	p=$(basename $f .svg).png
+	for s in 16 22 24 32 48 56 64 72 96 128 ; do
+		convert -resize ${s}x${s} -background None $f ../../${s}x${s}/apps/$p
+	done
+done
