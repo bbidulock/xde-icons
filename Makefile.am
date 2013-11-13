@@ -98,8 +98,10 @@ EXTRA_DIST = \
 	src/icons/hicolor/128x128/apps/GNUstep3D.png \
 	src/icons/hicolor/128x128/apps/GNUstep.png \
 	src/icons/hicolor/128x128/apps/jwm.png \
+	src/icons/hicolor/128x128/apps/mwm.png \
 	src/icons/hicolor/128x128/apps/pekwm.png \
 	src/icons/hicolor/128x128/apps/twm.png \
+	src/icons/hicolor/128x128/apps/vtwm.png \
 	src/icons/hicolor/128x128/apps/wmaker.png \
 	src/icons/hicolor/128x128/apps/xlogo.png \
 	src/icons/hicolor/16x16/actions/application-exit.png \
@@ -171,9 +173,11 @@ EXTRA_DIST = \
 	src/icons/hicolor/16x16/apps/GNUstep.png \
 	src/icons/hicolor/16x16/apps/icewm.png \
 	src/icons/hicolor/16x16/apps/jwm.png \
+	src/icons/hicolor/16x16/apps/mwm.png \
 	src/icons/hicolor/16x16/apps/pekwm.png \
 	src/icons/hicolor/16x16/apps/start-here.png \
 	src/icons/hicolor/16x16/apps/twm.png \
+	src/icons/hicolor/16x16/apps/vtwm.png \
 	src/icons/hicolor/16x16/apps/WindowMaker.png \
 	src/icons/hicolor/16x16/apps/wmaker.png \
 	src/icons/hicolor/16x16/apps/xlogo.png \
@@ -230,8 +234,10 @@ EXTRA_DIST = \
 	src/icons/hicolor/22x22/apps/GNUstep3D.png \
 	src/icons/hicolor/22x22/apps/GNUstep.png \
 	src/icons/hicolor/22x22/apps/jwm.png \
+	src/icons/hicolor/22x22/apps/mwm.png \
 	src/icons/hicolor/22x22/apps/pekwm.png \
 	src/icons/hicolor/22x22/apps/twm.png \
+	src/icons/hicolor/22x22/apps/vtwm.png \
 	src/icons/hicolor/22x22/apps/wmaker.png \
 	src/icons/hicolor/22x22/apps/xlogo.png \
 	src/icons/hicolor/24x24/apps/archlinux-wm-awesome.png \
@@ -266,8 +272,10 @@ EXTRA_DIST = \
 	src/icons/hicolor/24x24/apps/GNUstep3D.png \
 	src/icons/hicolor/24x24/apps/GNUstep.png \
 	src/icons/hicolor/24x24/apps/jwm.png \
+	src/icons/hicolor/24x24/apps/mwm.png \
 	src/icons/hicolor/24x24/apps/pekwm.png \
 	src/icons/hicolor/24x24/apps/twm.png \
+	src/icons/hicolor/24x24/apps/vtwm.png \
 	src/icons/hicolor/24x24/apps/wmaker.png \
 	src/icons/hicolor/24x24/apps/xlogo.png \
 	src/icons/hicolor/256x256/apps/archlinux-wm-blackbox.png \
@@ -325,8 +333,10 @@ EXTRA_DIST = \
 	src/icons/hicolor/32x32/apps/GNUstep.png \
 	src/icons/hicolor/32x32/apps/icewm.png \
 	src/icons/hicolor/32x32/apps/jwm.png \
+	src/icons/hicolor/32x32/apps/mwm.png \
 	src/icons/hicolor/32x32/apps/pekwm.png \
 	src/icons/hicolor/32x32/apps/twm.png \
+	src/icons/hicolor/32x32/apps/vtwm.png \
 	src/icons/hicolor/32x32/apps/WindowMaker.png \
 	src/icons/hicolor/32x32/apps/wmaker.png \
 	src/icons/hicolor/32x32/apps/xclock.png \
@@ -402,8 +412,10 @@ EXTRA_DIST = \
 	src/icons/hicolor/48x48/apps/GNUstep.png \
 	src/icons/hicolor/48x48/apps/icewm.png \
 	src/icons/hicolor/48x48/apps/jwm.png \
+	src/icons/hicolor/48x48/apps/mwm.png \
 	src/icons/hicolor/48x48/apps/pekwm.png \
 	src/icons/hicolor/48x48/apps/twm.png \
+	src/icons/hicolor/48x48/apps/vtwm.png \
 	src/icons/hicolor/48x48/apps/WindowMaker.png \
 	src/icons/hicolor/48x48/apps/wmaker.png \
 	src/icons/hicolor/48x48/apps/XApp.png \
@@ -465,9 +477,11 @@ EXTRA_DIST = \
 	src/icons/hicolor/56x56/apps/GNUstep3D.png \
 	src/icons/hicolor/56x56/apps/GNUstep.png \
 	src/icons/hicolor/56x56/apps/jwm.png \
+	src/icons/hicolor/56x56/apps/mwm.png \
 	src/icons/hicolor/56x56/apps/pekwm.png \
 	src/icons/hicolor/56x56/apps/start-here.png \
 	src/icons/hicolor/56x56/apps/twm.png \
+	src/icons/hicolor/56x56/apps/vtwm.png \
 	src/icons/hicolor/56x56/apps/wmaker.png \
 	src/icons/hicolor/56x56/apps/xlogo.png \
 	src/icons/hicolor/56x56/devices/Computer.png \
@@ -514,9 +528,11 @@ EXTRA_DIST = \
 	src/icons/hicolor/64x64/apps/GNUstep3D.png \
 	src/icons/hicolor/64x64/apps/GNUstep.png \
 	src/icons/hicolor/64x64/apps/jwm.png \
+	src/icons/hicolor/64x64/apps/mwm.png \
 	src/icons/hicolor/64x64/apps/pekwm.png \
 	src/icons/hicolor/64x64/apps/start-here.png \
 	src/icons/hicolor/64x64/apps/twm.png \
+	src/icons/hicolor/64x64/apps/vtwm.png \
 	src/icons/hicolor/64x64/apps/wmaker.png \
 	src/icons/hicolor/64x64/apps/xclock.png \
 	src/icons/hicolor/64x64/apps/xlogo.png \
@@ -545,8 +561,10 @@ EXTRA_DIST = \
 	src/icons/hicolor/72x72/apps/GNUstep3D.png \
 	src/icons/hicolor/72x72/apps/GNUstep.png \
 	src/icons/hicolor/72x72/apps/jwm.png \
+	src/icons/hicolor/72x72/apps/mwm.png \
 	src/icons/hicolor/72x72/apps/pekwm.png \
 	src/icons/hicolor/72x72/apps/twm.png \
+	src/icons/hicolor/72x72/apps/vtwm.png \
 	src/icons/hicolor/72x72/apps/wmaker.png \
 	src/icons/hicolor/72x72/apps/xlogo.png \
 	src/icons/hicolor/96x96/apps/archlinux-wm-awesome.png \
@@ -574,8 +592,10 @@ EXTRA_DIST = \
 	src/icons/hicolor/96x96/apps/GNUstep3D.png \
 	src/icons/hicolor/96x96/apps/GNUstep.png \
 	src/icons/hicolor/96x96/apps/jwm.png \
+	src/icons/hicolor/96x96/apps/mwm.png \
 	src/icons/hicolor/96x96/apps/pekwm.png \
 	src/icons/hicolor/96x96/apps/twm.png \
+	src/icons/hicolor/96x96/apps/vtwm.png \
 	src/icons/hicolor/96x96/apps/wmaker.png \
 	src/icons/hicolor/96x96/apps/xlogo.png \
 	src/icons/hicolor/scalable/actions/unexicon-new.svg \
@@ -623,8 +643,10 @@ EXTRA_DIST = \
 	src/icons/hicolor/scalable/apps/GNUstep.svg \
 	src/icons/hicolor/scalable/apps/jwm.svg \
 	src/icons/hicolor/scalable/apps/makepngs \
+	src/icons/hicolor/scalable/apps/mwm.svg \
 	src/icons/hicolor/scalable/apps/pekwm.svg \
 	src/icons/hicolor/scalable/apps/twm.svg \
+	src/icons/hicolor/scalable/apps/vtwm.svg \
 	src/icons/hicolor/scalable/apps/wmaker.svg \
 	src/icons/hicolor/scalable/apps/xlogo.svg \
 	src/icons/Mist/16x16/apps/start-here.png \

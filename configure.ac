@@ -1,7 +1,7 @@
 
 AC_PREREQ(2.69)
-AC_INIT([xde-icons],[1.0.1],[bugs@openss7.org],[xde-icons])
-AC_REVISION([1.0.1])
+AC_INIT([xde-icons],[1.0.2],[bugs@openss7.org],[xde-icons])
+AC_REVISION([1.0.2])
 
 AC_CONFIG_SRCDIR([configure.ac])
 AC_CONFIG_AUX_DIR([scripts])
