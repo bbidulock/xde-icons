@@ -42,6 +42,11 @@ nobase_dist_share_DATA += \
 
 
 nobase_dist_share_DATA += \
+	icons/Mist/16x16/apps/start-here.png \
+	icons/Mist/192x192/apps/start-here.png \
+	icons/Mist/64x64/apps/start-here.png
+
+nobase_dist_share_DATA += \
 	icons/hicolor/48x48/devices/chip.png \
 	icons/hicolor/48x48/devices/ExpansionCard.png \
 	icons/hicolor/48x48/devices/Harddrive.png \
