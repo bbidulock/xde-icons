@@ -1,3 +1,12 @@
+xde-icons -- NEWS file.  2013-12-29
+
+History of major user-visible changes:
+======================================
+
+Major changes for release 1.1:
+------------------------------
+
+Build pngs from svgs where possible at install time.
 
 Major changes for release 1.0.3:
 ------------------------------
@@ -11,3 +20,4 @@ Major changes for release 1.0:
 
 Initial release of this package.
 
+# vim: set ft=asciidoc tw=72 nocin nosi fo+=tcqlorn:
