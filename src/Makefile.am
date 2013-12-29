@@ -272,7 +272,6 @@ scalable_ICONS = \
 	icons/hicolor/scalable/apps/archlinux-wm-wmaker.svg \
 	icons/hicolor/scalable/apps/archlinux-wm-xfce.svg \
 	icons/hicolor/scalable/apps/archlinux-wm-xmonad.svg \
-	icons/hicolor/scalable/apps/arch-logo.svg \
 	icons/hicolor/scalable/apps/blackbox.svg \
 	icons/hicolor/scalable/apps/ctwm.svg \
 	icons/hicolor/scalable/apps/fluxbox.svg \
