@@ -9,3 +9,5 @@ scripts/
 *.log
 *.swp
 *.swo
+configure.ac
+ChangeLog
