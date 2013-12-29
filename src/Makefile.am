@@ -277,6 +277,7 @@ scalable_ICONS = \
 	icons/hicolor/scalable/apps/archlinux-wm-wmaker.svg \
 	icons/hicolor/scalable/apps/archlinux-wm-xfce.svg \
 	icons/hicolor/scalable/apps/archlinux-wm-xmonad.svg \
+	icons/hicolor/scalable/apps/arch-logo.svg \
 	icons/hicolor/scalable/apps/blackbox.svg \
 	icons/hicolor/scalable/apps/ctwm.svg \
 	icons/hicolor/scalable/apps/fluxbox.svg \
@@ -298,10 +299,14 @@ install-data-local:
 	list="$(scalable_ICONS)" ; for f in $$list ; do \
 		p=`basename "$$f" .svg`.png ; \
 		d=; if test -f "$(srcdir)/$$f" ; then d="$(srcdir)/" ; fi ; \
-		for s in 16 22 24 32 48 56 64 72 96 128 256 ; do \
+		if test "$$p" = "xlogo.png" ; then \
+			sizes="16 22 24 32 36 48 56 64 72 96 100 128 256" ; \
+		else \
+			sizes="16 22 24 32 36 48 56 64 72 96 128 256" ; \
+		fi ; \
+		for s in $$sizes ; do \
 			t="$(DESTDIR)$(sharedir)/icons/hicolor/$${s}x$${s}/apps" ; \
 			test -d "$$t" || $(MKDIR_P) "$$t" ; \
 			rsvg-convert -w $$s -h $$s -f png "$$d$$f" -o "$$t/$$p" ; \
 		done ; \
 	done
-
