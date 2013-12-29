@@ -181,7 +181,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/16x16/apps/gnome-session-sleep.png \
 	icons/hicolor/16x16/apps/gnome-session-suspend.png \
 	icons/hicolor/16x16/apps/gnome-session-switch.png \
-	icons/hicolor/16x16/apps/GNUstep3D.png \
 	icons/hicolor/16x16/apps/icewm.png \
 	icons/hicolor/16x16/apps/start-here.png \
 	icons/hicolor/16x16/apps/WindowMaker.png \
@@ -195,7 +194,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/22x22/apps/gnome-session-sleep.png \
 	icons/hicolor/22x22/apps/gnome-session-suspend.png \
 	icons/hicolor/22x22/apps/gnome-session-switch.png \
-	icons/hicolor/22x22/apps/GNUstep3D.png \
 	icons/hicolor/24x24/apps/fvwm.png \
 	icons/hicolor/24x24/apps/gnome-session-halt.png \
 	icons/hicolor/24x24/apps/gnome-session-hibernate.png \
@@ -203,7 +201,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/24x24/apps/gnome-session-sleep.png \
 	icons/hicolor/24x24/apps/gnome-session-suspend.png \
 	icons/hicolor/24x24/apps/gnome-session-switch.png \
-	icons/hicolor/24x24/apps/GNUstep3D.png \
 	icons/hicolor/32x32/apps/fvwm-crystal.png \
 	icons/hicolor/32x32/apps/fvwm.png \
 	icons/hicolor/32x32/apps/gnome-logout.png \
@@ -214,12 +211,10 @@ nobase_dist_share_DATA += \
 	icons/hicolor/32x32/apps/gnome-session-sleep.png \
 	icons/hicolor/32x32/apps/gnome-session-suspend.png \
 	icons/hicolor/32x32/apps/gnome-session-switch.png \
-	icons/hicolor/32x32/apps/GNUstep3D.png \
 	icons/hicolor/32x32/apps/icewm.png \
 	icons/hicolor/32x32/apps/WindowMaker.png \
 	icons/hicolor/32x32/apps/xclock.png \
 	icons/hicolor/36x36/apps/fvwm.png \
-	icons/hicolor/36x36/apps/GNUstep3D.png \
 	icons/hicolor/48x48/apps/AfterStep2.png \
 	icons/hicolor/48x48/apps/AfterStep.png \
 	icons/hicolor/48x48/apps/fvwm-crystal.png \
@@ -232,7 +227,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/48x48/apps/gnome-session-suspend.png \
 	icons/hicolor/48x48/apps/gnome-session-switch.png \
 	icons/hicolor/48x48/apps/GNUStep3D.png \
-	icons/hicolor/48x48/apps/GNUstep3D.png \
 	icons/hicolor/48x48/apps/GNUStepGlow.png \
 	icons/hicolor/48x48/apps/GNUStep.png \
 	icons/hicolor/48x48/apps/icewm.png \
@@ -244,7 +238,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/48x48/apps/XWindow.png \
 	icons/hicolor/56x56/apps/AfterStep3.png \
 	icons/hicolor/56x56/apps/AfterStep4.png \
-	icons/hicolor/56x56/apps/GNUstep3D.png \
 	icons/hicolor/56x56/apps/start-here.png \
 	icons/hicolor/64x64/apps/allin1.png \
 	icons/hicolor/64x64/apps/fvwm.png \
@@ -255,16 +248,10 @@ nobase_dist_share_DATA += \
 	icons/hicolor/64x64/apps/gnome-session-reboot.png \
 	icons/hicolor/64x64/apps/gnome-session-suspend.png \
 	icons/hicolor/64x64/apps/gnome-session-switch.png \
-	icons/hicolor/64x64/apps/GNUstep3D.png \
 	icons/hicolor/64x64/apps/start-here.png \
 	icons/hicolor/64x64/apps/xclock.png \
-	icons/hicolor/72x72/apps/GNUstep3D.png \
-	icons/hicolor/96x96/apps/GNUstep3D.png \
 	icons/hicolor/128x128/apps/fvwm.png \
-	icons/hicolor/128x128/apps/GNUstep3D.png \
-	icons/hicolor/192x192/apps/start-here.png \
-	icons/hicolor/256x256/apps/GNUstep3D.png \
-	icons/hicolor/512x512/apps/GNUstep3D.png
+	icons/hicolor/192x192/apps/start-here.png
 
 scalable_ICONS = \
 	icons/hicolor/scalable/apps/archlinux-wm-awesome.svg \
@@ -290,6 +277,7 @@ scalable_ICONS = \
 	icons/hicolor/scalable/apps/ctwm.svg \
 	icons/hicolor/scalable/apps/fluxbox.svg \
 	icons/hicolor/scalable/apps/GNUstep.svg \
+	icons/hicolor/scalable/apps/GNUstep3D.svg \
 	icons/hicolor/scalable/apps/jwm.svg \
 	icons/hicolor/scalable/apps/mwm.svg \
 	icons/hicolor/scalable/apps/pekwm.svg \
@@ -309,8 +297,7 @@ install-data-local:
 		for s in 16 22 24 32 48 56 64 72 96 128 256 ; do \
 			t="$(DESTDIR)$(sharedir)/icons/hicolor/$${s}x$${s}/apps" ; \
 			test -d "$$t" || $(MKDIR_P) "$$t" ; \
-			convert -resize $${s}x$${s} -background None "$$d$$f" "$$t/$$p" ; \
+			rsvg-convert -w $$s -h $$s -f png "$$d$$f" -o "$$t/$$p" ; \
 		done ; \
 	done
-
 
