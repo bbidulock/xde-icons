@@ -259,6 +259,7 @@ nobase_dist_share_DATA += \
 	icons/hicolor/192x192/apps/start-here.png
 
 scalable_ICONS = \
+	icons/hicolor/scalable/apps/2bWM.svg \
 	icons/hicolor/scalable/apps/archlinux-wm-awesome.svg \
 	icons/hicolor/scalable/apps/archlinux-wm-base.svg \
 	icons/hicolor/scalable/apps/archlinux-wm-blackbox.svg \
@@ -310,3 +311,6 @@ install-data-local:
 			rsvg-convert -w $$s -h $$s -f png "$$d$$f" -o "$$t/$$p" ; \
 		done ; \
 	done
+
+# rsvg-convert -w $$s -h $$s -f png "$$d$$f" -o "$$t/$$p"
+# convert -resize $${s}x$${s} -background None "$$d$$f" "$$t/$$p"
