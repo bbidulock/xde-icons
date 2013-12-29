@@ -11,3 +11,7 @@ scripts/
 *.swo
 configure.ac
 ChangeLog
+Makefile
+config.status
+src/Makefile
+src/Makefile.in

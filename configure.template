@@ -14,13 +14,22 @@ AC_PROG_LN_S
 AC_PROG_MAKE_SET
 AC_PROG_MKDIR_P
 
+test "x$prefix" = xNONE && prefix="$ac_default_prefix"
+sharedir="$datadir"
+eval "sharedir=\"$sharedir\""
+eval "sharedir=\"$sharedir\""
+eval "sharedir=\"$sharedir\""
+
+AC_SUBST([sharedir])
+
 iconsdir='$(datadir)/icons'
 AC_SUBST([iconsdir])
 
 pixmapsdir='$(datadir)/pixmaps'
 AC_SUBST([pixmapsdir])
 
-AC_CONFIG_FILES([Makefile])
+AC_CONFIG_FILES([Makefile
+		 src/Makefile])
 AC_OUTPUT
 
 # vim: set ft=config:
