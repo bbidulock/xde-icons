@@ -4,6 +4,7 @@ nobase_nodist_share_DATA =
 
 nobase_dist_share_DATA += \
 	pixmaps/AfterStep.xpm \
+	pixmaps/fltk-editor.xpm \
 	pixmaps/fvwm_clipped.png \
 	pixmaps/fvwm_noback.png \
 	pixmaps/fvwm.png \
