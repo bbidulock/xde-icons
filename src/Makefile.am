@@ -191,6 +191,7 @@ nobase_dist_share_DATA += \
 	icons/hicolor/16x16/apps/icewm.png \
 	icons/hicolor/16x16/apps/start-here.png \
 	icons/hicolor/16x16/apps/WindowMaker.png \
+	icons/hicolor/22x22/apps/aterm.png \
 	icons/hicolor/22x22/apps/fvwm-crystal.png \
 	icons/hicolor/22x22/apps/fvwm.png \
 	icons/hicolor/22x22/apps/gnome-logout.png \
@@ -210,6 +211,7 @@ nobase_dist_share_DATA += \
 	icons/hicolor/24x24/apps/gnome-session-suspend.png \
 	icons/hicolor/24x24/apps/gnome-session-switch.png \
 	icons/hicolor/24x24/apps/postscript-viewer.png \
+	icons/hicolor/32x32/apps/aterm.png \
 	icons/hicolor/32x32/apps/fvwm-crystal.png \
 	icons/hicolor/32x32/apps/fvwm.png \
 	icons/hicolor/32x32/apps/gnome-logout.png \
@@ -225,6 +227,7 @@ nobase_dist_share_DATA += \
 	icons/hicolor/32x32/apps/WindowMaker.png \
 	icons/hicolor/32x32/apps/xclock.png \
 	icons/hicolor/36x36/apps/fvwm.png \
+	icons/hicolor/48x48/apps/aterm.png \
 	icons/hicolor/48x48/apps/AfterStep2.png \
 	icons/hicolor/48x48/apps/AfterStep.png \
 	icons/hicolor/48x48/apps/fvwm-crystal.png \
