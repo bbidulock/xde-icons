@@ -38,7 +38,9 @@ nobase_dist_share_DATA += \
 	pixmaps/window-snap.xpm \
 	pixmaps/window-stick.xpm \
 	pixmaps/window-titlebar.xpm \
-	pixmaps/window-unshade.xpm
+	pixmaps/window-unshade.xpm \
+	pixmaps/xdvi.png \
+	pixmaps/xdvi.xpm
 
 
 nobase_dist_share_DATA += \
@@ -206,6 +208,7 @@ nobase_dist_share_DATA += \
 	icons/hicolor/24x24/apps/gnome-session-sleep.png \
 	icons/hicolor/24x24/apps/gnome-session-suspend.png \
 	icons/hicolor/24x24/apps/gnome-session-switch.png \
+	icons/hicolor/24x24/apps/postscript-viewer.png \
 	icons/hicolor/32x32/apps/fvwm-crystal.png \
 	icons/hicolor/32x32/apps/fvwm.png \
 	icons/hicolor/32x32/apps/gnome-logout.png \
@@ -235,6 +238,7 @@ nobase_dist_share_DATA += \
 	icons/hicolor/48x48/apps/GNUStepGlow.png \
 	icons/hicolor/48x48/apps/GNUStep.png \
 	icons/hicolor/48x48/apps/icewm.png \
+	icons/hicolor/48x48/apps/postscript-viewer.png \
 	icons/hicolor/48x48/apps/WindowMaker.png \
 	icons/hicolor/48x48/apps/XApp.png \
 	icons/hicolor/48x48/apps/xclock.png \
