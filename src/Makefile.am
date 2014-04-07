@@ -201,6 +201,7 @@ nobase_dist_share_DATA += \
 	icons/hicolor/22x22/apps/gnome-session-sleep.png \
 	icons/hicolor/22x22/apps/gnome-session-suspend.png \
 	icons/hicolor/22x22/apps/gnome-session-switch.png \
+	icons/hicolor/22x22/apps/nano.png \
 	icons/hicolor/24x24/apps/fvwm.png \
 	icons/hicolor/24x24/apps/gnome-session-halt.png \
 	icons/hicolor/24x24/apps/gnome-session-hibernate.png \
@@ -220,6 +221,7 @@ nobase_dist_share_DATA += \
 	icons/hicolor/32x32/apps/gnome-session-suspend.png \
 	icons/hicolor/32x32/apps/gnome-session-switch.png \
 	icons/hicolor/32x32/apps/icewm.png \
+	icons/hicolor/32x32/apps/nano.png \
 	icons/hicolor/32x32/apps/WindowMaker.png \
 	icons/hicolor/32x32/apps/xclock.png \
 	icons/hicolor/36x36/apps/fvwm.png \
@@ -238,6 +240,7 @@ nobase_dist_share_DATA += \
 	icons/hicolor/48x48/apps/GNUStepGlow.png \
 	icons/hicolor/48x48/apps/GNUStep.png \
 	icons/hicolor/48x48/apps/icewm.png \
+	icons/hicolor/48x48/apps/nano.png \
 	icons/hicolor/48x48/apps/postscript-viewer.png \
 	icons/hicolor/48x48/apps/WindowMaker.png \
 	icons/hicolor/48x48/apps/XApp.png \
