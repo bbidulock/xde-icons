@@ -41,7 +41,9 @@ nobase_dist_share_DATA += \
 	pixmaps/window-titlebar.xpm \
 	pixmaps/window-unshade.xpm \
 	pixmaps/xdvi.png \
-	pixmaps/xdvi.xpm
+	pixmaps/xdvi.xpm \
+	pixmaps/xv.png \
+	pixmaps/xv.xpm
 
 
 nobase_dist_share_DATA += \
