@@ -296,6 +296,7 @@ scalable_ICONS = \
 	icons/hicolor/scalable/apps/arch-logo.svg \
 	icons/hicolor/scalable/apps/blackbox.svg \
 	icons/hicolor/scalable/apps/ctwm.svg \
+	icons/hicolor/scalable/apps/eeschema.svg \
 	icons/hicolor/scalable/apps/fluxbox.svg \
 	icons/hicolor/scalable/apps/GNUstep.svg \
 	icons/hicolor/scalable/apps/GNUstep3D.svg \
