@@ -9,6 +9,8 @@ nobase_dist_share_DATA += \
 	pixmaps/fvwm_noback.png \
 	pixmaps/fvwm.png \
 	pixmaps/fvwm.xpm \
+	pixmaps/gv.png \
+	pixmaps/gv.xpm \
 	pixmaps/lxde-icon.png \
 	pixmaps/mini.fvwm.xpm \
 	pixmaps/mini-start.xpm \
