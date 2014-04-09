@@ -11,6 +11,8 @@ nobase_dist_share_DATA += \
 	pixmaps/fvwm.xpm \
 	pixmaps/gv.png \
 	pixmaps/gv.xpm \
+	pixmaps/imagic.png \
+	pixmaps/imagic.xpm \
 	pixmaps/lxde-icon.png \
 	pixmaps/mini.fvwm.xpm \
 	pixmaps/mini-start.xpm \
@@ -183,6 +185,7 @@ nobase_dist_share_DATA += \
 	icons/hicolor/64x64/actions/system-switch-user.png
 
 nobase_dist_share_DATA += \
+	icons/hicolor/16x16/apps/chbg.png \
 	icons/hicolor/16x16/apps/fvwm-crystal.png \
 	icons/hicolor/16x16/apps/fvwm.png \
 	icons/hicolor/16x16/apps/gnome-logout.png \
@@ -217,6 +220,7 @@ nobase_dist_share_DATA += \
 	icons/hicolor/24x24/apps/gnome-session-switch.png \
 	icons/hicolor/24x24/apps/postscript-viewer.png \
 	icons/hicolor/32x32/apps/aterm.png \
+	icons/hicolor/32x32/apps/chbg.png \
 	icons/hicolor/32x32/apps/fvwm-crystal.png \
 	icons/hicolor/32x32/apps/fvwm.png \
 	icons/hicolor/32x32/apps/gnome-logout.png \
@@ -233,6 +237,7 @@ nobase_dist_share_DATA += \
 	icons/hicolor/32x32/apps/xclock.png \
 	icons/hicolor/36x36/apps/fvwm.png \
 	icons/hicolor/48x48/apps/aterm.png \
+	icons/hicolor/48x48/apps/chbg.png \
 	icons/hicolor/48x48/apps/AfterStep2.png \
 	icons/hicolor/48x48/apps/AfterStep.png \
 	icons/hicolor/48x48/apps/fvwm-crystal.png \
