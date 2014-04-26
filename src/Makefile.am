@@ -48,6 +48,8 @@ nobase_dist_share_DATA += \
 	pixmaps/window-stick.xpm \
 	pixmaps/window-titlebar.xpm \
 	pixmaps/window-unmaximize-b.xpm \
+	pixmaps/window-unmaximize-h.xpm \
+	pixmaps/window-unmaximize-v.xpm \
 	pixmaps/window-unmaximize.xpm \
 	pixmaps/window-unminimize.xpm \
 	pixmaps/window-unshade.xpm \
@@ -148,7 +150,9 @@ nobase_dist_share_DATA += \
 	icons/hicolor/16x16/actions/window-stick.png \
 	icons/hicolor/16x16/actions/window-titlebar.png \
 	icons/hicolor/16x16/actions/window-unmaximize-b.png \
+	icons/hicolor/16x16/actions/window-unmaximize-h.png \
 	icons/hicolor/16x16/actions/window-unmaximize.png \
+	icons/hicolor/16x16/actions/window-unmaximize-v.png \
 	icons/hicolor/16x16/actions/window-unminimize.png \
 	icons/hicolor/16x16/actions/window-unshade.png \
 	icons/hicolor/16x16/actions/window-unstick.png \
