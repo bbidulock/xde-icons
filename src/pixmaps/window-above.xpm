@@ -1,5 +1,5 @@
 /* XPM */
-static char * window_raise[] = {
+static char * window_above[] = {
 /* columns rows colors chars-per-pixel */
 "16 16 9 1 ",
 "	c None",

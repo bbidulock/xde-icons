@@ -28,7 +28,6 @@ nobase_dist_share_DATA += \
 	pixmaps/window-focus.xpm \
 	pixmaps/window-kill.xpm \
 	pixmaps/window-lower.xpm \
-	pixmaps/WindowMaker.png \
 	pixmaps/window-maximize-b.xpm \
 	pixmaps/window-maximize-h.xpm \
 	pixmaps/window-maximize-v.xpm \
@@ -36,14 +35,23 @@ nobase_dist_share_DATA += \
 	pixmaps/window-menu.xpm \
 	pixmaps/window-minimize.xpm \
 	pixmaps/window-move.xpm \
+	pixmaps/window-normal.xpm \
 	pixmaps/window-raise.xpm \
 	pixmaps/window-resize.xpm \
+	pixmaps/window-sendto-d.xpm \
+	pixmaps/window-sendto-l.xpm \
+	pixmaps/window-sendto-r.xpm \
+	pixmaps/window-sendto-u.xpm \
 	pixmaps/window-sendto.xpm \
 	pixmaps/window-shade.xpm \
 	pixmaps/window-snap.xpm \
 	pixmaps/window-stick.xpm \
 	pixmaps/window-titlebar.xpm \
+	pixmaps/window-unmaximize-b.xpm \
+	pixmaps/window-unmaximize.xpm \
+	pixmaps/window-unminimize.xpm \
 	pixmaps/window-unshade.xpm \
+	pixmaps/window-unstick.xpm \
 	pixmaps/xdvi.png \
 	pixmaps/xdvi.xpm \
 	pixmaps/xv.png \
@@ -127,14 +135,23 @@ nobase_dist_share_DATA += \
 	icons/hicolor/16x16/actions/window-menu.png \
 	icons/hicolor/16x16/actions/window-minimize.png \
 	icons/hicolor/16x16/actions/window-move.png \
+	icons/hicolor/16x16/actions/window-normal.png \
 	icons/hicolor/16x16/actions/window-raise.png \
 	icons/hicolor/16x16/actions/window-resize.png \
+	icons/hicolor/16x16/actions/window-sendto-d.png \
+	icons/hicolor/16x16/actions/window-sendto-l.png \
 	icons/hicolor/16x16/actions/window-sendto.png \
+	icons/hicolor/16x16/actions/window-sendto-r.png \
+	icons/hicolor/16x16/actions/window-sendto-u.png \
 	icons/hicolor/16x16/actions/window-shade.png \
 	icons/hicolor/16x16/actions/window-snap.png \
 	icons/hicolor/16x16/actions/window-stick.png \
 	icons/hicolor/16x16/actions/window-titlebar.png \
+	icons/hicolor/16x16/actions/window-unmaximize-b.png \
+	icons/hicolor/16x16/actions/window-unmaximize.png \
+	icons/hicolor/16x16/actions/window-unminimize.png \
 	icons/hicolor/16x16/actions/window-unshade.png \
+	icons/hicolor/16x16/actions/window-unstick.png \
 	icons/hicolor/22x22/actions/application-exit.png \
 	icons/hicolor/22x22/actions/gnome-logout.png \
 	icons/hicolor/22x22/actions/gnome-session-halt.png \
