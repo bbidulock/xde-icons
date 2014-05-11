@@ -301,6 +301,7 @@ nobase_dist_share_DATA += \
 
 scalable_ICONS = \
 	icons/hicolor/scalable/apps/2bWM.svg \
+	icons/hicolor/scalable/apps/adwm.svg \
 	icons/hicolor/scalable/apps/archlinux-wm-awesome.svg \
 	icons/hicolor/scalable/apps/archlinux-wm-base.svg \
 	icons/hicolor/scalable/apps/archlinux-wm-blackbox.svg \
@@ -322,10 +323,12 @@ scalable_ICONS = \
 	icons/hicolor/scalable/apps/arch-logo.svg \
 	icons/hicolor/scalable/apps/blackbox.svg \
 	icons/hicolor/scalable/apps/ctwm.svg \
+	icons/hicolor/scalable/apps/dwm.svg \
 	icons/hicolor/scalable/apps/eeschema.svg \
 	icons/hicolor/scalable/apps/fluxbox.svg \
-	icons/hicolor/scalable/apps/GNUstep.svg \
 	icons/hicolor/scalable/apps/GNUstep3D.svg \
+	icons/hicolor/scalable/apps/GNUstep.svg \
+	icons/hicolor/scalable/apps/i3.svg \
 	icons/hicolor/scalable/apps/jwm.svg \
 	icons/hicolor/scalable/apps/mwm.svg \
 	icons/hicolor/scalable/apps/pekwm.svg \
