@@ -325,6 +325,7 @@ scalable_ICONS = \
 	icons/hicolor/scalable/apps/ctwm.svg \
 	icons/hicolor/scalable/apps/dwm.svg \
 	icons/hicolor/scalable/apps/eeschema.svg \
+	icons/hicolor/scalable/apps/evilwm.svg \
 	icons/hicolor/scalable/apps/fluxbox.svg \
 	icons/hicolor/scalable/apps/GNUstep3D.svg \
 	icons/hicolor/scalable/apps/GNUstep.svg \
@@ -335,6 +336,7 @@ scalable_ICONS = \
 	icons/hicolor/scalable/apps/pekwm.svg \
 	icons/hicolor/scalable/apps/twm.svg \
 	icons/hicolor/scalable/apps/vtwm.svg \
+	icons/hicolor/scalable/apps/wm2.svg \
 	icons/hicolor/scalable/apps/wmaker.svg \
 	icons/hicolor/scalable/apps/xdwm.svg \
 	icons/hicolor/scalable/apps/xlogo.svg \
