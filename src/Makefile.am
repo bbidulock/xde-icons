@@ -335,6 +335,7 @@ scalable_ICONS = \
 	icons/hicolor/scalable/apps/twm.svg \
 	icons/hicolor/scalable/apps/vtwm.svg \
 	icons/hicolor/scalable/apps/wmaker.svg \
+	icons/hicolor/scalable/apps/xdwm.svg \
 	icons/hicolor/scalable/apps/xlogo.svg
 
 nobase_dist_share_DATA += \
@@ -345,10 +346,10 @@ install-data-local:
 	list="$(scalable_ICONS)" ; for f in $$list ; do \
 		p=`basename "$$f" .svg`.png ; \
 		d=; if test -f "$(srcdir)/$$f" ; then d="$(srcdir)/" ; fi ; \
-		if test "$$p" = "xlogo.png" ; then \
+		if test "$$p" = "xlogo.png" -o "$$p" = "arch-logo.png"; then \
 			sizes="16 22 24 32 36 48 56 64 72 96 100 128 256" ; \
 		else \
-			sizes="16 22 24 32 36 48 56 64 72 96 128 256" ; \
+			sizes="16 24 32 48 56 64" ; \
 		fi ; \
 		for s in $$sizes ; do \
 			t="$(DESTDIR)$(sharedir)/icons/hicolor/$${s}x$${s}/apps" ; \
