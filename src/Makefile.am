@@ -330,13 +330,15 @@ scalable_ICONS = \
 	icons/hicolor/scalable/apps/GNUstep.svg \
 	icons/hicolor/scalable/apps/i3.svg \
 	icons/hicolor/scalable/apps/jwm.svg \
+	icons/hicolor/scalable/apps/larswm.svg \
 	icons/hicolor/scalable/apps/mwm.svg \
 	icons/hicolor/scalable/apps/pekwm.svg \
 	icons/hicolor/scalable/apps/twm.svg \
 	icons/hicolor/scalable/apps/vtwm.svg \
 	icons/hicolor/scalable/apps/wmaker.svg \
 	icons/hicolor/scalable/apps/xdwm.svg \
-	icons/hicolor/scalable/apps/xlogo.svg
+	icons/hicolor/scalable/apps/xlogo.svg \
+	icons/hicolor/scalable/apps/yeahwm.svg
 
 nobase_dist_share_DATA += \
 	$(scalable_ICONS)
