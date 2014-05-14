@@ -338,6 +338,8 @@ scalable_ICONS = \
 	icons/hicolor/scalable/apps/vtwm.svg \
 	icons/hicolor/scalable/apps/wm2.svg \
 	icons/hicolor/scalable/apps/wmaker.svg \
+	icons/hicolor/scalable/apps/wmii.svg \
+	icons/hicolor/scalable/apps/wmx.svg \
 	icons/hicolor/scalable/apps/xdwm.svg \
 	icons/hicolor/scalable/apps/xlogo.svg \
 	icons/hicolor/scalable/apps/yeahwm.svg
