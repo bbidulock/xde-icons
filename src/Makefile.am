@@ -14,6 +14,7 @@ nobase_dist_share_DATA += \
 	pixmaps/imagic.png \
 	pixmaps/imagic.xpm \
 	pixmaps/lxde-icon.png \
+	pixmaps/metacity.png \
 	pixmaps/mini.fvwm.xpm \
 	pixmaps/mini-start.xpm \
 	pixmaps/pekwm_logo2.png \
@@ -333,9 +334,13 @@ scalable_ICONS = \
 	icons/hicolor/scalable/apps/jwm.svg \
 	icons/hicolor/scalable/apps/larswm.svg \
 	icons/hicolor/scalable/apps/mwm.svg \
+	icons/hicolor/scalable/apps/pawm.svg \
 	icons/hicolor/scalable/apps/pekwm.svg \
+	icons/hicolor/scalable/apps/spectrwm.svg \
 	icons/hicolor/scalable/apps/twm.svg \
+	icons/hicolor/scalable/apps/velox.svg \
 	icons/hicolor/scalable/apps/vtwm.svg \
+	icons/hicolor/scalable/apps/windwm.svg \
 	icons/hicolor/scalable/apps/wm2.svg \
 	icons/hicolor/scalable/apps/wmaker.svg \
 	icons/hicolor/scalable/apps/wmii.svg \
