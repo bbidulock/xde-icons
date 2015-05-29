@@ -221,6 +221,7 @@ nobase_dist_share_DATA += \
 	icons/hicolor/16x16/apps/icewm.png \
 	icons/hicolor/16x16/apps/start-here.png \
 	icons/hicolor/16x16/apps/WindowMaker.png \
+	icons/hicolor/192x192/apps/start-here.png \
 	icons/hicolor/22x22/apps/aterm.png \
 	icons/hicolor/22x22/apps/fvwm-crystal.png \
 	icons/hicolor/22x22/apps/fvwm.png \
@@ -241,11 +242,48 @@ nobase_dist_share_DATA += \
 	icons/hicolor/24x24/apps/gnome-session-suspend.png \
 	icons/hicolor/24x24/apps/gnome-session-switch.png \
 	icons/hicolor/24x24/apps/postscript-viewer.png \
+	icons/hicolor/32x32/apps/acroread.png \
+	icons/hicolor/32x32/apps/amsn.png \
+	icons/hicolor/32x32/apps/arach.png \
+	icons/hicolor/32x32/apps/ArmyOps.png \
 	icons/hicolor/32x32/apps/aterm.png \
+	icons/hicolor/32x32/apps/bluefish.png \
+	icons/hicolor/32x32/apps/cards.png \
+	icons/hicolor/32x32/apps/cdburner.png \
+	icons/hicolor/32x32/apps/cdrom.png \
 	icons/hicolor/32x32/apps/chbg.png \
+	icons/hicolor/32x32/apps/clock.png \
+	icons/hicolor/32x32/apps/compression.png \
+	icons/hicolor/32x32/apps/concentration.png \
+	icons/hicolor/32x32/apps/configuration.png \
+	icons/hicolor/32x32/apps/dia.png \
+	icons/hicolor/32x32/apps/dice.png \
+	icons/hicolor/32x32/apps/dillo.png \
+	icons/hicolor/32x32/apps/dosbox.png \
+	icons/hicolor/32x32/apps/dvd.png \
+	icons/hicolor/32x32/apps/editorWindow.png \
+	icons/hicolor/32x32/apps/evolution.png \
+	icons/hicolor/32x32/apps/exit.png \
+	icons/hicolor/32x32/apps/file-roller.png \
+	icons/hicolor/32x32/apps/file_transfer.png \
+	icons/hicolor/32x32/apps/firefox.png \
+	icons/hicolor/32x32/apps/floppy.png \
+	icons/hicolor/32x32/apps/fluxbox.png \
+	icons/hicolor/32x32/apps/frozen-bubble.png \
+	icons/hicolor/32x32/apps/ftp.png \
 	icons/hicolor/32x32/apps/fvwm-crystal.png \
 	icons/hicolor/32x32/apps/fvwm.png \
+	icons/hicolor/32x32/apps/gaim.png \
+	icons/hicolor/32x32/apps/gcalctool.png \
+	icons/hicolor/32x32/apps/gedit.png \
+	icons/hicolor/32x32/apps/gimp.png \
+	icons/hicolor/32x32/apps/gnome-cd.png \
+	icons/hicolor/32x32/apps/gnome-dictionary.png \
 	icons/hicolor/32x32/apps/gnome-logout.png \
+	icons/hicolor/32x32/apps/gnome-networktool.png \
+	icons/hicolor/32x32/apps/gnome-pack-deb.png \
+	icons/hicolor/32x32/apps/gnome-pack-rpm.png \
+	icons/hicolor/32x32/apps/gnome-panel-screenshot.png \
 	icons/hicolor/32x32/apps/gnome-session-halt.png \
 	icons/hicolor/32x32/apps/gnome-session-hibernate.png \
 	icons/hicolor/32x32/apps/gnome-session-logout.png \
@@ -253,40 +291,176 @@ nobase_dist_share_DATA += \
 	icons/hicolor/32x32/apps/gnome-session-sleep.png \
 	icons/hicolor/32x32/apps/gnome-session-suspend.png \
 	icons/hicolor/32x32/apps/gnome-session-switch.png \
+	icons/hicolor/32x32/apps/gnome-terminal.png \
+	icons/hicolor/32x32/apps/gnumeric.png \
+	icons/hicolor/32x32/apps/gv.png \
+	icons/hicolor/32x32/apps/home-mdk.png \
+	icons/hicolor/32x32/apps/home.png \
+	icons/hicolor/32x32/apps/ical.png \
 	icons/hicolor/32x32/apps/icewm.png \
+	icons/hicolor/32x32/apps/k3b.png \
+	icons/hicolor/32x32/apps/kedit.png \
+	icons/hicolor/32x32/apps/kfm.png \
+	icons/hicolor/32x32/apps/kmail.png \
+	icons/hicolor/32x32/apps/kppp.png \
+	icons/hicolor/32x32/apps/kwrite.png \
+	icons/hicolor/32x32/apps/lime.png \
+	icons/hicolor/32x32/apps/mozilla-mail.png \
+	icons/hicolor/32x32/apps/mozilla.png \
 	icons/hicolor/32x32/apps/nano.png \
+	icons/hicolor/32x32/apps/nautilus.png \
+	icons/hicolor/32x32/apps/netscape.png \
+	icons/hicolor/32x32/apps/nvu.png \
+	icons/hicolor/32x32/apps/oocalc.png \
+	icons/hicolor/32x32/apps/ooffice.png \
+	icons/hicolor/32x32/apps/oowriter.png \
+	icons/hicolor/32x32/apps/paint.png \
+	icons/hicolor/32x32/apps/pan.png \
+	icons/hicolor/32x32/apps/pdf.png \
+	icons/hicolor/32x32/apps/penguin.png \
+	icons/hicolor/32x32/apps/print_printer.png \
+	icons/hicolor/32x32/apps/qcad.png \
+	icons/hicolor/32x32/apps/readme.png \
+	icons/hicolor/32x32/apps/rpm.png \
+	icons/hicolor/32x32/apps/samba.png \
+	icons/hicolor/32x32/apps/sound.png \
+	icons/hicolor/32x32/apps/spreadsheet.png \
+	icons/hicolor/32x32/apps/sylpheed.png \
+	icons/hicolor/32x32/apps/tbird.png \
+	icons/hicolor/32x32/apps/telescope.png \
+	icons/hicolor/32x32/apps/totem.png \
+	icons/hicolor/32x32/apps/toys_section.png \
+	icons/hicolor/32x32/apps/trash.png \
+	icons/hicolor/32x32/apps/usbkey.png \
+	icons/hicolor/32x32/apps/vectorgfx.png \
+	icons/hicolor/32x32/apps/videocam.png \
 	icons/hicolor/32x32/apps/WindowMaker.png \
+	icons/hicolor/32x32/apps/xchat.png \
 	icons/hicolor/32x32/apps/xclock.png \
+	icons/hicolor/32x32/apps/xemacs.png \
+	icons/hicolor/32x32/apps/xine.png \
+	icons/hicolor/32x32/apps/xkill.png \
+	icons/hicolor/32x32/apps/xmms.png \
+	icons/hicolor/32x32/apps/xpdf.png \
+	icons/hicolor/32x32/apps/xscreensaver.png \
+	icons/hicolor/32x32/apps/xwc.png \
 	icons/hicolor/36x36/apps/fvwm.png \
-	icons/hicolor/48x48/apps/aterm.png \
-	icons/hicolor/48x48/apps/chbg.png \
+	icons/hicolor/48x48/apps/acroread.png \
 	icons/hicolor/48x48/apps/AfterStep2.png \
 	icons/hicolor/48x48/apps/AfterStep.png \
+	icons/hicolor/48x48/apps/amsn.png \
+	icons/hicolor/48x48/apps/arach.png \
+	icons/hicolor/48x48/apps/ArmyOps.png \
+	icons/hicolor/48x48/apps/aterm.png \
+	icons/hicolor/48x48/apps/bluefish.png \
+	icons/hicolor/48x48/apps/cards.png \
+	icons/hicolor/48x48/apps/cdburner.png \
+	icons/hicolor/48x48/apps/cdrom.png \
+	icons/hicolor/48x48/apps/chbg.png \
+	icons/hicolor/48x48/apps/clock.png \
+	icons/hicolor/48x48/apps/compression.png \
+	icons/hicolor/48x48/apps/concentration.png \
+	icons/hicolor/48x48/apps/configuration.png \
+	icons/hicolor/48x48/apps/dia.png \
+	icons/hicolor/48x48/apps/dice.png \
+	icons/hicolor/48x48/apps/dillo.png \
+	icons/hicolor/48x48/apps/dosbox.png \
+	icons/hicolor/48x48/apps/dvd.png \
+	icons/hicolor/48x48/apps/editorWindow.png \
+	icons/hicolor/48x48/apps/evolution.png \
+	icons/hicolor/48x48/apps/exit.png \
+	icons/hicolor/48x48/apps/file-roller.png \
+	icons/hicolor/48x48/apps/file_transfer.png \
+	icons/hicolor/48x48/apps/firefox.png \
+	icons/hicolor/48x48/apps/floppy.png \
+	icons/hicolor/48x48/apps/frozen-bubble.png \
+	icons/hicolor/48x48/apps/ftp.png \
 	icons/hicolor/48x48/apps/fvwm-crystal.png \
 	icons/hicolor/48x48/apps/fvwm.png \
+	icons/hicolor/48x48/apps/gaim.png \
+	icons/hicolor/48x48/apps/gcalctool.png \
+	icons/hicolor/48x48/apps/gedit.png \
+	icons/hicolor/48x48/apps/gimp.png \
+	icons/hicolor/48x48/apps/gnome-cd.png \
+	icons/hicolor/48x48/apps/gnome-dictionary.png \
 	icons/hicolor/48x48/apps/gnome-logout.png \
+	icons/hicolor/48x48/apps/gnome-networktool.png \
+	icons/hicolor/48x48/apps/gnome-pack-deb.png \
+	icons/hicolor/48x48/apps/gnome-pack-rpm.png \
+	icons/hicolor/48x48/apps/gnome-panel-screenshot.png \
 	icons/hicolor/48x48/apps/gnome-session-halt.png \
 	icons/hicolor/48x48/apps/gnome-session-hibernate.png \
 	icons/hicolor/48x48/apps/gnome-session-logout.png \
 	icons/hicolor/48x48/apps/gnome-session-reboot.png \
 	icons/hicolor/48x48/apps/gnome-session-suspend.png \
 	icons/hicolor/48x48/apps/gnome-session-switch.png \
+	icons/hicolor/48x48/apps/gnome-terminal.png \
+	icons/hicolor/48x48/apps/gnumeric.png \
 	icons/hicolor/48x48/apps/GNUStep3D.png \
 	icons/hicolor/48x48/apps/GNUStepGlow.png \
 	icons/hicolor/48x48/apps/GNUStep.png \
+	icons/hicolor/48x48/apps/gv.png \
+	icons/hicolor/48x48/apps/home-mdk.png \
+	icons/hicolor/48x48/apps/home.png \
+	icons/hicolor/48x48/apps/ical.png \
 	icons/hicolor/48x48/apps/icewm.png \
+	icons/hicolor/48x48/apps/k3b.png \
+	icons/hicolor/48x48/apps/kedit.png \
+	icons/hicolor/48x48/apps/kfm.png \
+	icons/hicolor/48x48/apps/kmail.png \
+	icons/hicolor/48x48/apps/kppp.png \
+	icons/hicolor/48x48/apps/kwrite.png \
+	icons/hicolor/48x48/apps/lime.png \
+	icons/hicolor/48x48/apps/mozilla-mail.png \
+	icons/hicolor/48x48/apps/mozilla.png \
 	icons/hicolor/48x48/apps/nano.png \
+	icons/hicolor/48x48/apps/nautilus.png \
+	icons/hicolor/48x48/apps/netscape.png \
+	icons/hicolor/48x48/apps/nvu.png \
+	icons/hicolor/48x48/apps/oocalc.png \
+	icons/hicolor/48x48/apps/ooffice.png \
+	icons/hicolor/48x48/apps/oowriter.png \
+	icons/hicolor/48x48/apps/paint.png \
+	icons/hicolor/48x48/apps/pan.png \
+	icons/hicolor/48x48/apps/pdf.png \
+	icons/hicolor/48x48/apps/penguin.png \
 	icons/hicolor/48x48/apps/postscript-viewer.png \
+	icons/hicolor/48x48/apps/print_printer.png \
+	icons/hicolor/48x48/apps/qcad.png \
+	icons/hicolor/48x48/apps/readme.png \
+	icons/hicolor/48x48/apps/rpm.png \
+	icons/hicolor/48x48/apps/samba.png \
+	icons/hicolor/48x48/apps/sound.png \
+	icons/hicolor/48x48/apps/spreadsheet.png \
+	icons/hicolor/48x48/apps/sylpheed.png \
+	icons/hicolor/48x48/apps/tbird.png \
+	icons/hicolor/48x48/apps/telescope.png \
+	icons/hicolor/48x48/apps/totem.png \
+	icons/hicolor/48x48/apps/toys_section.png \
+	icons/hicolor/48x48/apps/trash.png \
+	icons/hicolor/48x48/apps/usbkey.png \
+	icons/hicolor/48x48/apps/vectorgfx.png \
+	icons/hicolor/48x48/apps/videocam.png \
 	icons/hicolor/48x48/apps/WindowMaker.png \
 	icons/hicolor/48x48/apps/XApp.png \
+	icons/hicolor/48x48/apps/xchat.png \
 	icons/hicolor/48x48/apps/xclock.png \
+	icons/hicolor/48x48/apps/xemacs.png \
+	icons/hicolor/48x48/apps/xine.png \
+	icons/hicolor/48x48/apps/xkill.png \
+	icons/hicolor/48x48/apps/xmms.png \
+	icons/hicolor/48x48/apps/xpdf.png \
+	icons/hicolor/48x48/apps/xscreensaver.png \
+	icons/hicolor/48x48/apps/xwc.png \
 	icons/hicolor/48x48/apps/XWindow2.png \
 	icons/hicolor/48x48/apps/XWindow3.png \
 	icons/hicolor/48x48/apps/XWindow.png \
 	icons/hicolor/56x56/apps/AfterStep3.png \
 	icons/hicolor/56x56/apps/AfterStep4.png \
+	icons/hicolor/56x56/apps/arch-logo.png \
 	icons/hicolor/56x56/apps/start-here.png \
 	icons/hicolor/64x64/apps/allin1.png \
+	icons/hicolor/64x64/apps/arch-logo.png \
 	icons/hicolor/64x64/apps/fvwm.png \
 	icons/hicolor/64x64/apps/gnome-logout.png \
 	icons/hicolor/64x64/apps/gnome-session-halt.png \
@@ -295,10 +469,14 @@ nobase_dist_share_DATA += \
 	icons/hicolor/64x64/apps/gnome-session-reboot.png \
 	icons/hicolor/64x64/apps/gnome-session-suspend.png \
 	icons/hicolor/64x64/apps/gnome-session-switch.png \
+	icons/hicolor/64x64/apps/GNUstep3D.png \
+	icons/hicolor/64x64/apps/GNUstep.png \
 	icons/hicolor/64x64/apps/start-here.png \
 	icons/hicolor/64x64/apps/xclock.png \
-	icons/hicolor/128x128/apps/fvwm.png \
-	icons/hicolor/192x192/apps/start-here.png
+	icons/hicolor/72x72/apps/arch-logo.png \
+	icons/hicolor/96x96/apps/arch-logo.png \
+	icons/hicolor/128x128/apps/arch-logo.png \
+	icons/hicolor/128x128/apps/fvwm.png
 
 scalable_ICONS = \
 	icons/hicolor/scalable/apps/2bWM.svg \
