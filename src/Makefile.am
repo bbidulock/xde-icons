@@ -266,7 +266,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/32x32/apps/exit.png \
 	icons/hicolor/32x32/apps/file-roller.png \
 	icons/hicolor/32x32/apps/file_transfer.png \
-	icons/hicolor/32x32/apps/firefox.png \
 	icons/hicolor/32x32/apps/floppy.png \
 	icons/hicolor/32x32/apps/fluxbox.png \
 	icons/hicolor/32x32/apps/frozen-bubble.png \
@@ -276,7 +275,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/32x32/apps/gaim.png \
 	icons/hicolor/32x32/apps/gcalctool.png \
 	icons/hicolor/32x32/apps/gedit.png \
-	icons/hicolor/32x32/apps/gimp.png \
 	icons/hicolor/32x32/apps/gnome-cd.png \
 	icons/hicolor/32x32/apps/gnome-dictionary.png \
 	icons/hicolor/32x32/apps/gnome-logout.png \
@@ -328,14 +326,12 @@ nobase_dist_share_DATA += \
 	icons/hicolor/32x32/apps/sylpheed.png \
 	icons/hicolor/32x32/apps/tbird.png \
 	icons/hicolor/32x32/apps/telescope.png \
-	icons/hicolor/32x32/apps/totem.png \
 	icons/hicolor/32x32/apps/toys_section.png \
 	icons/hicolor/32x32/apps/trash.png \
 	icons/hicolor/32x32/apps/usbkey.png \
 	icons/hicolor/32x32/apps/vectorgfx.png \
 	icons/hicolor/32x32/apps/videocam.png \
 	icons/hicolor/32x32/apps/WindowMaker.png \
-	icons/hicolor/32x32/apps/xchat.png \
 	icons/hicolor/32x32/apps/xclock.png \
 	icons/hicolor/32x32/apps/xemacs.png \
 	icons/hicolor/32x32/apps/xine.png \
@@ -371,7 +367,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/48x48/apps/exit.png \
 	icons/hicolor/48x48/apps/file-roller.png \
 	icons/hicolor/48x48/apps/file_transfer.png \
-	icons/hicolor/48x48/apps/firefox.png \
 	icons/hicolor/48x48/apps/floppy.png \
 	icons/hicolor/48x48/apps/frozen-bubble.png \
 	icons/hicolor/48x48/apps/ftp.png \
@@ -380,7 +375,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/48x48/apps/gaim.png \
 	icons/hicolor/48x48/apps/gcalctool.png \
 	icons/hicolor/48x48/apps/gedit.png \
-	icons/hicolor/48x48/apps/gimp.png \
 	icons/hicolor/48x48/apps/gnome-cd.png \
 	icons/hicolor/48x48/apps/gnome-dictionary.png \
 	icons/hicolor/48x48/apps/gnome-logout.png \
@@ -435,7 +429,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/48x48/apps/sylpheed.png \
 	icons/hicolor/48x48/apps/tbird.png \
 	icons/hicolor/48x48/apps/telescope.png \
-	icons/hicolor/48x48/apps/totem.png \
 	icons/hicolor/48x48/apps/toys_section.png \
 	icons/hicolor/48x48/apps/trash.png \
 	icons/hicolor/48x48/apps/usbkey.png \
@@ -443,7 +436,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/48x48/apps/videocam.png \
 	icons/hicolor/48x48/apps/WindowMaker.png \
 	icons/hicolor/48x48/apps/XApp.png \
-	icons/hicolor/48x48/apps/xchat.png \
 	icons/hicolor/48x48/apps/xclock.png \
 	icons/hicolor/48x48/apps/xemacs.png \
 	icons/hicolor/48x48/apps/xine.png \
