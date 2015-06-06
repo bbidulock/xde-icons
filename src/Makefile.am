@@ -256,7 +256,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/32x32/apps/compression.png \
 	icons/hicolor/32x32/apps/concentration.png \
 	icons/hicolor/32x32/apps/configuration.png \
-	icons/hicolor/32x32/apps/dia.png \
 	icons/hicolor/32x32/apps/dice.png \
 	icons/hicolor/32x32/apps/dillo.png \
 	icons/hicolor/32x32/apps/dosbox.png \
@@ -357,7 +356,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/48x48/apps/compression.png \
 	icons/hicolor/48x48/apps/concentration.png \
 	icons/hicolor/48x48/apps/configuration.png \
-	icons/hicolor/48x48/apps/dia.png \
 	icons/hicolor/48x48/apps/dice.png \
 	icons/hicolor/48x48/apps/dillo.png \
 	icons/hicolor/48x48/apps/dosbox.png \
