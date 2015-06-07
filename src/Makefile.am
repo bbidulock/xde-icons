@@ -263,7 +263,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/32x32/apps/editorWindow.png \
 	icons/hicolor/32x32/apps/evolution.png \
 	icons/hicolor/32x32/apps/exit.png \
-	icons/hicolor/32x32/apps/file-roller.png \
 	icons/hicolor/32x32/apps/file_transfer.png \
 	icons/hicolor/32x32/apps/floppy.png \
 	icons/hicolor/32x32/apps/fluxbox.png \
@@ -363,7 +362,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/48x48/apps/editorWindow.png \
 	icons/hicolor/48x48/apps/evolution.png \
 	icons/hicolor/48x48/apps/exit.png \
-	icons/hicolor/48x48/apps/file-roller.png \
 	icons/hicolor/48x48/apps/file_transfer.png \
 	icons/hicolor/48x48/apps/floppy.png \
 	icons/hicolor/48x48/apps/frozen-bubble.png \
