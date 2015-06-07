@@ -516,6 +516,7 @@ scalable_ICONS = \
 	icons/hicolor/scalable/apps/wmx.svg \
 	icons/hicolor/scalable/apps/xdwm.svg \
 	icons/hicolor/scalable/apps/xlogo.svg \
+	icons/hicolor/scalable/apps/xterm.svg \
 	icons/hicolor/scalable/apps/yeahwm.svg
 
 nobase_dist_share_DATA += \
