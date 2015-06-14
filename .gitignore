@@ -15,4 +15,3 @@ Makefile
 config.status
 src/Makefile
 src/Makefile.in
-src/pixmaps
