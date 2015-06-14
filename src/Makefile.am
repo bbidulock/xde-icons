@@ -1315,7 +1315,7 @@ dist_noinst_DATA = \
 	$(hicolor_ICONS) \
 	$(pixmap_ICONS)
 
-install-data-local:
+install-data-hook:
 	$(NORMAL_INSTALL)
 	@x="$(DESTDIR)$(sharedir)/pixmaps/" ; \
 	test -d "$$x" || $(MKDIR_P) "$$x" ; \
