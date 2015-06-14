@@ -470,7 +470,7 @@ hicolor_ICONS = \
 	icons/hicolor/scalable/apps/2bWM.svg \
 	icons/hicolor/scalable/apps/adwm.svg \
 	icons/hicolor/scalable/apps/aewm.svg \
-	icons/hicolor/scalable/apps/afterstep.svg \
+	icons/hicolor/scalable/apps/AfterStep.svg \
 	icons/hicolor/scalable/apps/archlinux-wm-awesome.svg \
 	icons/hicolor/scalable/apps/archlinux-wm-base.svg \
 	icons/hicolor/scalable/apps/archlinux-wm-blackbox.svg \
