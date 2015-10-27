@@ -494,7 +494,6 @@ hicolor_ICONS = \
 	icons/hicolor/scalable/apps/blackbox.svg \
 	icons/hicolor/scalable/apps/ctwm.svg \
 	icons/hicolor/scalable/apps/dwm.svg \
-	icons/hicolor/scalable/apps/eeschema.svg \
 	icons/hicolor/scalable/apps/evilwm.svg \
 	icons/hicolor/scalable/apps/fluxbox.svg \
 	icons/hicolor/scalable/apps/GNUstep3D.svg \
