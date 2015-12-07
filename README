@@ -9,6 +9,8 @@ This is a set of icons, primarily window manager icons and icons for
 shutdown and reboot of the system on logout, for the XDE (X Desktop
 Environment).
 
+Note that this package will not build with librsvg-2.40.12.
+
 Release
 -------
 
