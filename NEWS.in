@@ -1,6 +1,6 @@
-xde-icons -- NEWS file.  2015-12-29
+@PACKAGE@ -- NEWS file.  @DATE@
 
-Release xde-icons-1.1.38
+Release @PACKAGE@-@VERSION@
 ===========================
 
 git shortlog -e -n -w80,6,8 ..0.1
