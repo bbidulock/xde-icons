@@ -1,7 +1,7 @@
 
 ## xde-icons
 
-Package xde-icons-1.1.38 was released under GPL license 2015-12-29.
+Package xde-icons-1.1.40 was released under GPL license .
 
 This is a set of icons, primarily window manager icons and icons for
 shutdown and reboot of the system on logout, for the XDE (X Desktop
@@ -12,7 +12,7 @@ Note that this package will not build with librsvg-2.40.12.
 
 ### Release
 
-This is the `xde-icons-1.1.38` package, released 2015-12-29.  This release,
+This is the `xde-icons-1.1.40` package, released .  This release,
 and the latest version, can be obtained from the GitHub repository at
 https://github.com/bbidulock/xde-icons, using a command such as:
 

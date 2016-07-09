@@ -1,0 +1,1831 @@
+# created with git log --stat=76 -M -C|fmt -sct -w80
+
+commit 5c7fda792f9fa984693e5a52cc0c44bde7a0cda3
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Mar 15 12:00:00 2016 -0600
+
+    add ignore files
+
+ .gitignore | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit d0aeac5c15024488749c70e3c6986fa35fae5879
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat Feb 13 07:27:12 2016 -0700
+
+    minor updates to build system
+
+ .gitignore          | 52 ++++++++++++++++++++++++++++----------
+ AUTHORS             |  9 ++-----
+ AUTHORS.in          |  3 +++
+ Makefile.am         | 39 ++++++++++++++++++++++++++++
+ NEWS                | 25 ++++--------------
+ NEWS.in             |  8 ++++++
+ README              | 25 +++++++++++++-----
+ README => README.in | 37 ++++++++++++++++++---------
+ README.md           | 67 +++++++++++++++++++++++++++++++++++++++++++++++++
+ README.md.in        | 67 +++++++++++++++++++++++++++++++++++++++++++++++++
+ THANKS              |  3 +--
+ THANKS => THANKS.in |  3 +--
+ TODO.in             |  7 ++++++
+ autogen.sh          | 37 ++++++++++++++++++++++-----
+ configure.sh        | 38 ++++++++++++++++++++++++++++
+ rebuild.sh          |  9 +++++++
+ 16 files changed, 361 insertions(+), 68 deletions(-)
+
+commit 089ebfbee335f2103ab7f697d5c8faa18d3e63c9
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Dec 29 14:40:44 2015 -0700
+
+    add category icons to package
+
+ src/Makefile.am | 407 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 407 insertions(+)
+
+commit 4623e4c44c6bece033a294a3fb9ef8c40c6fad5f
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Dec 29 14:33:19 2015 -0700
+
+    add some category icons for menus
+
+ src/icons/hicolor/16x16/categories/2dgraphics.png    | Bin 0 -> 1229 bytes
+ src/icons/hicolor/16x16/categories/3dgraphics.png    | Bin 0 -> 1196 bytes
+ src/icons/hicolor/16x16/categories/Emblem-earth.png  | Bin 0 -> 1309 bytes
+ .../hicolor/16x16/categories/Epistula.info0.png      | Bin 0 -> 3806 bytes
+ .../16x16/categories/accessories-calculator.png      | Bin 0 -> 686 bytes
+ src/icons/hicolor/16x16/categories/action-games.png  | Bin 0 -> 1495 bytes
+ src/icons/hicolor/16x16/categories/actiongames.png   | Bin 0 -> 1125 bytes
+ src/icons/hicolor/16x16/categories/adult.png         | Bin 0 -> 1224 bytes
+ .../hicolor/16x16/categories/adventuregames.png      | Bin 0 -> 1325 bytes
+ src/icons/hicolor/16x16/categories/amusement.png     | Bin 0 -> 1134 bytes
+ .../16x16/categories/applications-accessories.png    | Bin 0 -> 937 bytes
+ .../hicolor/16x16/categories/applications-chart.png  | Bin 0 -> 953 bytes
+ .../16x16/categories/applications-development.png    | Bin 0 -> 765 bytes
+ .../16x16/categories/applications-education.png      | Bin 0 -> 741 bytes
+ .../16x16/categories/applications-electronics.png    | Bin 0 -> 858 bytes
+ .../16x16/categories/applications-engineering.png    | Bin 0 -> 638 bytes
+ .../hicolor/16x16/categories/applications-games.png  | Bin 0 -> 346 bytes
+ .../16x16/categories/applications-graphics.png       | Bin 0 -> 635 bytes
+ .../16x16/categories/applications-internet.png       | Bin 0 -> 864 bytes
+ .../16x16/categories/applications-multimedia.png     | Bin 0 -> 592 bytes
+ .../hicolor/16x16/categories/applications-office.png | Bin 0 -> 769 bytes
+ .../hicolor/16x16/categories/applications-other.png  | Bin 0 -> 609 bytes
+ .../16x16/categories/applications-science.png        | Bin 0 -> 588 bytes
+ .../hicolor/16x16/categories/applications-system.png | Bin 0 -> 588 bytes
+ .../16x16/categories/applications-terminalonly.png   | Bin 0 -> 435 bytes
+ .../hicolor/16x16/categories/appointment-new.png     | Bin 0 -> 897 bytes
+ src/icons/hicolor/16x16/categories/arcadegames.png   | Bin 0 -> 1034 bytes
+ src/icons/hicolor/16x16/categories/art.png           | Bin 0 -> 1248 bytes
+ src/icons/hicolor/16x16/categories/artificiali.png   | Bin 0 -> 1288 bytes
+ .../hicolor/16x16/categories/audio-x-generic.png     | Bin 0 -> 688 bytes
+ src/icons/hicolor/16x16/categories/audiovideo.png    | Bin 0 -> 632 bytes
+ .../hicolor/16x16/categories/audiovideoedit.png      | Bin 0 -> 1334 bytes
+ src/icons/hicolor/16x16/categories/computer.png      | Bin 0 -> 725 bytes
+ src/icons/hicolor/16x16/categories/drive-optical.png | Bin 0 -> 720 bytes
+ src/icons/hicolor/16x16/categories/emblem-photos.png | Bin 0 -> 1074 bytes
+ src/icons/hicolor/16x16/categories/help-browser.png  | Bin 0 -> 932 bytes
+ .../hicolor/16x16/categories/internet-group-chat.png | Bin 0 -> 422 bytes
+ src/icons/hicolor/16x16/categories/internet-mail.png | Bin 0 -> 550 bytes
+ .../16x16/categories/internet-news-reader.png        | Bin 0 -> 474 bytes
+ .../hicolor/16x16/categories/internet-telephony.png  | Bin 0 -> 760 bytes
+ .../16x16/categories/internet-web-browser.png        | Bin 0 -> 928 bytes
+ src/icons/hicolor/16x16/categories/jack_mixer.png    | Bin 0 -> 560 bytes
+ .../hicolor/16x16/categories/multimedia-player.png   | Bin 0 -> 516 bytes
+ src/icons/hicolor/16x16/categories/music.png         | Bin 0 -> 1002 bytes
+ .../hicolor/16x16/categories/office-calendar.png     | Bin 0 -> 603 bytes
+ .../16x16/categories/package-manager-icon.png        | Bin 0 -> 1162 bytes
+ .../hicolor/16x16/categories/package-x-generic.png   | Bin 0 -> 540 bytes
+ .../hicolor/16x16/categories/package_archiving.png   | Bin 0 -> 1185 bytes
+ .../hicolor/16x16/categories/package_biology.png     | Bin 0 -> 1188 bytes
+ .../16x16/categories/package_construction.png        | Bin 0 -> 779 bytes
+ .../hicolor/16x16/categories/package_contact.png     | Bin 0 -> 628 bytes
+ src/icons/hicolor/16x16/categories/package_core.png  | Bin 0 -> 1109 bytes
+ .../16x16/categories/package_datavisualization.png   | Bin 0 -> 1189 bytes
+ .../categories/package_development_building.png      | Bin 0 -> 1070 bytes
+ .../categories/package_development_guidesigner.png   | Bin 0 -> 1201 bytes
+ .../categories/package_development_profiling.png     | Bin 0 -> 1212 bytes
+ .../package_development_revisioncontrol.png          | Bin 0 -> 1365 bytes
+ .../categories/package_development_translation.png   | Bin 0 -> 1151 bytes
+ .../hicolor/16x16/categories/package_economy.png     | Bin 0 -> 1404 bytes
+ .../categories/package_edutainment_chemical.png      | Bin 0 -> 650 bytes
+ .../categories/package_edutainment_geography.png     | Bin 0 -> 1268 bytes
+ .../16x16/categories/package_edutainment_geology.png | Bin 0 -> 1336 bytes
+ .../categories/package_edutainment_geoscience.png    | Bin 0 -> 1419 bytes
+ .../categories/package_edutainment_languages.png     | Bin 0 -> 1218 bytes
+ .../categories/package_edutainment_mathematics.png   | Bin 0 -> 1164 bytes
+ .../hicolor/16x16/categories/package_electricity.png | Bin 0 -> 662 bytes
+ .../hicolor/16x16/categories/package_filesystem.png  | Bin 0 -> 1207 bytes
+ .../hicolor/16x16/categories/package_filetools.png   | Bin 0 -> 1246 bytes
+ .../16x16/categories/package_games_blocks.png        | Bin 0 -> 1257 bytes
+ .../hicolor/16x16/categories/package_games_board.png | Bin 0 -> 1327 bytes
+ .../hicolor/16x16/categories/package_games_card.png  | Bin 0 -> 1333 bytes
+ .../hicolor/16x16/categories/package_games_kids.png  | Bin 0 -> 1145 bytes
+ .../hicolor/16x16/categories/package_games_logic.png | Bin 0 -> 1156 bytes
+ .../16x16/categories/package_games_role-playing.png  | Bin 0 -> 1168 bytes
+ .../16x16/categories/package_games_simulation.png    | Bin 0 -> 1364 bytes
+ .../16x16/categories/package_games_sports.png        | Bin 0 -> 1344 bytes
+ .../16x16/categories/package_games_strategy.png      | Bin 0 -> 1368 bytes
+ .../16x16/categories/package_graphics_scanning.png   | Bin 0 -> 1296 bytes
+ .../hicolor/16x16/categories/package_hardware.png    | Bin 0 -> 1074 bytes
+ .../hicolor/16x16/categories/package_history.png     | Bin 0 -> 1176 bytes
+ .../hicolor/16x16/categories/package_humanities.png  | Bin 0 -> 1251 bytes
+ src/icons/hicolor/16x16/categories/package_ide.png   | Bin 0 -> 1402 bytes
+ .../16x16/categories/package_imageprocessing.png     | Bin 0 -> 1194 bytes
+ .../16x16/categories/package_internet_dialup.png     | Bin 0 -> 1080 bytes
+ .../categories/package_internet_filetransfert.png    | Bin 0 -> 1167 bytes
+ .../16x16/categories/package_internet_hamradio.png   | Bin 0 -> 1324 bytes
+ .../categories/package_internet_instantmessaging.png | Bin 0 -> 1304 bytes
+ .../categories/package_internet_news-feed-reader.png | Bin 0 -> 1007 bytes
+ .../16x16/categories/package_internet_p2p.png        | Bin 0 -> 749 bytes
+ .../categories/package_internet_remoteaccess.png     | Bin 0 -> 1324 bytes
+ .../hicolor/16x16/categories/package_literature.png  | Bin 0 -> 1193 bytes
+ src/icons/hicolor/16x16/categories/package_maps.png  | Bin 0 -> 1339 bytes
+ .../16x16/categories/package_medicalsoftware.png     | Bin 0 -> 1043 bytes
+ src/icons/hicolor/16x16/categories/package_midi.png  | Bin 0 -> 1213 bytes
+ .../categories/package_multimedia_sequencer.png      | Bin 0 -> 997 bytes
+ src/icons/hicolor/16x16/categories/package_ocr.png   | Bin 0 -> 1227 bytes
+ .../16x16/categories/package_office_database.png     | Bin 0 -> 1370 bytes
+ .../16x16/categories/package_office_dictionary.png   | Bin 0 -> 1302 bytes
+ .../16x16/categories/package_office_finance.png      | Bin 0 -> 1165 bytes
+ .../16x16/categories/package_office_flowchart.png    | Bin 0 -> 1207 bytes
+ .../categories/package_office_projectmanagement.png  | Bin 0 -> 1221 bytes
+ .../16x16/categories/package_parallelcomputing.png   | Bin 0 -> 1131 bytes
+ src/icons/hicolor/16x16/categories/package_pda.png   | Bin 0 -> 1157 bytes
+ .../hicolor/16x16/categories/package_physics.png     | Bin 0 -> 1154 bytes
+ .../hicolor/16x16/categories/package_publishing.png  | Bin 0 -> 1232 bytes
+ .../16x16/categories/package_raster_graphics.png     | Bin 0 -> 607 bytes
+ .../hicolor/16x16/categories/package_recorder.png    | Bin 0 -> 1245 bytes
+ .../hicolor/16x16/categories/package_science.png     | Bin 0 -> 1421 bytes
+ .../hicolor/16x16/categories/package_sports.png      | Bin 0 -> 1101 bytes
+ .../16x16/categories/package_system_security.png     | Bin 0 -> 1315 bytes
+ .../hicolor/16x16/categories/package_telephone.png   | Bin 0 -> 1075 bytes
+ src/icons/hicolor/16x16/categories/peace.png         | Bin 0 -> 1211 bytes
+ .../categories/preferences-desktop-screensaver.png   | Bin 0 -> 707 bytes
+ .../hicolor/16x16/categories/preferences-desktop.png | Bin 0 -> 440 bytes
+ .../hicolor/16x16/categories/preferences-system.png  | Bin 0 -> 611 bytes
+ src/icons/hicolor/16x16/categories/printer.png       | Bin 0 -> 481 bytes
+ .../hicolor/16x16/categories/puppeter_template.png   | Bin 0 -> 1288 bytes
+ src/icons/hicolor/16x16/categories/shooter-games.png | Bin 0 -> 1125 bytes
+ src/icons/hicolor/16x16/categories/simulation.png    | Bin 0 -> 1417 bytes
+ .../hicolor/16x16/categories/system-file-manager.png | Bin 0 -> 378 bytes
+ .../16x16/categories/system-software-update.png      | Bin 0 -> 964 bytes
+ src/icons/hicolor/16x16/categories/television.png    | Bin 0 -> 1146 bytes
+ src/icons/hicolor/16x16/categories/text-html.png     | Bin 0 -> 709 bytes
+ .../hicolor/16x16/categories/text-x-generic.png      | Bin 0 -> 333 bytes
+ src/icons/hicolor/16x16/categories/tuner.png         | Bin 0 -> 512 bytes
+ .../16x16/categories/utilities-system-monitor.png    | Bin 0 -> 611 bytes
+ .../hicolor/16x16/categories/utilities-terminal.png  | Bin 0 -> 668 bytes
+ .../hicolor/16x16/categories/video-x-generic.png     | Bin 0 -> 823 bytes
+ src/icons/hicolor/16x16/categories/videoconf.png     | Bin 0 -> 1229 bytes
+ src/icons/hicolor/16x16/categories/viewer.png        | Bin 0 -> 1252 bytes
+ .../hicolor/16x16/categories/x-office-document.png   | Bin 0 -> 392 bytes
+ .../hicolor/16x16/categories/x-office-drawing.png    | Bin 0 -> 541 bytes
+ .../16x16/categories/x-office-presentation.png       | Bin 0 -> 567 bytes
+ .../categories/x-office-spreadsheet-template.png     | Bin 0 -> 780 bytes
+ .../16x16/categories/x-office-spreadsheet.png        | Bin 0 -> 704 bytes
+ src/icons/hicolor/24x24/categories/2dgraphics.png    | Bin 0 -> 1789 bytes
+ src/icons/hicolor/24x24/categories/3dgraphics.png    | Bin 0 -> 1586 bytes
+ src/icons/hicolor/24x24/categories/Emblem-earth.png  | Bin 0 -> 1785 bytes
+ .../24x24/categories/accessories-calculator.png      | Bin 0 -> 977 bytes
+ .../24x24/categories/accessories-text-editor.png     | Bin 0 -> 1010 bytes
+ src/icons/hicolor/24x24/categories/action-games.png  | Bin 0 -> 2214 bytes
+ src/icons/hicolor/24x24/categories/actiongames.png   | Bin 0 -> 1334 bytes
+ src/icons/hicolor/24x24/categories/adult.png         | Bin 0 -> 1740 bytes
+ .../hicolor/24x24/categories/adventuregames.png      | Bin 0 -> 1962 bytes
+ src/icons/hicolor/24x24/categories/amusement.png     | Bin 0 -> 1488 bytes
+ .../24x24/categories/applications-accessories.png    | Bin 0 -> 1621 bytes
+ .../hicolor/24x24/categories/applications-chart.png  | Bin 0 -> 1615 bytes
+ .../24x24/categories/applications-development.png    | Bin 0 -> 1489 bytes
+ .../24x24/categories/applications-education.png      | Bin 0 -> 1454 bytes
+ .../24x24/categories/applications-electronics.png    | Bin 0 -> 801 bytes
+ .../24x24/categories/applications-engineering.png    | Bin 0 -> 1101 bytes
+ .../hicolor/24x24/categories/applications-games.png  | Bin 0 -> 1466 bytes
+ .../24x24/categories/applications-graphics.png       | Bin 0 -> 1196 bytes
+ .../24x24/categories/applications-internet.png       | Bin 0 -> 1553 bytes
+ .../24x24/categories/applications-multimedia.png     | Bin 0 -> 1456 bytes
+ .../hicolor/24x24/categories/applications-office.png | Bin 0 -> 1528 bytes
+ .../hicolor/24x24/categories/applications-other.png  | Bin 0 -> 1306 bytes
+ .../24x24/categories/applications-science.png        | Bin 0 -> 1396 bytes
+ .../hicolor/24x24/categories/applications-system.png | Bin 0 -> 1649 bytes
+ .../24x24/categories/applications-terminalonly.png   | Bin 0 -> 519 bytes
+ .../hicolor/24x24/categories/appointment-new.png     | Bin 0 -> 1583 bytes
+ src/icons/hicolor/24x24/categories/arcadegames.png   | Bin 0 -> 1346 bytes
+ src/icons/hicolor/24x24/categories/art.png           | Bin 0 -> 1596 bytes
+ src/icons/hicolor/24x24/categories/artificiali.png   | Bin 0 -> 1749 bytes
+ .../hicolor/24x24/categories/audio-x-generic.png     | Bin 0 -> 1456 bytes
+ src/icons/hicolor/24x24/categories/audiovideo.png    | Bin 0 -> 1072 bytes
+ .../hicolor/24x24/categories/audiovideoedit.png      | Bin 0 -> 1820 bytes
+ src/icons/hicolor/24x24/categories/computer.png      | Bin 0 -> 1451 bytes
+ src/icons/hicolor/24x24/categories/drive-optical.png | Bin 0 -> 1173 bytes
+ src/icons/hicolor/24x24/categories/emblem-photos.png | Bin 0 -> 1397 bytes
+ src/icons/hicolor/24x24/categories/help-browser.png  | Bin 0 -> 1547 bytes
+ .../hicolor/24x24/categories/internet-group-chat.png | Bin 0 -> 647 bytes
+ src/icons/hicolor/24x24/categories/internet-mail.png | Bin 0 -> 931 bytes
+ .../24x24/categories/internet-news-reader.png        | Bin 0 -> 709 bytes
+ .../hicolor/24x24/categories/internet-telephony.png  | Bin 0 -> 1583 bytes
+ .../24x24/categories/internet-web-browser.png        | Bin 0 -> 1471 bytes
+ src/icons/hicolor/24x24/categories/jack_mixer.png    | Bin 0 -> 1004 bytes
+ .../hicolor/24x24/categories/multimedia-player.png   | Bin 0 -> 1249 bytes
+ src/icons/hicolor/24x24/categories/music.png         | Bin 0 -> 1328 bytes
+ .../hicolor/24x24/categories/office-calendar.png     | Bin 0 -> 946 bytes
+ .../24x24/categories/package-manager-icon.png        | Bin 0 -> 1399 bytes
+ .../hicolor/24x24/categories/package-x-generic.png   | Bin 0 -> 907 bytes
+ .../hicolor/24x24/categories/package_archiving.png   | Bin 0 -> 1336 bytes
+ .../hicolor/24x24/categories/package_biology.png     | Bin 0 -> 1535 bytes
+ .../24x24/categories/package_construction.png        | Bin 0 -> 1217 bytes
+ .../hicolor/24x24/categories/package_contact.png     | Bin 0 -> 1088 bytes
+ src/icons/hicolor/24x24/categories/package_core.png  | Bin 0 -> 1437 bytes
+ .../24x24/categories/package_datavisualization.png   | Bin 0 -> 1399 bytes
+ .../categories/package_development_building.png      | Bin 0 -> 1458 bytes
+ .../categories/package_development_guidesigner.png   | Bin 0 -> 1303 bytes
+ .../categories/package_development_profiling.png     | Bin 0 -> 1344 bytes
+ .../package_development_revisioncontrol.png          | Bin 0 -> 1922 bytes
+ .../categories/package_development_translation.png   | Bin 0 -> 1452 bytes
+ .../hicolor/24x24/categories/package_economy.png     | Bin 0 -> 1998 bytes
+ .../categories/package_edutainment_chemical.png      | Bin 0 -> 955 bytes
+ .../categories/package_edutainment_geography.png     | Bin 0 -> 1769 bytes
+ .../24x24/categories/package_edutainment_geology.png | Bin 0 -> 1818 bytes
+ .../categories/package_edutainment_geoscience.png    | Bin 0 -> 2090 bytes
+ .../categories/package_edutainment_languages.png     | Bin 0 -> 1706 bytes
+ .../categories/package_edutainment_mathematics.png   | Bin 0 -> 1347 bytes
+ .../hicolor/24x24/categories/package_electricity.png | Bin 0 -> 998 bytes
+ .../hicolor/24x24/categories/package_filesystem.png  | Bin 0 -> 1575 bytes
+ .../hicolor/24x24/categories/package_filetools.png   | Bin 0 -> 1448 bytes
+ .../24x24/categories/package_games_blocks.png        | Bin 0 -> 1701 bytes
+ .../hicolor/24x24/categories/package_games_board.png | Bin 0 -> 1873 bytes
+ .../hicolor/24x24/categories/package_games_card.png  | Bin 0 -> 1715 bytes
+ .../hicolor/24x24/categories/package_games_kids.png  | Bin 0 -> 1701 bytes
+ .../hicolor/24x24/categories/package_games_logic.png | Bin 0 -> 1328 bytes
+ .../24x24/categories/package_games_role-playing.png  | Bin 0 -> 1550 bytes
+ .../24x24/categories/package_games_simulation.png    | Bin 0 -> 1955 bytes
+ .../24x24/categories/package_games_sports.png        | Bin 0 -> 1963 bytes
+ .../24x24/categories/package_games_strategy.png      | Bin 0 -> 1884 bytes
+ .../24x24/categories/package_graphics_scanning.png   | Bin 0 -> 1666 bytes
+ .../hicolor/24x24/categories/package_hardware.png    | Bin 0 -> 1278 bytes
+ .../hicolor/24x24/categories/package_history.png     | Bin 0 -> 1554 bytes
+ .../hicolor/24x24/categories/package_humanities.png  | Bin 0 -> 1703 bytes
+ src/icons/hicolor/24x24/categories/package_ide.png   | Bin 0 -> 1543 bytes
+ .../24x24/categories/package_imageprocessing.png     | Bin 0 -> 1541 bytes
+ .../24x24/categories/package_internet_dialup.png     | Bin 0 -> 1412 bytes
+ .../categories/package_internet_filetransfert.png    | Bin 0 -> 1606 bytes
+ .../24x24/categories/package_internet_hamradio.png   | Bin 0 -> 1891 bytes
+ .../categories/package_internet_instantmessaging.png | Bin 0 -> 1735 bytes
+ .../categories/package_internet_news-feed-reader.png | Bin 0 -> 1406 bytes
+ .../24x24/categories/package_internet_p2p.png        | Bin 0 -> 1126 bytes
+ .../categories/package_internet_remoteaccess.png     | Bin 0 -> 1891 bytes
+ .../hicolor/24x24/categories/package_literature.png  | Bin 0 -> 1536 bytes
+ src/icons/hicolor/24x24/categories/package_maps.png  | Bin 0 -> 1701 bytes
+ .../24x24/categories/package_medicalsoftware.png     | Bin 0 -> 1671 bytes
+ src/icons/hicolor/24x24/categories/package_midi.png  | Bin 0 -> 1316 bytes
+ .../categories/package_multimedia_sequencer.png      | Bin 0 -> 1345 bytes
+ src/icons/hicolor/24x24/categories/package_ocr.png   | Bin 0 -> 1653 bytes
+ .../24x24/categories/package_office_database.png     | Bin 0 -> 1795 bytes
+ .../24x24/categories/package_office_dictionary.png   | Bin 0 -> 1860 bytes
+ .../24x24/categories/package_office_finance.png      | Bin 0 -> 1308 bytes
+ .../24x24/categories/package_office_flowchart.png    | Bin 0 -> 1335 bytes
+ .../categories/package_office_projectmanagement.png  | Bin 0 -> 1366 bytes
+ .../24x24/categories/package_parallelcomputing.png   | Bin 0 -> 1471 bytes
+ src/icons/hicolor/24x24/categories/package_pda.png   | Bin 0 -> 1400 bytes
+ .../hicolor/24x24/categories/package_physics.png     | Bin 0 -> 1426 bytes
+ .../hicolor/24x24/categories/package_publishing.png  | Bin 0 -> 1699 bytes
+ .../24x24/categories/package_raster_graphics.png     | Bin 0 -> 1494 bytes
+ .../hicolor/24x24/categories/package_recorder.png    | Bin 0 -> 1738 bytes
+ .../hicolor/24x24/categories/package_science.png     | Bin 0 -> 1667 bytes
+ .../hicolor/24x24/categories/package_sports.png      | Bin 0 -> 1452 bytes
+ .../24x24/categories/package_system_security.png     | Bin 0 -> 1532 bytes
+ .../hicolor/24x24/categories/package_telephone.png   | Bin 0 -> 1503 bytes
+ src/icons/hicolor/24x24/categories/peace.png         | Bin 0 -> 1906 bytes
+ .../categories/preferences-desktop-screensaver.png   | Bin 0 -> 1250 bytes
+ .../hicolor/24x24/categories/preferences-desktop.png | Bin 0 -> 763 bytes
+ .../hicolor/24x24/categories/preferences-system.png  | Bin 0 -> 1147 bytes
+ src/icons/hicolor/24x24/categories/printer.png       | Bin 0 -> 1048 bytes
+ .../hicolor/24x24/categories/puppeter_template.png   | Bin 0 -> 1749 bytes
+ src/icons/hicolor/24x24/categories/shooter-games.png | Bin 0 -> 1334 bytes
+ src/icons/hicolor/24x24/categories/simulation.png    | Bin 0 -> 2007 bytes
+ .../hicolor/24x24/categories/system-file-manager.png | Bin 0 -> 561 bytes
+ .../24x24/categories/system-software-update.png      | Bin 0 -> 1464 bytes
+ src/icons/hicolor/24x24/categories/television.png    | Bin 0 -> 1041 bytes
+ src/icons/hicolor/24x24/categories/text-html.png     | Bin 0 -> 1391 bytes
+ .../hicolor/24x24/categories/text-x-generic.png      | Bin 0 -> 662 bytes
+ src/icons/hicolor/24x24/categories/tuner.png         | Bin 0 -> 770 bytes
+ .../24x24/categories/utilities-system-monitor.png    | Bin 0 -> 1169 bytes
+ .../hicolor/24x24/categories/utilities-terminal.png  | Bin 0 -> 1203 bytes
+ .../hicolor/24x24/categories/video-x-generic.png     | Bin 0 -> 1496 bytes
+ src/icons/hicolor/24x24/categories/videoconf.png     | Bin 0 -> 1499 bytes
+ src/icons/hicolor/24x24/categories/viewer.png        | Bin 0 -> 1751 bytes
+ .../hicolor/24x24/categories/x-office-document.png   | Bin 0 -> 937 bytes
+ .../hicolor/24x24/categories/x-office-drawing.png    | Bin 0 -> 987 bytes
+ .../24x24/categories/x-office-presentation.png       | Bin 0 -> 1010 bytes
+ .../categories/x-office-spreadsheet-template.png     | Bin 0 -> 1392 bytes
+ .../24x24/categories/x-office-spreadsheet.png        | Bin 0 -> 1411 bytes
+ src/icons/hicolor/32x32/categories/2dgraphics.png    | Bin 0 -> 2635 bytes
+ src/icons/hicolor/32x32/categories/3dgraphics.png    | Bin 0 -> 2210 bytes
+ src/icons/hicolor/32x32/categories/Emblem-earth.png  | Bin 0 -> 2562 bytes
+ .../32x32/categories/accessories-calculator.png      | Bin 0 -> 1382 bytes
+ .../32x32/categories/accessories-text-editor.png     | Bin 0 -> 1523 bytes
+ src/icons/hicolor/32x32/categories/action-games.png  | Bin 0 -> 3382 bytes
+ src/icons/hicolor/32x32/categories/actiongames.png   | Bin 0 -> 1827 bytes
+ src/icons/hicolor/32x32/categories/adult.png         | Bin 0 -> 2559 bytes
+ .../hicolor/32x32/categories/adventuregames.png      | Bin 0 -> 2834 bytes
+ src/icons/hicolor/32x32/categories/amusement.png     | Bin 0 -> 2206 bytes
+ .../32x32/categories/applications-accessories.png    | Bin 0 -> 2223 bytes
+ .../hicolor/32x32/categories/applications-chart.png  | Bin 0 -> 1939 bytes
+ .../32x32/categories/applications-development.png    | Bin 0 -> 2174 bytes
+ .../32x32/categories/applications-education.png      | Bin 0 -> 1780 bytes
+ .../32x32/categories/applications-electronics.png    | Bin 0 -> 1003 bytes
+ .../32x32/categories/applications-engineering.png    | Bin 0 -> 1392 bytes
+ .../hicolor/32x32/categories/applications-games.png  | Bin 0 -> 2125 bytes
+ .../32x32/categories/applications-graphics.png       | Bin 0 -> 1673 bytes
+ .../32x32/categories/applications-internet.png       | Bin 0 -> 2464 bytes
+ .../32x32/categories/applications-multimedia.png     | Bin 0 -> 1797 bytes
+ .../hicolor/32x32/categories/applications-office.png | Bin 0 -> 2004 bytes
+ .../hicolor/32x32/categories/applications-other.png  | Bin 0 -> 1490 bytes
+ .../32x32/categories/applications-science.png        | Bin 0 -> 1329 bytes
+ .../hicolor/32x32/categories/applications-system.png | Bin 0 -> 2544 bytes
+ .../32x32/categories/applications-terminalonly.png   | Bin 0 -> 571 bytes
+ .../hicolor/32x32/categories/appointment-new.png     | Bin 0 -> 2399 bytes
+ src/icons/hicolor/32x32/categories/arcadegames.png   | Bin 0 -> 1928 bytes
+ src/icons/hicolor/32x32/categories/art.png           | Bin 0 -> 2287 bytes
+ src/icons/hicolor/32x32/categories/artificiali.png   | Bin 0 -> 2554 bytes
+ .../hicolor/32x32/categories/audio-x-generic.png     | Bin 0 -> 1486 bytes
+ src/icons/hicolor/32x32/categories/audiovideo.png    | Bin 0 -> 1692 bytes
+ .../hicolor/32x32/categories/audiovideoedit.png      | Bin 0 -> 2592 bytes
+ src/icons/hicolor/32x32/categories/computer.png      | Bin 0 -> 1591 bytes
+ src/icons/hicolor/32x32/categories/drive-optical.png | Bin 0 -> 1338 bytes
+ src/icons/hicolor/32x32/categories/emblem-photos.png | Bin 0 -> 1990 bytes
+ src/icons/hicolor/32x32/categories/help-browser.png  | Bin 0 -> 2231 bytes
+ .../hicolor/32x32/categories/internet-group-chat.png | Bin 0 -> 783 bytes
+ src/icons/hicolor/32x32/categories/internet-mail.png | Bin 0 -> 1426 bytes
+ .../32x32/categories/internet-news-reader.png        | Bin 0 -> 1152 bytes
+ .../hicolor/32x32/categories/internet-telephony.png  | Bin 0 -> 1827 bytes
+ .../32x32/categories/internet-web-browser.png        | Bin 0 -> 2251 bytes
+ src/icons/hicolor/32x32/categories/jack_mixer.png    | Bin 0 -> 1801 bytes
+ .../hicolor/32x32/categories/multimedia-player.png   | Bin 0 -> 1804 bytes
+ src/icons/hicolor/32x32/categories/music.png         | Bin 0 -> 1856 bytes
+ .../hicolor/32x32/categories/office-calendar.png     | Bin 0 -> 1298 bytes
+ .../32x32/categories/package-manager-icon.png        | Bin 0 -> 1645 bytes
+ .../hicolor/32x32/categories/package-x-generic.png   | Bin 0 -> 1067 bytes
+ .../hicolor/32x32/categories/package_archiving.png   | Bin 0 -> 1876 bytes
+ .../hicolor/32x32/categories/package_biology.png     | Bin 0 -> 2136 bytes
+ .../32x32/categories/package_construction.png        | Bin 0 -> 1260 bytes
+ .../hicolor/32x32/categories/package_contact.png     | Bin 0 -> 1390 bytes
+ src/icons/hicolor/32x32/categories/package_core.png  | Bin 0 -> 2023 bytes
+ .../32x32/categories/package_datavisualization.png   | Bin 0 -> 1982 bytes
+ .../categories/package_development_building.png      | Bin 0 -> 1783 bytes
+ .../categories/package_development_guidesigner.png   | Bin 0 -> 1175 bytes
+ .../categories/package_development_profiling.png     | Bin 0 -> 1446 bytes
+ .../package_development_revisioncontrol.png          | Bin 0 -> 2771 bytes
+ .../categories/package_development_translation.png   | Bin 0 -> 2155 bytes
+ .../hicolor/32x32/categories/package_economy.png     | Bin 0 -> 3146 bytes
+ .../categories/package_edutainment_chemical.png      | Bin 0 -> 1879 bytes
+ .../categories/package_edutainment_geography.png     | Bin 0 -> 2633 bytes
+ .../32x32/categories/package_edutainment_geology.png | Bin 0 -> 2707 bytes
+ .../categories/package_edutainment_geoscience.png    | Bin 0 -> 3263 bytes
+ .../categories/package_edutainment_languages.png     | Bin 0 -> 2032 bytes
+ .../categories/package_edutainment_mathematics.png   | Bin 0 -> 1615 bytes
+ .../hicolor/32x32/categories/package_electricity.png | Bin 0 -> 1383 bytes
+ .../hicolor/32x32/categories/package_filesystem.png  | Bin 0 -> 2203 bytes
+ .../hicolor/32x32/categories/package_filetools.png   | Bin 0 -> 1550 bytes
+ .../32x32/categories/package_games_blocks.png        | Bin 0 -> 2382 bytes
+ .../hicolor/32x32/categories/package_games_board.png | Bin 0 -> 2996 bytes
+ .../hicolor/32x32/categories/package_games_card.png  | Bin 0 -> 2253 bytes
+ .../hicolor/32x32/categories/package_games_kids.png  | Bin 0 -> 2570 bytes
+ .../hicolor/32x32/categories/package_games_logic.png | Bin 0 -> 1843 bytes
+ .../32x32/categories/package_games_role-playing.png  | Bin 0 -> 2381 bytes
+ .../32x32/categories/package_games_simulation.png    | Bin 0 -> 2875 bytes
+ .../32x32/categories/package_games_sports.png        | Bin 0 -> 2967 bytes
+ .../32x32/categories/package_games_strategy.png      | Bin 0 -> 1649 bytes
+ .../32x32/categories/package_graphics_scanning.png   | Bin 0 -> 1863 bytes
+ .../hicolor/32x32/categories/package_hardware.png    | Bin 0 -> 1626 bytes
+ .../hicolor/32x32/categories/package_history.png     | Bin 0 -> 2172 bytes
+ .../hicolor/32x32/categories/package_humanities.png  | Bin 0 -> 2383 bytes
+ src/icons/hicolor/32x32/categories/package_ide.png   | Bin 0 -> 1938 bytes
+ .../32x32/categories/package_imageprocessing.png     | Bin 0 -> 2223 bytes
+ .../32x32/categories/package_internet_dialup.png     | Bin 0 -> 1665 bytes
+ .../categories/package_internet_filetransfert.png    | Bin 0 -> 2412 bytes
+ .../32x32/categories/package_internet_hamradio.png   | Bin 0 -> 2350 bytes
+ .../categories/package_internet_instantmessaging.png | Bin 0 -> 1786 bytes
+ .../categories/package_internet_news-feed-reader.png | Bin 0 -> 1731 bytes
+ .../32x32/categories/package_internet_p2p.png        | Bin 0 -> 1263 bytes
+ .../categories/package_internet_remoteaccess.png     | Bin 0 -> 2350 bytes
+ .../hicolor/32x32/categories/package_literature.png  | Bin 0 -> 1896 bytes
+ src/icons/hicolor/32x32/categories/package_maps.png  | Bin 0 -> 2419 bytes
+ .../32x32/categories/package_medicalsoftware.png     | Bin 0 -> 2156 bytes
+ src/icons/hicolor/32x32/categories/package_midi.png  | Bin 0 -> 1893 bytes
+ .../categories/package_multimedia_sequencer.png      | Bin 0 -> 1728 bytes
+ src/icons/hicolor/32x32/categories/package_ocr.png   | Bin 0 -> 2516 bytes
+ .../32x32/categories/package_office_database.png     | Bin 0 -> 2691 bytes
+ .../32x32/categories/package_office_dictionary.png   | Bin 0 -> 2467 bytes
+ .../32x32/categories/package_office_finance.png      | Bin 0 -> 1454 bytes
+ .../32x32/categories/package_office_flowchart.png    | Bin 0 -> 1475 bytes
+ .../categories/package_office_projectmanagement.png  | Bin 0 -> 1910 bytes
+ .../32x32/categories/package_parallelcomputing.png   | Bin 0 -> 2069 bytes
+ src/icons/hicolor/32x32/categories/package_pda.png   | Bin 0 -> 2002 bytes
+ .../hicolor/32x32/categories/package_physics.png     | Bin 0 -> 1944 bytes
+ .../hicolor/32x32/categories/package_publishing.png  | Bin 0 -> 2494 bytes
+ .../32x32/categories/package_raster_graphics.png     | Bin 0 -> 2096 bytes
+ .../hicolor/32x32/categories/package_recorder.png    | Bin 0 -> 2587 bytes
+ .../hicolor/32x32/categories/package_science.png     | Bin 0 -> 2650 bytes
+ .../hicolor/32x32/categories/package_sports.png      | Bin 0 -> 1509 bytes
+ .../32x32/categories/package_system_security.png     | Bin 0 -> 2077 bytes
+ .../hicolor/32x32/categories/package_telephone.png   | Bin 0 -> 1947 bytes
+ src/icons/hicolor/32x32/categories/peace.png         | Bin 0 -> 2865 bytes
+ .../categories/preferences-desktop-screensaver.png   | Bin 0 -> 1878 bytes
+ .../hicolor/32x32/categories/preferences-desktop.png | Bin 0 -> 846 bytes
+ .../hicolor/32x32/categories/preferences-system.png  | Bin 0 -> 2129 bytes
+ src/icons/hicolor/32x32/categories/printer.png       | Bin 0 -> 917 bytes
+ .../hicolor/32x32/categories/puppeter_template.png   | Bin 0 -> 2554 bytes
+ src/icons/hicolor/32x32/categories/shooter-games.png | Bin 0 -> 1827 bytes
+ src/icons/hicolor/32x32/categories/simulation.png    | Bin 0 -> 2962 bytes
+ .../hicolor/32x32/categories/system-file-manager.png | Bin 0 -> 667 bytes
+ .../32x32/categories/system-software-update.png      | Bin 0 -> 2216 bytes
+ src/icons/hicolor/32x32/categories/television.png    | Bin 0 -> 1375 bytes
+ src/icons/hicolor/32x32/categories/text-html.png     | Bin 0 -> 1759 bytes
+ .../hicolor/32x32/categories/text-x-generic.png      | Bin 0 -> 744 bytes
+ src/icons/hicolor/32x32/categories/tuner.png         | Bin 0 -> 1046 bytes
+ .../32x32/categories/utilities-system-monitor.png    | Bin 0 -> 1886 bytes
+ .../hicolor/32x32/categories/utilities-terminal.png  | Bin 0 -> 1488 bytes
+ .../hicolor/32x32/categories/video-x-generic.png     | Bin 0 -> 2044 bytes
+ src/icons/hicolor/32x32/categories/videoconf.png     | Bin 0 -> 2055 bytes
+ src/icons/hicolor/32x32/categories/viewer.png        | Bin 0 -> 2781 bytes
+ .../hicolor/32x32/categories/x-office-document.png   | Bin 0 -> 902 bytes
+ .../hicolor/32x32/categories/x-office-drawing.png    | Bin 0 -> 1179 bytes
+ .../32x32/categories/x-office-presentation.png       | Bin 0 -> 1350 bytes
+ .../categories/x-office-spreadsheet-template.png     | Bin 0 -> 1896 bytes
+ .../32x32/categories/x-office-spreadsheet.png        | Bin 0 -> 1518 bytes
+ 405 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 7dbc5c2907bcd9828f9a368395c78aeb7a8ce405
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Dec 7 06:55:04 2015 -0700
+
+    note librsvg incompatability
+
+ README | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 8351e2b0d9c2cc15843977d11118bd9353a01c78
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Oct 27 12:00:00 2015 -0600
+
+    kicad package now has this
+
+ src/Makefile.am                              |   1 -
+ src/icons/hicolor/scalable/apps/eeschema.svg | 394 -----------------------
+ 2 files changed, 395 deletions(-)
+
+commit f2e443580ab43b6f9e6832b21506bff236e41423
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Jun 14 05:46:39 2015 -0600
+
+    move afterstep icon back to AfterStep
+
+ src/Makefile.am                                                  | 2 +-
+ src/icons/hicolor/scalable/apps/{afterstep.svg => AfterStep.svg} | 0
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+
+commit f10d6208788dc0dab19b55855a0559edd66451d8
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Jun 14 05:04:20 2015 -0600
+
+    overwrite with svg conversions
+
+ src/Makefile.am | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 165248ebb53406eeea71030765589c7d3294c365
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Jun 14 05:02:05 2015 -0600
+
+    rename afterstep icon
+
+ src/Makefile.am                                                  | 2 +-
+ src/icons/hicolor/scalable/apps/{AfterStep.svg => afterstep.svg} | 0
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+
+commit eaace2ce142ee1c95a6beefeec60d91aca4a5d8b
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Jun 14 04:58:15 2015 -0600
+
+    thicker characters
+
+ src/icons/hicolor/scalable/apps/AfterStep.svg | 244 +++++++++++++++-------
+ 1 file changed, 174 insertions(+), 70 deletions(-)
+
+commit 73ededd82bf1569d6745bd9e5b422aab3a38c18e
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Jun 14 04:07:29 2015 -0600
+
+    add AfterStep svg icon
+
+ src/Makefile.am                               |   1 +
+ src/icons/hicolor/scalable/apps/AfterStep.svg | 230 ++++++++++++++++++++++
+ 2 files changed, 231 insertions(+)
+
+commit 287fea973c07c4f18bbd99bd40303db613044d0f
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Jun 14 02:59:03 2015 -0600
+
+    do not add unnecessary icons yet
+
+ .gitignore                                 |    1 -
+ src/Makefile.am                            | 1582 ++++++++++++------------
+ src/icons/hicolor/scalable/apps/.gitignore |   58 +
+ src/pixmaps/.gitignore                     |  790 ++++++++++++
+ 4 files changed, 1639 insertions(+), 792 deletions(-)
+
+commit f06539847e638a626064f7b07a3aa732879ad158
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Jun 14 02:49:40 2015 -0600
+
+    add svg icon for awesome into the mix
+
+ .gitignore                                  |   1 +
+ src/Makefile.am                             | 827 +++++++++++++++++++++++-
+ src/icons/hicolor/scalable/apps/awesome.svg |  79 +++
+ 3 files changed, 901 insertions(+), 6 deletions(-)
+
+commit a0cda6b5542a62429d780aa935de7c8d5caa4d49
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Jun 7 04:15:02 2015 -0600
+
+    remove conflicting file-roller pngs
+
+ src/Makefile.am | 2 --
+ 1 file changed, 2 deletions(-)
+
+commit 7a4314852b5d10bc0e3b78c58cf3bbe997e721e2
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Jun 7 03:00:09 2015 -0600
+
+    add svg for xterm
+
+ src/Makefile.am                           |   1 +
+ src/icons/hicolor/scalable/apps/xterm.svg | 322 ++++++++++++++++++++++++++
+ 2 files changed, 323 insertions(+)
+
+commit e980c251ab5d6d96a41aabc7dec0e504b9898893
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat Jun 6 16:44:30 2015 -0600
+
+    remove conflicting dia icons
+
+ src/Makefile.am | 2 --
+ 1 file changed, 2 deletions(-)
+
+commit 77f2c01829434069865744581e012c2255b8bf9f
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Fri May 29 02:27:28 2015 -0600
+
+    remove some conflicting icons
+
+ src/Makefile.am | 8 --------
+ 1 file changed, 8 deletions(-)
+
+commit b47527ea80a9928a5e448310b4f0281540530952
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Fri May 29 01:53:50 2015 -0600
+
+    add in some new icons
+
+ src/Makefile.am                                  | 186 ++++++++++++++++++-
+ src/icons/hicolor/32x32/apps/ArmyOps.png         | Bin 0 -> 1281 bytes
+ src/icons/hicolor/32x32/apps/acroread.png        | Bin 0 -> 2319 bytes
+ src/icons/hicolor/32x32/apps/amsn.png            | Bin 0 -> 1956 bytes
+ src/icons/hicolor/32x32/apps/arach.png           | Bin 0 -> 1154 bytes
+ src/icons/hicolor/32x32/apps/bluefish.png        | Bin 0 -> 2486 bytes
+ src/icons/hicolor/32x32/apps/cards.png           | Bin 0 -> 1906 bytes
+ src/icons/hicolor/32x32/apps/cdburner.png        | Bin 0 -> 2318 bytes
+ src/icons/hicolor/32x32/apps/cdrom.png           | Bin 0 -> 1985 bytes
+ src/icons/hicolor/32x32/apps/clock.png           | Bin 0 -> 2693 bytes
+ src/icons/hicolor/32x32/apps/compression.png     | Bin 0 -> 1777 bytes
+ src/icons/hicolor/32x32/apps/concentration.png   | Bin 0 -> 2496 bytes
+ src/icons/hicolor/32x32/apps/configuration.png   | Bin 0 -> 2057 bytes
+ src/icons/hicolor/32x32/apps/dia.png             | Bin 0 -> 1906 bytes
+ src/icons/hicolor/32x32/apps/dice.png            | Bin 0 -> 2041 bytes
+ src/icons/hicolor/32x32/apps/dillo.png           | Bin 0 -> 2549 bytes
+ src/icons/hicolor/32x32/apps/dosbox.png          | Bin 0 -> 206 bytes
+ src/icons/hicolor/32x32/apps/dvd.png             | Bin 0 -> 2046 bytes
+ src/icons/hicolor/32x32/apps/editorWindow.png    | Bin 0 -> 2656 bytes
+ src/icons/hicolor/32x32/apps/evolution.png       | Bin 0 -> 2562 bytes
+ src/icons/hicolor/32x32/apps/exit.png            | Bin 0 -> 1763 bytes
+ src/icons/hicolor/32x32/apps/file-roller.png     | Bin 0 -> 2075 bytes
+ src/icons/hicolor/32x32/apps/file_transfer.png   | Bin 0 -> 2591 bytes
+ src/icons/hicolor/32x32/apps/firefox.png         | Bin 0 -> 2386 bytes
+ src/icons/hicolor/32x32/apps/floppy.png          | Bin 0 -> 2192 bytes
+ src/icons/hicolor/32x32/apps/frozen-bubble.png   | Bin 0 -> 1744 bytes
+ src/icons/hicolor/32x32/apps/ftp.png             | Bin 0 -> 2625 bytes
+ src/icons/hicolor/32x32/apps/gaim.png            | Bin 0 -> 1489 bytes
+ src/icons/hicolor/32x32/apps/gcalctool.png       | Bin 0 -> 1657 bytes
+ src/icons/hicolor/32x32/apps/gedit.png           | Bin 0 -> 1593 bytes
+ src/icons/hicolor/32x32/apps/gimp.png            | Bin 0 -> 2145 bytes
+ src/icons/hicolor/32x32/apps/gnome-cd.png        | Bin 0 -> 1774 bytes
+ .../hicolor/32x32/apps/gnome-dictionary.png      | Bin 0 -> 1924 bytes
+ .../hicolor/32x32/apps/gnome-networktool.png     | Bin 0 -> 2436 bytes
+ src/icons/hicolor/32x32/apps/gnome-pack-deb.png  | Bin 0 -> 2319 bytes
+ src/icons/hicolor/32x32/apps/gnome-pack-rpm.png  | Bin 0 -> 2325 bytes
+ .../32x32/apps/gnome-panel-screenshot.png        | Bin 0 -> 2043 bytes
+ src/icons/hicolor/32x32/apps/gnome-terminal.png  | Bin 0 -> 1703 bytes
+ src/icons/hicolor/32x32/apps/gnumeric.png        | Bin 0 -> 1955 bytes
+ src/icons/hicolor/32x32/apps/gv.png              | Bin 0 -> 341 bytes
+ src/icons/hicolor/32x32/apps/home-mdk.png        | Bin 0 -> 2097 bytes
+ src/icons/hicolor/32x32/apps/home.png            | Bin 0 -> 2212 bytes
+ src/icons/hicolor/32x32/apps/ical.png            | Bin 0 -> 315 bytes
+ src/icons/hicolor/32x32/apps/k3b.png             | Bin 0 -> 500 bytes
+ src/icons/hicolor/32x32/apps/kedit.png           | Bin 0 -> 1101 bytes
+ src/icons/hicolor/32x32/apps/kfm.png             | Bin 0 -> 1033 bytes
+ src/icons/hicolor/32x32/apps/kmail.png           | Bin 0 -> 2946 bytes
+ src/icons/hicolor/32x32/apps/kppp.png            | Bin 0 -> 1950 bytes
+ src/icons/hicolor/32x32/apps/kwrite.png          | Bin 0 -> 2928 bytes
+ src/icons/hicolor/32x32/apps/lime.png            | Bin 0 -> 1321 bytes
+ src/icons/hicolor/32x32/apps/mozilla-mail.png    | Bin 0 -> 1969 bytes
+ src/icons/hicolor/32x32/apps/mozilla.png         | Bin 0 -> 1984 bytes
+ src/icons/hicolor/32x32/apps/nautilus.png        | Bin 0 -> 2116 bytes
+ src/icons/hicolor/32x32/apps/netscape.png        | Bin 0 -> 3007 bytes
+ src/icons/hicolor/32x32/apps/nvu.png             | Bin 0 -> 2376 bytes
+ src/icons/hicolor/32x32/apps/oocalc.png          | Bin 0 -> 1199 bytes
+ src/icons/hicolor/32x32/apps/ooffice.png         | Bin 0 -> 759 bytes
+ src/icons/hicolor/32x32/apps/oowriter.png        | Bin 0 -> 1203 bytes
+ src/icons/hicolor/32x32/apps/paint.png           | Bin 0 -> 2586 bytes
+ src/icons/hicolor/32x32/apps/pan.png             | Bin 0 -> 1657 bytes
+ src/icons/hicolor/32x32/apps/pdf.png             | Bin 0 -> 1751 bytes
+ src/icons/hicolor/32x32/apps/penguin.png         | Bin 0 -> 1668 bytes
+ src/icons/hicolor/32x32/apps/print_printer.png   | Bin 0 -> 1586 bytes
+ src/icons/hicolor/32x32/apps/qcad.png            | Bin 0 -> 1166 bytes
+ src/icons/hicolor/32x32/apps/readme.png          | Bin 0 -> 2233 bytes
+ src/icons/hicolor/32x32/apps/rpm.png             | Bin 0 -> 2064 bytes
+ src/icons/hicolor/32x32/apps/samba.png           | Bin 0 -> 2376 bytes
+ src/icons/hicolor/32x32/apps/sound.png           | Bin 0 -> 2141 bytes
+ src/icons/hicolor/32x32/apps/spreadsheet.png     | Bin 0 -> 1873 bytes
+ src/icons/hicolor/32x32/apps/sylpheed.png        | Bin 0 -> 2141 bytes
+ src/icons/hicolor/32x32/apps/tbird.png           | Bin 0 -> 2610 bytes
+ src/icons/hicolor/32x32/apps/telescope.png       | Bin 0 -> 1821 bytes
+ src/icons/hicolor/32x32/apps/totem.png           | Bin 0 -> 2185 bytes
+ src/icons/hicolor/32x32/apps/toys_section.png    | Bin 0 -> 2065 bytes
+ src/icons/hicolor/32x32/apps/trash.png           | Bin 0 -> 2400 bytes
+ src/icons/hicolor/32x32/apps/usbkey.png          | Bin 0 -> 1763 bytes
+ src/icons/hicolor/32x32/apps/vectorgfx.png       | Bin 0 -> 2199 bytes
+ src/icons/hicolor/32x32/apps/videocam.png        | Bin 0 -> 2339 bytes
+ src/icons/hicolor/32x32/apps/xchat.png           | Bin 0 -> 2157 bytes
+ src/icons/hicolor/32x32/apps/xemacs.png          | Bin 0 -> 2145 bytes
+ src/icons/hicolor/32x32/apps/xine.png            | Bin 0 -> 2371 bytes
+ src/icons/hicolor/32x32/apps/xkill.png           | Bin 0 -> 1096 bytes
+ src/icons/hicolor/32x32/apps/xmms.png            | Bin 0 -> 2507 bytes
+ src/icons/hicolor/32x32/apps/xpdf.png            | Bin 0 -> 881 bytes
+ src/icons/hicolor/32x32/apps/xscreensaver.png    | Bin 0 -> 1432 bytes
+ src/icons/hicolor/32x32/apps/xwc.png             | Bin 0 -> 2649 bytes
+ src/icons/hicolor/48x48/apps/ArmyOps.png         | Bin 0 -> 1380 bytes
+ src/icons/hicolor/48x48/apps/acroread.png        | Bin 0 -> 2397 bytes
+ src/icons/hicolor/48x48/apps/amsn.png            | Bin 0 -> 3345 bytes
+ src/icons/hicolor/48x48/apps/arach.png           | Bin 0 -> 1435 bytes
+ src/icons/hicolor/48x48/apps/bluefish.png        | Bin 0 -> 4437 bytes
+ src/icons/hicolor/48x48/apps/cards.png           | Bin 0 -> 2849 bytes
+ src/icons/hicolor/48x48/apps/cdburner.png        | Bin 0 -> 4022 bytes
+ src/icons/hicolor/48x48/apps/cdrom.png           | Bin 0 -> 3291 bytes
+ src/icons/hicolor/48x48/apps/clock.png           | Bin 0 -> 4846 bytes
+ src/icons/hicolor/48x48/apps/compression.png     | Bin 0 -> 2797 bytes
+ src/icons/hicolor/48x48/apps/concentration.png   | Bin 0 -> 3267 bytes
+ src/icons/hicolor/48x48/apps/configuration.png   | Bin 0 -> 3982 bytes
+ src/icons/hicolor/48x48/apps/dia.png             | Bin 0 -> 1067 bytes
+ src/icons/hicolor/48x48/apps/dice.png            | Bin 0 -> 2834 bytes
+ src/icons/hicolor/48x48/apps/dillo.png           | Bin 0 -> 6135 bytes
+ src/icons/hicolor/48x48/apps/dosbox.png          | Bin 0 -> 524 bytes
+ src/icons/hicolor/48x48/apps/dvd.png             | Bin 0 -> 3872 bytes
+ src/icons/hicolor/48x48/apps/editorWindow.png    | Bin 0 -> 4779 bytes
+ src/icons/hicolor/48x48/apps/evolution.png       | Bin 0 -> 5182 bytes
+ src/icons/hicolor/48x48/apps/exit.png            | Bin 0 -> 2238 bytes
+ src/icons/hicolor/48x48/apps/file-roller.png     | Bin 0 -> 3885 bytes
+ src/icons/hicolor/48x48/apps/file_transfer.png   | Bin 0 -> 4868 bytes
+ src/icons/hicolor/48x48/apps/firefox.png         | Bin 0 -> 3979 bytes
+ src/icons/hicolor/48x48/apps/floppy.png          | Bin 0 -> 3244 bytes
+ src/icons/hicolor/48x48/apps/frozen-bubble.png   | Bin 0 -> 4182 bytes
+ src/icons/hicolor/48x48/apps/ftp.png             | Bin 0 -> 4821 bytes
+ src/icons/hicolor/48x48/apps/gaim.png            | Bin 0 -> 2750 bytes
+ src/icons/hicolor/48x48/apps/gcalctool.png       | Bin 0 -> 2406 bytes
+ src/icons/hicolor/48x48/apps/gedit.png           | Bin 0 -> 2813 bytes
+ src/icons/hicolor/48x48/apps/gimp.png            | Bin 0 -> 2530 bytes
+ src/icons/hicolor/48x48/apps/gnome-cd.png        | Bin 0 -> 3783 bytes
+ .../hicolor/48x48/apps/gnome-dictionary.png      | Bin 0 -> 3463 bytes
+ .../hicolor/48x48/apps/gnome-networktool.png     | Bin 0 -> 4509 bytes
+ src/icons/hicolor/48x48/apps/gnome-pack-deb.png  | Bin 0 -> 2326 bytes
+ src/icons/hicolor/48x48/apps/gnome-pack-rpm.png  | Bin 0 -> 2247 bytes
+ .../48x48/apps/gnome-panel-screenshot.png        | Bin 0 -> 3595 bytes
+ src/icons/hicolor/48x48/apps/gnome-terminal.png  | Bin 0 -> 2929 bytes
+ src/icons/hicolor/48x48/apps/gnumeric.png        | Bin 0 -> 1913 bytes
+ src/icons/hicolor/48x48/apps/gv.png              | Bin 0 -> 917 bytes
+ src/icons/hicolor/48x48/apps/home-mdk.png        | Bin 0 -> 3395 bytes
+ src/icons/hicolor/48x48/apps/home.png            | Bin 0 -> 4135 bytes
+ src/icons/hicolor/48x48/apps/ical.png            | Bin 0 -> 414 bytes
+ src/icons/hicolor/48x48/apps/k3b.png             | Bin 0 -> 741 bytes
+ src/icons/hicolor/48x48/apps/kedit.png           | Bin 0 -> 1343 bytes
+ src/icons/hicolor/48x48/apps/kfm.png             | Bin 0 -> 1272 bytes
+ src/icons/hicolor/48x48/apps/kmail.png           | Bin 0 -> 4799 bytes
+ src/icons/hicolor/48x48/apps/kppp.png            | Bin 0 -> 1930 bytes
+ src/icons/hicolor/48x48/apps/kwrite.png          | Bin 0 -> 5022 bytes
+ src/icons/hicolor/48x48/apps/lime.png            | Bin 0 -> 1986 bytes
+ src/icons/hicolor/48x48/apps/mozilla-mail.png    | Bin 0 -> 3053 bytes
+ src/icons/hicolor/48x48/apps/mozilla.png         | Bin 0 -> 3564 bytes
+ src/icons/hicolor/48x48/apps/nautilus.png        | Bin 0 -> 4032 bytes
+ src/icons/hicolor/48x48/apps/netscape.png        | Bin 0 -> 5201 bytes
+ src/icons/hicolor/48x48/apps/nvu.png             | Bin 0 -> 3934 bytes
+ src/icons/hicolor/48x48/apps/oocalc.png          | Bin 0 -> 1684 bytes
+ src/icons/hicolor/48x48/apps/ooffice.png         | Bin 0 -> 1511 bytes
+ src/icons/hicolor/48x48/apps/oowriter.png        | Bin 0 -> 1764 bytes
+ src/icons/hicolor/48x48/apps/paint.png           | Bin 0 -> 4075 bytes
+ src/icons/hicolor/48x48/apps/pan.png             | Bin 0 -> 5598 bytes
+ src/icons/hicolor/48x48/apps/pdf.png             | Bin 0 -> 3655 bytes
+ src/icons/hicolor/48x48/apps/penguin.png         | Bin 0 -> 2814 bytes
+ src/icons/hicolor/48x48/apps/print_printer.png   | Bin 0 -> 2129 bytes
+ src/icons/hicolor/48x48/apps/qcad.png            | Bin 0 -> 4418 bytes
+ src/icons/hicolor/48x48/apps/readme.png          | Bin 0 -> 3732 bytes
+ src/icons/hicolor/48x48/apps/rpm.png             | Bin 0 -> 3110 bytes
+ src/icons/hicolor/48x48/apps/samba.png           | Bin 0 -> 4049 bytes
+ src/icons/hicolor/48x48/apps/sound.png           | Bin 0 -> 3944 bytes
+ src/icons/hicolor/48x48/apps/spreadsheet.png     | Bin 0 -> 2269 bytes
+ src/icons/hicolor/48x48/apps/sylpheed.png        | Bin 0 -> 3809 bytes
+ src/icons/hicolor/48x48/apps/tbird.png           | Bin 0 -> 2125 bytes
+ src/icons/hicolor/48x48/apps/telescope.png       | Bin 0 -> 3063 bytes
+ src/icons/hicolor/48x48/apps/totem.png           | Bin 0 -> 3823 bytes
+ src/icons/hicolor/48x48/apps/toys_section.png    | Bin 0 -> 3333 bytes
+ src/icons/hicolor/48x48/apps/trash.png           | Bin 0 -> 2913 bytes
+ src/icons/hicolor/48x48/apps/usbkey.png          | Bin 0 -> 3163 bytes
+ src/icons/hicolor/48x48/apps/vectorgfx.png       | Bin 0 -> 3018 bytes
+ src/icons/hicolor/48x48/apps/videocam.png        | Bin 0 -> 4382 bytes
+ src/icons/hicolor/48x48/apps/xchat.png           | Bin 0 -> 4169 bytes
+ src/icons/hicolor/48x48/apps/xemacs.png          | Bin 0 -> 2752 bytes
+ src/icons/hicolor/48x48/apps/xine.png            | Bin 0 -> 2449 bytes
+ src/icons/hicolor/48x48/apps/xkill.png           | Bin 0 -> 1035 bytes
+ src/icons/hicolor/48x48/apps/xmms.png            | Bin 0 -> 3887 bytes
+ src/icons/hicolor/48x48/apps/xpdf.png            | Bin 0 -> 646 bytes
+ src/icons/hicolor/48x48/apps/xscreensaver.png    | Bin 0 -> 1369 bytes
+ src/icons/hicolor/48x48/apps/xwc.png             | Bin 0 -> 3363 bytes
+ 171 files changed, 182 insertions(+), 4 deletions(-)
+
+commit c75948d207d1c063ec6967182841d7f985f6126a
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Fri Sep 12 20:19:50 2014 -0600
+
+    added aewm icon
+
+ INSTALL                                  |   4 +-
+ src/Makefile.am                          |   1 +
+ src/icons/hicolor/scalable/apps/aewm.svg | 680 +++++++++++++++++++++++++++
+ 3 files changed, 683 insertions(+), 2 deletions(-)
+
+commit 2543c275ad2f86bd8c582b44824c2c59d720b7ac
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed May 14 16:22:00 2014 -0600
+
+    more wm icons: pawm, spectrwm, velox, wind, metacity
+
+ src/Makefile.am                              |   5 +
+ src/icons/hicolor/scalable/apps/pawm.svg     | 680 +++++++++++++++++
+ src/icons/hicolor/scalable/apps/spectrwm.svg | 749 +++++++++++++++++++
+ src/icons/hicolor/scalable/apps/velox.svg    | 654 +++++++++++++++++
+ src/icons/hicolor/scalable/apps/windwm.svg   | 898 +++++++++++++++++++++++
+ src/pixmaps/metacity.png                     | Bin 0 -> 1565 bytes
+ 6 files changed, 2986 insertions(+)
+
+commit 8755d623d62a62cbce4aae4e88d7feb44cd0f251
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed May 14 02:39:03 2014 -0600
+
+    add wmx and wmii window manager icons
+
+ src/Makefile.am                          |   2 +
+ src/icons/hicolor/scalable/apps/wmii.svg | 691 +++++++++++++++++++++++++
+ src/icons/hicolor/scalable/apps/wmx.svg  | 746 +++++++++++++++++++++++++++
+ 3 files changed, 1439 insertions(+)
+
+commit 80674645e627371a8030ac790b8bd173f9e9b495
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue May 13 17:56:41 2014 -0600
+
+    more window manager icons: evilwm, wm2
+
+ src/Makefile.am                            |   2 +
+ src/icons/hicolor/scalable/apps/evilwm.svg | 653 ++++++++++++++++++++++
+ src/icons/hicolor/scalable/apps/wm2.svg    | 714 +++++++++++++++++++++++++
+ 3 files changed, 1369 insertions(+)
+
+commit 26b46400f1a30806ebacb2f8c16ec7dd38fcfc5e
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue May 13 14:59:08 2014 -0600
+
+    more wm icons: larswm, yeahwm
+
+ src/Makefile.am                            |   4 +-
+ src/icons/hicolor/scalable/apps/larswm.svg | 697 +++++++++++++++++++++++++
+ src/icons/hicolor/scalable/apps/yeahwm.svg | 674 ++++++++++++++++++++++++
+ 3 files changed, 1374 insertions(+), 1 deletion(-)
+
+commit 86cbcb9cb3d92c5088b6a647b087e274a29467a0
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue May 13 02:20:06 2014 -0600
+
+    add xdwm, also limit compressed material
+
+ src/Makefile.am                          |   5 +-
+ src/icons/hicolor/scalable/apps/xdwm.svg | 879 +++++++++++++++++++++++++++
+ 2 files changed, 882 insertions(+), 2 deletions(-)
+
+commit 4905628e6d9117ff9a631812a786f134df758a7f
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun May 11 11:59:00 2014 -0600
+
+    add more wm icons ADWM, DWM and I3
+
+ src/Makefile.am                          |   5 +-
+ src/icons/hicolor/scalable/apps/adwm.svg | 682 +++++++++++++++++++++++++
+ src/icons/hicolor/scalable/apps/dwm.svg  | 729 +++++++++++++++++++++++++++
+ src/icons/hicolor/scalable/apps/i3.svg   | 597 ++++++++++++++++++++++
+ 4 files changed, 2012 insertions(+), 1 deletion(-)
+
+commit a26678f1bbdf1872068aed93a6aa8a0bc84720a3
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu May 1 16:01:16 2014 -0600
+
+    added two uninstalled pixmaps to repo
+
+ src/GNUstep3D.png | Bin 0 -> 3032 bytes
+ src/GNUstep3D.xpm | 128 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 128 insertions(+)
+
+commit e37a4fad86cfa80d2276eb31199ad00b8cc4c21f
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat Apr 26 17:33:39 2014 -0600
+
+    add two missing window icons
+
+ src/Makefile.am                                  |   4 +++
+ src/icons/hicolor/16x16/actions/window-above.png | Bin 277 -> 277 bytes
+ src/icons/hicolor/16x16/actions/window-below.png | Bin 279 -> 279 bytes
+ .../hicolor/16x16/actions/window-border.png      | Bin 267 -> 267 bytes
+ src/icons/hicolor/16x16/actions/window-close.png | Bin 284 -> 284 bytes
+ .../hicolor/16x16/actions/window-command.png     | Bin 274 -> 274 bytes
+ src/icons/hicolor/16x16/actions/window-focus.png | Bin 277 -> 277 bytes
+ src/icons/hicolor/16x16/actions/window-kill.png  | Bin 281 -> 281 bytes
+ src/icons/hicolor/16x16/actions/window-lower.png | Bin 277 -> 277 bytes
+ .../hicolor/16x16/actions/window-maximize-b.png  | Bin 276 -> 276 bytes
+ .../hicolor/16x16/actions/window-maximize-h.png  | Bin 318 -> 292 bytes
+ .../hicolor/16x16/actions/window-maximize-v.png  | Bin 289 -> 292 bytes
+ .../hicolor/16x16/actions/window-maximize.png    | Bin 291 -> 291 bytes
+ src/icons/hicolor/16x16/actions/window-menu.png  | Bin 262 -> 262 bytes
+ .../hicolor/16x16/actions/window-minimize.png    | Bin 292 -> 292 bytes
+ src/icons/hicolor/16x16/actions/window-move.png  | Bin 304 -> 304 bytes
+ .../hicolor/16x16/actions/window-normal.png      | Bin 277 -> 277 bytes
+ src/icons/hicolor/16x16/actions/window-raise.png | Bin 273 -> 273 bytes
+ .../hicolor/16x16/actions/window-resize.png      | Bin 295 -> 295 bytes
+ .../hicolor/16x16/actions/window-sendto-d.png    | Bin 283 -> 283 bytes
+ .../hicolor/16x16/actions/window-sendto-l.png    | Bin 274 -> 274 bytes
+ .../hicolor/16x16/actions/window-sendto-r.png    | Bin 277 -> 277 bytes
+ .../hicolor/16x16/actions/window-sendto-u.png    | Bin 280 -> 280 bytes
+ .../hicolor/16x16/actions/window-sendto.png      | Bin 277 -> 277 bytes
+ src/icons/hicolor/16x16/actions/window-shade.png | Bin 312 -> 312 bytes
+ src/icons/hicolor/16x16/actions/window-snap.png  | Bin 296 -> 296 bytes
+ src/icons/hicolor/16x16/actions/window-stick.png | Bin 309 -> 309 bytes
+ .../hicolor/16x16/actions/window-titlebar.png    | Bin 267 -> 267 bytes
+ .../16x16/actions/window-unmaximize-b.png        | Bin 277 -> 277 bytes
+ .../16x16/actions/window-unmaximize-h.png        | Bin 0 -> 303 bytes
+ .../16x16/actions/window-unmaximize-v.png        | Bin 0 -> 286 bytes
+ .../hicolor/16x16/actions/window-unmaximize.png  | Bin 274 -> 274 bytes
+ .../hicolor/16x16/actions/window-unminimize.png  | Bin 313 -> 313 bytes
+ .../hicolor/16x16/actions/window-unshade.png     | Bin 311 -> 311 bytes
+ .../hicolor/16x16/actions/window-unstick.png     | Bin 289 -> 289 bytes
+ src/pixmaps/window-maximize-h.xpm                |  16 ++++++------
+ src/pixmaps/window-maximize-v.xpm                |   8 +++---
+ ...ow-maximize-h.xpm => window-unmaximize-h.xpm} |  26 +++++++++----------
+ ...ow-maximize-h.xpm => window-unmaximize-v.xpm} |  18 ++++++-------
+ 39 files changed, 38 insertions(+), 34 deletions(-)
+
+commit 6b3779033bebed8541e0c7dc50085be7a4267071
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat Apr 26 16:48:18 2014 -0600
+
+    add some new window icons for libwnck+
+
+ src/Makefile.am                                  |  19 +-
+ src/icons/hicolor/16x16/actions/window-above.png | Bin 292 -> 277 bytes
+ src/icons/hicolor/16x16/actions/window-below.png | Bin 295 -> 279 bytes
+ .../hicolor/16x16/actions/window-border.png      | Bin 293 -> 267 bytes
+ src/icons/hicolor/16x16/actions/window-close.png | Bin 300 -> 284 bytes
+ .../hicolor/16x16/actions/window-command.png     | Bin 292 -> 274 bytes
+ src/icons/hicolor/16x16/actions/window-focus.png | Bin 292 -> 277 bytes
+ src/icons/hicolor/16x16/actions/window-kill.png  | Bin 298 -> 281 bytes
+ src/icons/hicolor/16x16/actions/window-lower.png | Bin 292 -> 277 bytes
+ .../hicolor/16x16/actions/window-maximize-b.png  | Bin 292 -> 276 bytes
+ .../hicolor/16x16/actions/window-maximize-h.png  | Bin 318 -> 318 bytes
+ .../hicolor/16x16/actions/window-maximize-v.png  | Bin 310 -> 289 bytes
+ .../hicolor/16x16/actions/window-maximize.png    | Bin 277 -> 291 bytes
+ src/icons/hicolor/16x16/actions/window-menu.png  | Bin 280 -> 262 bytes
+ .../hicolor/16x16/actions/window-minimize.png    | Bin 307 -> 292 bytes
+ src/icons/hicolor/16x16/actions/window-move.png  | Bin 320 -> 304 bytes
+ .../hicolor/16x16/actions/window-normal.png      | Bin 0 -> 277 bytes
+ src/icons/hicolor/16x16/actions/window-raise.png | Bin 288 -> 273 bytes
+ .../hicolor/16x16/actions/window-resize.png      | Bin 301 -> 295 bytes
+ .../hicolor/16x16/actions/window-sendto-d.png    | Bin 0 -> 283 bytes
+ .../hicolor/16x16/actions/window-sendto-l.png    | Bin 0 -> 274 bytes
+ .../hicolor/16x16/actions/window-sendto-r.png    | Bin 0 -> 277 bytes
+ .../hicolor/16x16/actions/window-sendto-u.png    | Bin 0 -> 280 bytes
+ .../hicolor/16x16/actions/window-sendto.png      | Bin 292 -> 277 bytes
+ src/icons/hicolor/16x16/actions/window-shade.png | Bin 337 -> 312 bytes
+ src/icons/hicolor/16x16/actions/window-snap.png  | Bin 310 -> 296 bytes
+ src/icons/hicolor/16x16/actions/window-stick.png | Bin 330 -> 309 bytes
+ .../hicolor/16x16/actions/window-titlebar.png    | Bin 293 -> 267 bytes
+ .../16x16/actions/window-unmaximize-b.png        | Bin 0 -> 277 bytes
+ .../hicolor/16x16/actions/window-unmaximize.png  | Bin 0 -> 274 bytes
+ .../hicolor/16x16/actions/window-unminimize.png  | Bin 0 -> 313 bytes
+ .../hicolor/16x16/actions/window-unshade.png     | Bin 335 -> 311 bytes
+ .../hicolor/16x16/actions/window-unstick.png     | Bin 0 -> 289 bytes
+ src/icons/hicolor/scalable/apps/2bWM.save.svg    |  37 +++
+ src/icons/hicolor/scalable/apps/xpdf-rosa.svg    | 298 +++++++++++++++++++
+ src/pixmaps/window-above.xpm                     |   2 +-
+ src/pixmaps/window-below.xpm                     |   2 +-
+ src/pixmaps/window-maximize-b.xpm                |   2 +-
+ src/pixmaps/window-maximize.xpm                  |  14 +-
+ .../{window-below.xpm => window-normal.xpm}      |  26 +-
+ src/pixmaps/window-sendto-d.xpm                  |  31 ++
+ ...window-maximize-b.xpm => window-sendto-l.xpm} |  26 +-
+ ...window-maximize-b.xpm => window-sendto-r.xpm} |  26 +-
+ src/pixmaps/window-sendto-u.xpm                  |  31 ++
+ ...ow-maximize-b.xpm => window-unmaximize-b.xpm} |   6 +-
+ ...ndow-maximize-b.xpm => window-unmaximize.xpm} |  26 +-
+ ...ndow-maximize-b.xpm => window-unminimize.xpm} |  22 +-
+ src/pixmaps/window-unstick.xpm                   |  31 ++
+ 48 files changed, 522 insertions(+), 77 deletions(-)
+
+commit 4f80477695e2ec8959b49a6a3c058049f9bdf5a8
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Apr 9 09:07:51 2014 -0600
+
+    add icons for imagic and chbg
+
+ src/Makefile.am                       |   5 ++
+ src/icons/hicolor/16x16/apps/chbg.png | Bin 0 -> 981 bytes
+ src/icons/hicolor/32x32/apps/chbg.png | Bin 0 -> 3205 bytes
+ src/icons/hicolor/48x48/apps/chbg.png | Bin 0 -> 6194 bytes
+ src/pixmaps/imagic.png                | Bin 0 -> 2656 bytes
+ src/pixmaps/imagic.xpm                | 108 ++++++++++++++++++++++++++++++
+ 6 files changed, 113 insertions(+)
+
+commit 34b324eba66307c4ca26575b264c052c4ab5502e
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Apr 8 16:47:06 2014 -0600
+
+    add eeschema icon
+
+ src/Makefile.am                              |   1 +
+ src/icons/hicolor/scalable/apps/eeschema.svg | 394 +++++++++++++++++++++++
+ 2 files changed, 395 insertions(+)
+
+commit dd1493c7732dd536a99de2445a3ffdcc47b7e659
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Apr 8 11:06:18 2014 -0600
+
+    add gv icon
+
+ src/Makefile.am    |   2 ++
+ src/pixmaps/gv.png | Bin 0 -> 514 bytes
+ src/pixmaps/gv.xpm |  55 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 57 insertions(+)
+
+commit 2f747fc68e64b5a329b954ad952fe2e1042f2e74
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Apr 8 09:37:59 2014 -0600
+
+    add xv.xpm
+
+ src/Makefile.am    |   4 +++-
+ src/pixmaps/xv.png | Bin 0 -> 451 bytes
+ src/pixmaps/xv.xpm |  44 ++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 47 insertions(+), 1 deletion(-)
+
+commit 2f6b9ce9767450cf150346f9bc72741030ecef09
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Apr 7 07:38:24 2014 -0600
+
+    added fltk-editor icon
+
+ src/Makefile.am             |   1 +
+ src/pixmaps/fltk-editor.xpm | 225 ++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 226 insertions(+)
+
+commit 852d79c2782d81cbb4efbf2a7494db19c8f0a213
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Apr 7 07:19:31 2014 -0600
+
+    added aterm icon
+
+ src/Makefile.am                        |   3 +++
+ src/icons/hicolor/22x22/apps/aterm.png | Bin 0 -> 1531 bytes
+ src/icons/hicolor/32x32/apps/aterm.png | Bin 0 -> 2478 bytes
+ src/icons/hicolor/48x48/apps/aterm.png | Bin 0 -> 4319 bytes
+ 4 files changed, 3 insertions(+)
+
+commit 5d3a12c4aa3cf0c8784d40e7e1729927be94f24d
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Apr 7 04:38:12 2014 -0600
+
+    add icons for nano editor
+
+ src/Makefile.am                       |   3 +++
+ src/icons/hicolor/22x22/apps/nano.png | Bin 0 -> 2813 bytes
+ src/icons/hicolor/32x32/apps/nano.png | Bin 0 -> 2175 bytes
+ src/icons/hicolor/48x48/apps/nano.png | Bin 0 -> 8768 bytes
+ 4 files changed, 3 insertions(+)
+
+commit 2a87a4ed65067d3fb5d8a55dbbca896d3a1abe42
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Apr 7 02:51:15 2014 -0600
+
+    added a few missing icons
+
+ src/Makefile.am                                  |   6 +-
+ .../hicolor/24x24/apps/postscript-viewer.png     | Bin 0 -> 1293 bytes
+ .../hicolor/48x48/apps/postscript-viewer.png     | Bin 0 -> 2776 bytes
+ src/pixmaps/xdvi.png                             | Bin 0 -> 798 bytes
+ src/pixmaps/xdvi.xpm                             |  89 +++++++++++++++++++
+ 5 files changed, 94 insertions(+), 1 deletion(-)
+
+commit 9adbee21f97bfeedffa64aebbf3e3fc8c3628d32
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Dec 29 04:08:35 2013 -0700
+
+    add icon for 2bwm
+
+ src/Makefile.am                          |  4 ++
+ src/icons/hicolor/scalable/apps/2bWM.svg | 98 ++++++++++++++++++++++++++++
+ 2 files changed, 102 insertions(+)
+
+commit d51324baf3c1b10ad5c8a505a6afc078187a98be
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Dec 29 02:01:27 2013 -0700
+
+    some adjustments
+
+ src/Makefile.am | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+
+commit 7755ab4e2dc53c2a4864d5af0eb254da361a2cc5
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Dec 29 01:38:01 2013 -0700
+
+    add missing start-here
+
+ src/Makefile.am | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 67a1894826775545023e9a10384abfa3cf88279a
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Dec 29 01:32:39 2013 -0700
+
+    reremove conflicting arch-logo files
+
+ src/Makefile.am | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 8b2ded0f9bfca0419a81e919dc78cbeac1c7bc60
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Dec 29 01:19:28 2013 -0700
+
+    release files
+
+ AUTHORS |  8 ++++++++
+ NEWS    | 10 ++++++++++
+ README  | 56 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ THANKS  |  4 ++++
+ 4 files changed, 78 insertions(+)
+
+commit 0322458ec39ab94e40c703a60eb691a882f9a55c
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Dec 29 01:10:19 2013 -0700
+
+    faster conversion
+
+ src/Makefile.am                               |  19 +--
+ src/icons/hicolor/scalable/apps/GNUstep3D.svg | 139 ++++++++++++++++++++++
+ 2 files changed, 142 insertions(+), 16 deletions(-)
+
+commit 7fb9d686153d9da30d73e2a7f50d28c041cb917e
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Dec 29 00:13:07 2013 -0700
+
+    build pngs from svg icons instead of distributing
+
+ .gitignore         |   4 +
+ Makefile.am        | 659 +------------------------------------------------
+ configure.template |  11 +-
+ src/Makefile.am    | 316 ++++++++++++++++++++++++
+ 4 files changed, 331 insertions(+), 659 deletions(-)
+
+commit 7479cb65286db3e90ab70240cb18b324f2bc3511
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat Dec 28 22:32:16 2013 -0700
+
+    avoid unecessary commits
+
+ .gitignore                         |  2 ++
+ ChangeLog                          |  0
+ Makefile.am                        |  1 -
+ autogen.sh                         | 20 +++++++++++++++-----
+ configure.ac => configure.template |  7 ++++---
+ 5 files changed, 21 insertions(+), 9 deletions(-)
+
+commit d3dcfa588e7dba52e7de6fe606c0b530de0f859d
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Wed Nov 13 02:57:29 2013 -0700
+
+    added mwm and vtwm icons
+
+ Makefile.am                              |  22 ++++
+ NEWS                                     |   3 +-
+ configure.ac                             |   4 +-
+ src/icons/hicolor/128x128/apps/mwm.png   | Bin 0 -> 3845 bytes
+ src/icons/hicolor/128x128/apps/vtwm.png  | Bin 0 -> 13143 bytes
+ src/icons/hicolor/16x16/apps/mwm.png     | Bin 0 -> 854 bytes
+ src/icons/hicolor/16x16/apps/vtwm.png    | Bin 0 -> 1434 bytes
+ src/icons/hicolor/22x22/apps/mwm.png     | Bin 0 -> 1092 bytes
+ src/icons/hicolor/22x22/apps/vtwm.png    | Bin 0 -> 1723 bytes
+ src/icons/hicolor/24x24/apps/mwm.png     | Bin 0 -> 1181 bytes
+ src/icons/hicolor/24x24/apps/vtwm.png    | Bin 0 -> 1950 bytes
+ src/icons/hicolor/32x32/apps/mwm.png     | Bin 0 -> 1410 bytes
+ src/icons/hicolor/32x32/apps/vtwm.png    | Bin 0 -> 2877 bytes
+ src/icons/hicolor/48x48/apps/mwm.png     | Bin 0 -> 1937 bytes
+ src/icons/hicolor/48x48/apps/vtwm.png    | Bin 0 -> 4875 bytes
+ src/icons/hicolor/56x56/apps/mwm.png     | Bin 0 -> 2250 bytes
+ src/icons/hicolor/56x56/apps/vtwm.png    | Bin 0 -> 5787 bytes
+ src/icons/hicolor/64x64/apps/mwm.png     | Bin 0 -> 2346 bytes
+ src/icons/hicolor/64x64/apps/vtwm.png    | Bin 0 -> 6750 bytes
+ src/icons/hicolor/72x72/apps/mwm.png     | Bin 0 -> 2596 bytes
+ src/icons/hicolor/72x72/apps/vtwm.png    | Bin 0 -> 7607 bytes
+ src/icons/hicolor/96x96/apps/mwm.png     | Bin 0 -> 3200 bytes
+ src/icons/hicolor/96x96/apps/vtwm.png    | Bin 0 -> 10465 bytes
+ src/icons/hicolor/scalable/apps/mwm.svg  |  79 ++++++++++++++
+ src/icons/hicolor/scalable/apps/vtwm.svg | 153 +++++++++++++++++++++++++++
+ 25 files changed, 258 insertions(+), 3 deletions(-)
+
+commit c3ac8725f3e742071dc425def9ebdf4d4b9a885b
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Nov 12 11:20:49 2013 -0700
+
+    remove conflicting arch-logo files
+
+ Makefile.am  | 2 --
+ NEWS         | 3 ++-
+ configure.ac | 4 ++--
+ 3 files changed, 4 insertions(+), 5 deletions(-)
+
+commit b664026e5b722f4eb9f0edb1900b56244ddf2952
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Nov 12 11:14:42 2013 -0700
+
+    full build
+
+ NEWS       |  5 ++---
+ autogen.sh | 10 ++++++++++
+ 2 files changed, 12 insertions(+), 3 deletions(-)
+
+commit 70f3ada7041b152f6b5a92641700a93c44b8820b
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Nov 12 11:06:44 2013 -0700
+
+    initial commit
+
+ .gitignore                                       |  11 +
+ AUTHORS                                          |   0
+ COPYING                                          | 674 +++++++++++++++++++
+ ChangeLog                                        |   0
+ INSTALL                                          | 370 ++++++++++
+ Makefile.am                                      | 640 ++++++++++++++++++
+ NEWS                                             |  12 +
+ README                                           |   0
+ THANKS                                           |   0
+ configure.ac                                     |  25 +
+ src/icons/Mist/16x16/apps/start-here.png         | Bin 0 -> 601 bytes
+ src/icons/Mist/192x192/apps/start-here.png       | Bin 0 -> 19296 bytes
+ src/icons/Mist/64x64/apps/start-here.png         | Bin 0 -> 2940 bytes
+ src/icons/hicolor/100x100/apps/xlogo.png         | Bin 0 -> 3845 bytes
+ src/icons/hicolor/128x128/apps/GNUstep.png       | Bin 0 -> 4710 bytes
+ src/icons/hicolor/128x128/apps/GNUstep3D.png     | Bin 0 -> 17439 bytes
+ src/icons/hicolor/128x128/apps/arch-logo.png     | Bin 0 -> 7045 bytes
+ .../128x128/apps/archlinux-wm-awesome.png        | Bin 0 -> 7802 bytes
+ .../hicolor/128x128/apps/archlinux-wm-base.png   | Bin 0 -> 6630 bytes
+ .../128x128/apps/archlinux-wm-blackbox.png       | Bin 0 -> 6374 bytes
+ .../hicolor/128x128/apps/archlinux-wm-dwm.png    | Bin 0 -> 5630 bytes
+ .../128x128/apps/archlinux-wm-fluxbox.png        | Bin 0 -> 5950 bytes
+ .../hicolor/128x128/apps/archlinux-wm-fvwm.png   | Bin 0 -> 9866 bytes
+ .../hicolor/128x128/apps/archlinux-wm-gnome.png  | Bin 0 -> 5965 bytes
+ .../hicolor/128x128/apps/archlinux-wm-icewm.png  | Bin 0 -> 10562 bytes
+ .../hicolor/128x128/apps/archlinux-wm-jwm.png    | Bin 0 -> 8174 bytes
+ .../hicolor/128x128/apps/archlinux-wm-kde.png    | Bin 0 -> 6221 bytes
+ .../hicolor/128x128/apps/archlinux-wm-kde2.png   | Bin 0 -> 6597 bytes
+ .../hicolor/128x128/apps/archlinux-wm-kdemod.png | Bin 0 -> 5981 bytes
+ .../128x128/apps/archlinux-wm-openbox.png        | Bin 0 -> 7333 bytes
+ .../hicolor/128x128/apps/archlinux-wm-pekwm.png  | Bin 0 -> 8126 bytes
+ .../hicolor/128x128/apps/archlinux-wm-twm.png    | Bin 0 -> 9117 bytes
+ .../hicolor/128x128/apps/archlinux-wm-wmaker.png | Bin 0 -> 7352 bytes
+ .../hicolor/128x128/apps/archlinux-wm-xfce.png   | Bin 0 -> 5628 bytes
+ .../hicolor/128x128/apps/archlinux-wm-xmonad.png | Bin 0 -> 7577 bytes
+ src/icons/hicolor/128x128/apps/blackbox.png      | Bin 0 -> 12960 bytes
+ src/icons/hicolor/128x128/apps/ctwm.png          | Bin 0 -> 6785 bytes
+ src/icons/hicolor/128x128/apps/fluxbox.png       | Bin 0 -> 3283 bytes
+ src/icons/hicolor/128x128/apps/fvwm.png          | Bin 0 -> 10208 bytes
+ src/icons/hicolor/128x128/apps/jwm.png           | Bin 0 -> 9036 bytes
+ src/icons/hicolor/128x128/apps/pekwm.png         | Bin 0 -> 11943 bytes
+ src/icons/hicolor/128x128/apps/twm.png           | Bin 0 -> 5326 bytes
+ src/icons/hicolor/128x128/apps/wmaker.png        | Bin 0 -> 8855 bytes
+ src/icons/hicolor/128x128/apps/xlogo.png         | Bin 0 -> 5623 bytes
+ .../hicolor/16x16/actions/application-exit.png   | Bin 0 -> 842 bytes
+ src/icons/hicolor/16x16/actions/gnome-logout.png | Bin 0 -> 818 bytes
+ .../hicolor/16x16/actions/system-lock-screen.png | Bin 0 -> 763 bytes
+ .../hicolor/16x16/actions/system-log-out.png     | Bin 0 -> 714 bytes
+ .../hicolor/16x16/actions/system-reboot.png      | Bin 0 -> 728 bytes
+ .../hicolor/16x16/actions/system-shutdown.png    | Bin 0 -> 775 bytes
+ .../16x16/actions/system-suspend-hibernate.png   | Bin 0 -> 731 bytes
+ .../hicolor/16x16/actions/system-suspend.png     | Bin 0 -> 780 bytes
+ .../hicolor/16x16/actions/system-switch-user.png | Bin 0 -> 761 bytes
+ src/icons/hicolor/16x16/actions/window-above.png | Bin 0 -> 292 bytes
+ src/icons/hicolor/16x16/actions/window-below.png | Bin 0 -> 295 bytes
+ .../hicolor/16x16/actions/window-border.png      | Bin 0 -> 293 bytes
+ src/icons/hicolor/16x16/actions/window-close.png | Bin 0 -> 300 bytes
+ .../hicolor/16x16/actions/window-command.png     | Bin 0 -> 292 bytes
+ src/icons/hicolor/16x16/actions/window-focus.png | Bin 0 -> 292 bytes
+ src/icons/hicolor/16x16/actions/window-kill.png  | Bin 0 -> 298 bytes
+ src/icons/hicolor/16x16/actions/window-lower.png | Bin 0 -> 292 bytes
+ .../hicolor/16x16/actions/window-maximize-b.png  | Bin 0 -> 292 bytes
+ .../hicolor/16x16/actions/window-maximize-h.png  | Bin 0 -> 318 bytes
+ .../hicolor/16x16/actions/window-maximize-v.png  | Bin 0 -> 310 bytes
+ .../hicolor/16x16/actions/window-maximize.png    | Bin 0 -> 277 bytes
+ src/icons/hicolor/16x16/actions/window-menu.png  | Bin 0 -> 280 bytes
+ .../hicolor/16x16/actions/window-minimize.png    | Bin 0 -> 307 bytes
+ src/icons/hicolor/16x16/actions/window-move.png  | Bin 0 -> 320 bytes
+ src/icons/hicolor/16x16/actions/window-raise.png | Bin 0 -> 288 bytes
+ .../hicolor/16x16/actions/window-resize.png      | Bin 0 -> 301 bytes
+ .../hicolor/16x16/actions/window-sendto.png      | Bin 0 -> 292 bytes
+ src/icons/hicolor/16x16/actions/window-shade.png | Bin 0 -> 337 bytes
+ src/icons/hicolor/16x16/actions/window-snap.png  | Bin 0 -> 310 bytes
+ src/icons/hicolor/16x16/actions/window-stick.png | Bin 0 -> 330 bytes
+ .../hicolor/16x16/actions/window-titlebar.png    | Bin 0 -> 293 bytes
+ .../hicolor/16x16/actions/window-unshade.png     | Bin 0 -> 335 bytes
+ src/icons/hicolor/16x16/apps/GNUstep.png         | Bin 0 -> 869 bytes
+ src/icons/hicolor/16x16/apps/GNUstep3D.png       | Bin 0 -> 872 bytes
+ src/icons/hicolor/16x16/apps/WindowMaker.png     | Bin 0 -> 1715 bytes
+ src/icons/hicolor/16x16/apps/arch-logo.png       | Bin 0 -> 1032 bytes
+ .../hicolor/16x16/apps/archlinux-wm-awesome.png  | Bin 0 -> 1041 bytes
+ .../hicolor/16x16/apps/archlinux-wm-base.png     | Bin 0 -> 1050 bytes
+ .../hicolor/16x16/apps/archlinux-wm-blackbox.png | Bin 0 -> 1077 bytes
+ .../hicolor/16x16/apps/archlinux-wm-dwm.png      | Bin 0 -> 1027 bytes
+ .../hicolor/16x16/apps/archlinux-wm-fluxbox.png  | Bin 0 -> 1075 bytes
+ .../hicolor/16x16/apps/archlinux-wm-fvwm.png     | Bin 0 -> 1069 bytes
+ .../hicolor/16x16/apps/archlinux-wm-gnome.png    | Bin 0 -> 1061 bytes
+ .../hicolor/16x16/apps/archlinux-wm-icewm.png    | Bin 0 -> 1063 bytes
+ .../hicolor/16x16/apps/archlinux-wm-jwm.png      | Bin 0 -> 1132 bytes
+ .../hicolor/16x16/apps/archlinux-wm-kde.png      | Bin 0 -> 1102 bytes
+ .../hicolor/16x16/apps/archlinux-wm-kde2.png     | Bin 0 -> 1084 bytes
+ .../hicolor/16x16/apps/archlinux-wm-kdemod.png   | Bin 0 -> 1083 bytes
+ .../hicolor/16x16/apps/archlinux-wm-openbox.png  | Bin 0 -> 1034 bytes
+ .../hicolor/16x16/apps/archlinux-wm-pekwm.png    | Bin 0 -> 1046 bytes
+ .../hicolor/16x16/apps/archlinux-wm-twm.png      | Bin 0 -> 1109 bytes
+ .../hicolor/16x16/apps/archlinux-wm-wmaker.png   | Bin 0 -> 1047 bytes
+ .../hicolor/16x16/apps/archlinux-wm-xfce.png     | Bin 0 -> 1067 bytes
+ .../hicolor/16x16/apps/archlinux-wm-xmonad.png   | Bin 0 -> 1016 bytes
+ src/icons/hicolor/16x16/apps/blackbox.png        | Bin 0 -> 1275 bytes
+ src/icons/hicolor/16x16/apps/blackbox.xpm        | 110 +++
+ src/icons/hicolor/16x16/apps/ctwm.png            | Bin 0 -> 1058 bytes
+ src/icons/hicolor/16x16/apps/fluxbox.png         | Bin 0 -> 974 bytes
+ src/icons/hicolor/16x16/apps/fvwm-crystal.png    | Bin 0 -> 786 bytes
+ src/icons/hicolor/16x16/apps/fvwm.png            | Bin 0 -> 539 bytes
+ src/icons/hicolor/16x16/apps/gnome-logout.png    | Bin 0 -> 663 bytes
+ .../hicolor/16x16/apps/gnome-session-halt.png    | Bin 0 -> 923 bytes
+ .../16x16/apps/gnome-session-hibernate.png       | Bin 0 -> 966 bytes
+ .../hicolor/16x16/apps/gnome-session-logout.png  | Bin 0 -> 722 bytes
+ .../hicolor/16x16/apps/gnome-session-reboot.png  | Bin 0 -> 995 bytes
+ .../hicolor/16x16/apps/gnome-session-sleep.png   | Bin 0 -> 780 bytes
+ .../hicolor/16x16/apps/gnome-session-suspend.png | Bin 0 -> 780 bytes
+ .../hicolor/16x16/apps/gnome-session-switch.png  | Bin 0 -> 758 bytes
+ src/icons/hicolor/16x16/apps/icewm.png           | Bin 0 -> 768 bytes
+ src/icons/hicolor/16x16/apps/jwm.png             | Bin 0 -> 488 bytes
+ src/icons/hicolor/16x16/apps/pekwm.png           | Bin 0 -> 1085 bytes
+ src/icons/hicolor/16x16/apps/start-here.png      | Bin 0 -> 601 bytes
+ src/icons/hicolor/16x16/apps/twm.png             | Bin 0 -> 1056 bytes
+ src/icons/hicolor/16x16/apps/wmaker.png          | Bin 0 -> 1212 bytes
+ src/icons/hicolor/16x16/apps/xlogo.png           | Bin 0 -> 804 bytes
+ src/icons/hicolor/192x192/apps/start-here.png    | Bin 0 -> 19296 bytes
+ src/icons/hicolor/192x192/apps/xlogo.png         | Bin 0 -> 6879 bytes
+ .../hicolor/22x22/actions/application-exit.png   | Bin 0 -> 1134 bytes
+ src/icons/hicolor/22x22/actions/gnome-logout.png | Bin 0 -> 1439 bytes
+ .../hicolor/22x22/actions/gnome-session-halt.png | Bin 0 -> 1807 bytes
+ .../22x22/actions/gnome-session-hibernate.png    | Bin 0 -> 1714 bytes
+ .../22x22/actions/gnome-session-logout.png       | Bin 0 -> 1213 bytes
+ .../22x22/actions/gnome-session-reboot.png       | Bin 0 -> 1704 bytes
+ .../22x22/actions/gnome-session-suspend.png      | Bin 0 -> 1777 bytes
+ .../22x22/actions/gnome-session-switch.png       | Bin 0 -> 975 bytes
+ .../hicolor/22x22/actions/system-lock-screen.png | Bin 0 -> 1161 bytes
+ .../hicolor/22x22/actions/system-log-out.png     | Bin 0 -> 1094 bytes
+ .../hicolor/22x22/actions/system-reboot.png      | Bin 0 -> 1103 bytes
+ .../hicolor/22x22/actions/system-shutdown.png    | Bin 0 -> 1197 bytes
+ .../22x22/actions/system-suspend-hibernate.png   | Bin 0 -> 1094 bytes
+ .../hicolor/22x22/actions/system-suspend.png     | Bin 0 -> 1195 bytes
+ .../hicolor/22x22/actions/system-switch-user.png | Bin 0 -> 1175 bytes
+ src/icons/hicolor/22x22/apps/GNUstep.png         | Bin 0 -> 1070 bytes
+ src/icons/hicolor/22x22/apps/GNUstep3D.png       | Bin 0 -> 1356 bytes
+ src/icons/hicolor/22x22/apps/arch-logo.png       | Bin 0 -> 1312 bytes
+ .../hicolor/22x22/apps/archlinux-wm-awesome.png  | Bin 0 -> 1401 bytes
+ .../hicolor/22x22/apps/archlinux-wm-base.png     | Bin 0 -> 1370 bytes
+ .../hicolor/22x22/apps/archlinux-wm-blackbox.png | Bin 0 -> 1468 bytes
+ .../hicolor/22x22/apps/archlinux-wm-dwm.png      | Bin 0 -> 1421 bytes
+ .../hicolor/22x22/apps/archlinux-wm-fluxbox.png  | Bin 0 -> 1513 bytes
+ .../hicolor/22x22/apps/archlinux-wm-fvwm.png     | Bin 0 -> 1470 bytes
+ .../hicolor/22x22/apps/archlinux-wm-gnome.png    | Bin 0 -> 1456 bytes
+ .../hicolor/22x22/apps/archlinux-wm-icewm.png    | Bin 0 -> 1502 bytes
+ .../hicolor/22x22/apps/archlinux-wm-jwm.png      | Bin 0 -> 1554 bytes
+ .../hicolor/22x22/apps/archlinux-wm-kde.png      | Bin 0 -> 1538 bytes
+ .../hicolor/22x22/apps/archlinux-wm-kde2.png     | Bin 0 -> 1553 bytes
+ .../hicolor/22x22/apps/archlinux-wm-kdemod.png   | Bin 0 -> 1491 bytes
+ .../hicolor/22x22/apps/archlinux-wm-openbox.png  | Bin 0 -> 1426 bytes
+ .../hicolor/22x22/apps/archlinux-wm-pekwm.png    | Bin 0 -> 1484 bytes
+ .../hicolor/22x22/apps/archlinux-wm-twm.png      | Bin 0 -> 1535 bytes
+ .../hicolor/22x22/apps/archlinux-wm-wmaker.png   | Bin 0 -> 1385 bytes
+ .../hicolor/22x22/apps/archlinux-wm-xfce.png     | Bin 0 -> 1462 bytes
+ .../hicolor/22x22/apps/archlinux-wm-xmonad.png   | Bin 0 -> 1358 bytes
+ src/icons/hicolor/22x22/apps/blackbox.png        | Bin 0 -> 1380 bytes
+ src/icons/hicolor/22x22/apps/blackbox.xpm        | 133 ++++
+ src/icons/hicolor/22x22/apps/ctwm.png            | Bin 0 -> 1328 bytes
+ src/icons/hicolor/22x22/apps/fluxbox.png         | Bin 0 -> 1200 bytes
+ src/icons/hicolor/22x22/apps/fvwm-crystal.png    | Bin 0 -> 1180 bytes
+ src/icons/hicolor/22x22/apps/fvwm.png            | Bin 0 -> 810 bytes
+ src/icons/hicolor/22x22/apps/gnome-logout.png    | Bin 0 -> 915 bytes
+ .../hicolor/22x22/apps/gnome-session-halt.png    | Bin 0 -> 1326 bytes
+ .../22x22/apps/gnome-session-hibernate.png       | Bin 0 -> 1458 bytes
+ .../hicolor/22x22/apps/gnome-session-logout.png  | Bin 0 -> 1016 bytes
+ .../hicolor/22x22/apps/gnome-session-reboot.png  | Bin 0 -> 1379 bytes
+ .../hicolor/22x22/apps/gnome-session-sleep.png   | Bin 0 -> 1347 bytes
+ .../hicolor/22x22/apps/gnome-session-suspend.png | Bin 0 -> 1347 bytes
+ .../hicolor/22x22/apps/gnome-session-switch.png  | Bin 0 -> 1008 bytes
+ src/icons/hicolor/22x22/apps/jwm.png             | Bin 0 -> 699 bytes
+ src/icons/hicolor/22x22/apps/pekwm.png           | Bin 0 -> 1442 bytes
+ src/icons/hicolor/22x22/apps/twm.png             | Bin 0 -> 1495 bytes
+ src/icons/hicolor/22x22/apps/wmaker.png          | Bin 0 -> 1374 bytes
+ src/icons/hicolor/22x22/apps/xlogo.png           | Bin 0 -> 1028 bytes
+ src/icons/hicolor/24x24/apps/GNUstep.png         | Bin 0 -> 1229 bytes
+ src/icons/hicolor/24x24/apps/GNUstep3D.png       | Bin 0 -> 1600 bytes
+ src/icons/hicolor/24x24/apps/arch-logo.png       | Bin 0 -> 1416 bytes
+ .../hicolor/24x24/apps/archlinux-wm-awesome.png  | Bin 0 -> 1507 bytes
+ .../hicolor/24x24/apps/archlinux-wm-base.png     | Bin 0 -> 1546 bytes
+ .../hicolor/24x24/apps/archlinux-wm-blackbox.png | Bin 0 -> 1621 bytes
+ .../hicolor/24x24/apps/archlinux-wm-dwm.png      | Bin 0 -> 1566 bytes
+ .../hicolor/24x24/apps/archlinux-wm-fluxbox.png  | Bin 0 -> 1625 bytes
+ .../hicolor/24x24/apps/archlinux-wm-fvwm.png     | Bin 0 -> 1316 bytes
+ .../hicolor/24x24/apps/archlinux-wm-gnome.png    | Bin 0 -> 1614 bytes
+ .../hicolor/24x24/apps/archlinux-wm-icewm.png    | Bin 0 -> 1647 bytes
+ .../hicolor/24x24/apps/archlinux-wm-jwm.png      | Bin 0 -> 1328 bytes
+ .../hicolor/24x24/apps/archlinux-wm-kde.png      | Bin 0 -> 1639 bytes
+ .../hicolor/24x24/apps/archlinux-wm-kde2.png     | Bin 0 -> 1662 bytes
+ .../hicolor/24x24/apps/archlinux-wm-kdemod.png   | Bin 0 -> 1581 bytes
+ .../hicolor/24x24/apps/archlinux-wm-openbox.png  | Bin 0 -> 1630 bytes
+ .../hicolor/24x24/apps/archlinux-wm-pekwm.png    | Bin 0 -> 1285 bytes
+ .../hicolor/24x24/apps/archlinux-wm-twm.png      | Bin 0 -> 1378 bytes
+ .../hicolor/24x24/apps/archlinux-wm-wmaker.png   | Bin 0 -> 1576 bytes
+ .../hicolor/24x24/apps/archlinux-wm-xfce.png     | Bin 0 -> 1587 bytes
+ .../hicolor/24x24/apps/archlinux-wm-xmonad.png   | Bin 0 -> 1492 bytes
+ src/icons/hicolor/24x24/apps/blackbox.png        | Bin 0 -> 1515 bytes
+ src/icons/hicolor/24x24/apps/ctwm.png            | Bin 0 -> 1524 bytes
+ src/icons/hicolor/24x24/apps/fluxbox.png         | Bin 0 -> 1278 bytes
+ src/icons/hicolor/24x24/apps/fvwm.png            | Bin 0 -> 907 bytes
+ .../hicolor/24x24/apps/gnome-session-halt.png    | Bin 0 -> 1327 bytes
+ .../24x24/apps/gnome-session-hibernate.png       | Bin 0 -> 1478 bytes
+ .../hicolor/24x24/apps/gnome-session-reboot.png  | Bin 0 -> 1503 bytes
+ .../hicolor/24x24/apps/gnome-session-sleep.png   | Bin 0 -> 1374 bytes
+ .../hicolor/24x24/apps/gnome-session-suspend.png | Bin 0 -> 1374 bytes
+ .../hicolor/24x24/apps/gnome-session-switch.png  | Bin 0 -> 974 bytes
+ src/icons/hicolor/24x24/apps/jwm.png             | Bin 0 -> 722 bytes
+ src/icons/hicolor/24x24/apps/pekwm.png           | Bin 0 -> 1539 bytes
+ src/icons/hicolor/24x24/apps/twm.png             | Bin 0 -> 1563 bytes
+ src/icons/hicolor/24x24/apps/wmaker.png          | Bin 0 -> 1476 bytes
+ src/icons/hicolor/24x24/apps/xlogo.png           | Bin 0 -> 1048 bytes
+ src/icons/hicolor/256x256/apps/GNUstep.png       | Bin 0 -> 8973 bytes
+ src/icons/hicolor/256x256/apps/GNUstep3D.png     | Bin 0 -> 49827 bytes
+ .../256x256/apps/archlinux-wm-blackbox.png       | Bin 0 -> 13010 bytes
+ .../256x256/apps/archlinux-wm-fluxbox.png        | Bin 0 -> 12300 bytes
+ .../hicolor/256x256/apps/archlinux-wm-fvwm.png   | Bin 0 -> 20775 bytes
+ .../hicolor/256x256/apps/archlinux-wm-icewm.png  | Bin 0 -> 20780 bytes
+ .../hicolor/256x256/apps/archlinux-wm-jwm.png    | Bin 0 -> 13573 bytes
+ .../256x256/apps/archlinux-wm-openbox.png        | Bin 0 -> 13325 bytes
+ .../hicolor/256x256/apps/archlinux-wm-pekwm.png  | Bin 0 -> 14694 bytes
+ .../hicolor/256x256/apps/archlinux-wm-wmaker.png | Bin 0 -> 14195 bytes
+ src/icons/hicolor/256x256/apps/xlogo.png         | Bin 0 -> 9877 bytes
+ .../hicolor/32x32/actions/application-exit.png   | Bin 0 -> 1760 bytes
+ .../hicolor/32x32/actions/system-lock-screen.png | Bin 0 -> 1717 bytes
+ .../hicolor/32x32/actions/system-log-out.png     | Bin 0 -> 1532 bytes
+ .../hicolor/32x32/actions/system-reboot.png      | Bin 0 -> 1648 bytes
+ .../hicolor/32x32/actions/system-shutdown.png    | Bin 0 -> 1753 bytes
+ .../32x32/actions/system-suspend-hibernate.png   | Bin 0 -> 1677 bytes
+ .../hicolor/32x32/actions/system-suspend.png     | Bin 0 -> 1749 bytes
+ .../hicolor/32x32/actions/system-switch-user.png | Bin 0 -> 1692 bytes
+ src/icons/hicolor/32x32/apps/GNUstep.png         | Bin 0 -> 1457 bytes
+ src/icons/hicolor/32x32/apps/GNUstep3D.png       | Bin 0 -> 2280 bytes
+ src/icons/hicolor/32x32/apps/WindowMaker.png     | Bin 0 -> 3265 bytes
+ src/icons/hicolor/32x32/apps/arch-logo.png       | Bin 0 -> 1441 bytes
+ .../hicolor/32x32/apps/archlinux-wm-awesome.png  | Bin 0 -> 1523 bytes
+ .../hicolor/32x32/apps/archlinux-wm-base.png     | Bin 0 -> 1566 bytes
+ .../hicolor/32x32/apps/archlinux-wm-blackbox.png | Bin 0 -> 1687 bytes
+ .../hicolor/32x32/apps/archlinux-wm-dwm.png      | Bin 0 -> 1461 bytes
+ .../hicolor/32x32/apps/archlinux-wm-fluxbox.png  | Bin 0 -> 1559 bytes
+ .../hicolor/32x32/apps/archlinux-wm-fvwm.png     | Bin 0 -> 1787 bytes
+ .../hicolor/32x32/apps/archlinux-wm-gnome.png    | Bin 0 -> 1589 bytes
+ .../hicolor/32x32/apps/archlinux-wm-icewm.png    | Bin 0 -> 1815 bytes
+ .../hicolor/32x32/apps/archlinux-wm-jwm.png      | Bin 0 -> 1791 bytes
+ .../hicolor/32x32/apps/archlinux-wm-kde.png      | Bin 0 -> 1721 bytes
+ .../hicolor/32x32/apps/archlinux-wm-kde2.png     | Bin 0 -> 1638 bytes
+ .../hicolor/32x32/apps/archlinux-wm-kdemod.png   | Bin 0 -> 1587 bytes
+ .../hicolor/32x32/apps/archlinux-wm-openbox.png  | Bin 0 -> 1602 bytes
+ .../hicolor/32x32/apps/archlinux-wm-pekwm.png    | Bin 0 -> 1750 bytes
+ .../hicolor/32x32/apps/archlinux-wm-twm.png      | Bin 0 -> 1864 bytes
+ .../hicolor/32x32/apps/archlinux-wm-wmaker.png   | Bin 0 -> 1796 bytes
+ .../hicolor/32x32/apps/archlinux-wm-xfce.png     | Bin 0 -> 1490 bytes
+ .../hicolor/32x32/apps/archlinux-wm-xmonad.png   | Bin 0 -> 1588 bytes
+ src/icons/hicolor/32x32/apps/blackbox.png        | Bin 0 -> 2052 bytes
+ src/icons/hicolor/32x32/apps/blackbox.xpm        | 172 +++++
+ src/icons/hicolor/32x32/apps/ctwm.png            | Bin 0 -> 1843 bytes
+ src/icons/hicolor/32x32/apps/fluxbox.png         | Bin 0 -> 1585 bytes
+ src/icons/hicolor/32x32/apps/fvwm-crystal.png    | Bin 0 -> 2000 bytes
+ src/icons/hicolor/32x32/apps/fvwm.png            | Bin 0 -> 1306 bytes
+ src/icons/hicolor/32x32/apps/gnome-logout.png    | Bin 0 -> 1317 bytes
+ .../hicolor/32x32/apps/gnome-session-halt.png    | Bin 0 -> 2340 bytes
+ .../32x32/apps/gnome-session-hibernate.png       | Bin 0 -> 2732 bytes
+ .../hicolor/32x32/apps/gnome-session-logout.png  | Bin 0 -> 1528 bytes
+ .../hicolor/32x32/apps/gnome-session-reboot.png  | Bin 0 -> 2182 bytes
+ .../hicolor/32x32/apps/gnome-session-sleep.png   | Bin 0 -> 2532 bytes
+ .../hicolor/32x32/apps/gnome-session-suspend.png | Bin 0 -> 2532 bytes
+ .../hicolor/32x32/apps/gnome-session-switch.png  | Bin 0 -> 1209 bytes
+ src/icons/hicolor/32x32/apps/icewm.png           | Bin 0 -> 2293 bytes
+ src/icons/hicolor/32x32/apps/jwm.png             | Bin 0 -> 865 bytes
+ src/icons/hicolor/32x32/apps/pekwm.png           | Bin 0 -> 2013 bytes
+ src/icons/hicolor/32x32/apps/twm.png             | Bin 0 -> 1990 bytes
+ src/icons/hicolor/32x32/apps/wmaker.png          | Bin 0 -> 1858 bytes
+ src/icons/hicolor/32x32/apps/xclock.png          | Bin 0 -> 755 bytes
+ src/icons/hicolor/32x32/apps/xlogo.png           | Bin 0 -> 1332 bytes
+ src/icons/hicolor/36x36/apps/GNUstep.png         | Bin 0 -> 1174 bytes
+ src/icons/hicolor/36x36/apps/GNUstep3D.png       | Bin 0 -> 2696 bytes
+ .../hicolor/36x36/apps/archlinux-wm-fluxbox.png  | Bin 0 -> 1490 bytes
+ .../hicolor/36x36/apps/archlinux-wm-fvwm.png     | Bin 0 -> 1730 bytes
+ .../hicolor/36x36/apps/archlinux-wm-icewm.png    | Bin 0 -> 1777 bytes
+ .../hicolor/36x36/apps/archlinux-wm-jwm.png      | Bin 0 -> 1644 bytes
+ .../hicolor/36x36/apps/archlinux-wm-openbox.png  | Bin 0 -> 1534 bytes
+ .../hicolor/36x36/apps/archlinux-wm-pekwm.png    | Bin 0 -> 1554 bytes
+ src/icons/hicolor/36x36/apps/fvwm.png            | Bin 0 -> 1538 bytes
+ src/icons/hicolor/36x36/apps/jwm.png             | Bin 0 -> 984 bytes
+ src/icons/hicolor/36x36/apps/pekwm.png           | Bin 0 -> 1967 bytes
+ src/icons/hicolor/36x36/apps/twm.png             | Bin 0 -> 1160 bytes
+ src/icons/hicolor/36x36/apps/xlogo.png           | Bin 0 -> 1383 bytes
+ .../hicolor/48x48/actions/PadlockClosed.png      | Bin 0 -> 2490 bytes
+ src/icons/hicolor/48x48/actions/PadlockOpen.png  | Bin 0 -> 2546 bytes
+ .../hicolor/48x48/actions/application-exit.png   | Bin 0 -> 3017 bytes
+ src/icons/hicolor/48x48/actions/gnome-logout.png | Bin 0 -> 2481 bytes
+ .../hicolor/48x48/actions/gnome-session-halt.png | Bin 0 -> 4823 bytes
+ .../48x48/actions/gnome-session-hibernate.png    | Bin 0 -> 4959 bytes
+ .../48x48/actions/gnome-session-logout.png       | Bin 0 -> 3550 bytes
+ .../48x48/actions/gnome-session-reboot.png       | Bin 0 -> 4396 bytes
+ .../48x48/actions/gnome-session-suspend.png      | Bin 0 -> 4577 bytes
+ .../48x48/actions/gnome-session-switch.png       | Bin 0 -> 2407 bytes
+ .../hicolor/48x48/actions/system-lock-screen.png | Bin 0 -> 2914 bytes
+ .../hicolor/48x48/actions/system-log-out.png     | Bin 0 -> 2554 bytes
+ .../hicolor/48x48/actions/system-reboot.png      | Bin 0 -> 2893 bytes
+ .../hicolor/48x48/actions/system-shutdown.png    | Bin 0 -> 3028 bytes
+ .../48x48/actions/system-suspend-hibernate.png   | Bin 0 -> 2866 bytes
+ .../hicolor/48x48/actions/system-suspend.png     | Bin 0 -> 3074 bytes
+ .../hicolor/48x48/actions/system-switch-user.png | Bin 0 -> 2873 bytes
+ src/icons/hicolor/48x48/apps/AfterStep.png       | Bin 0 -> 4107 bytes
+ src/icons/hicolor/48x48/apps/AfterStep2.png      | Bin 0 -> 3361 bytes
+ src/icons/hicolor/48x48/apps/GNUStep.png         | Bin 0 -> 648 bytes
+ src/icons/hicolor/48x48/apps/GNUStep3D.png       | Bin 0 -> 2689 bytes
+ src/icons/hicolor/48x48/apps/GNUStepGlow.png     | Bin 0 -> 7820 bytes
+ src/icons/hicolor/48x48/apps/GNUstep.png         | Bin 0 -> 1799 bytes
+ src/icons/hicolor/48x48/apps/GNUstep3D.png       | Bin 0 -> 4251 bytes
+ src/icons/hicolor/48x48/apps/WindowMaker.png     | Bin 0 -> 5806 bytes
+ src/icons/hicolor/48x48/apps/XApp.png            | Bin 0 -> 2493 bytes
+ src/icons/hicolor/48x48/apps/XWindow.png         | Bin 0 -> 2980 bytes
+ src/icons/hicolor/48x48/apps/XWindow2.png        | Bin 0 -> 4105 bytes
+ src/icons/hicolor/48x48/apps/XWindow3.png        | Bin 0 -> 3653 bytes
+ src/icons/hicolor/48x48/apps/arch-logo.png       | Bin 0 -> 2270 bytes
+ .../hicolor/48x48/apps/archlinux-wm-awesome.png  | Bin 0 -> 2337 bytes
+ .../hicolor/48x48/apps/archlinux-wm-base.png     | Bin 0 -> 2296 bytes
+ .../hicolor/48x48/apps/archlinux-wm-blackbox.png | Bin 0 -> 2606 bytes
+ .../hicolor/48x48/apps/archlinux-wm-dwm.png      | Bin 0 -> 2154 bytes
+ .../hicolor/48x48/apps/archlinux-wm-fluxbox.png  | Bin 0 -> 2429 bytes
+ .../hicolor/48x48/apps/archlinux-wm-fvwm.png     | Bin 0 -> 2857 bytes
+ .../hicolor/48x48/apps/archlinux-wm-gnome.png    | Bin 0 -> 2433 bytes
+ .../hicolor/48x48/apps/archlinux-wm-icewm.png    | Bin 0 -> 2938 bytes
+ .../hicolor/48x48/apps/archlinux-wm-jwm.png      | Bin 0 -> 2769 bytes
+ .../hicolor/48x48/apps/archlinux-wm-kde.png      | Bin 0 -> 2594 bytes
+ .../hicolor/48x48/apps/archlinux-wm-kde2.png     | Bin 0 -> 2574 bytes
+ .../hicolor/48x48/apps/archlinux-wm-kdemod.png   | Bin 0 -> 2455 bytes
+ .../hicolor/48x48/apps/archlinux-wm-openbox.png  | Bin 0 -> 2370 bytes
+ .../hicolor/48x48/apps/archlinux-wm-pekwm.png    | Bin 0 -> 2691 bytes
+ .../hicolor/48x48/apps/archlinux-wm-twm.png      | Bin 0 -> 2959 bytes
+ .../hicolor/48x48/apps/archlinux-wm-wmaker.png   | Bin 0 -> 2647 bytes
+ .../hicolor/48x48/apps/archlinux-wm-xfce.png     | Bin 0 -> 2295 bytes
+ .../hicolor/48x48/apps/archlinux-wm-xmonad.png   | Bin 0 -> 2452 bytes
+ src/icons/hicolor/48x48/apps/blackbox.png        | Bin 0 -> 2313 bytes
+ src/icons/hicolor/48x48/apps/blackbox.xpm        | 207 ++++++
+ src/icons/hicolor/48x48/apps/ctwm.png            | Bin 0 -> 2458 bytes
+ src/icons/hicolor/48x48/apps/fluxbox.png         | Bin 0 -> 2018 bytes
+ src/icons/hicolor/48x48/apps/fvwm-crystal.png    | Bin 0 -> 3672 bytes
+ src/icons/hicolor/48x48/apps/fvwm.png            | Bin 0 -> 2401 bytes
+ src/icons/hicolor/48x48/apps/gnome-logout.png    | Bin 0 -> 1941 bytes
+ .../hicolor/48x48/apps/gnome-session-halt.png    | Bin 0 -> 2023 bytes
+ .../48x48/apps/gnome-session-hibernate.png       | Bin 0 -> 2256 bytes
+ .../hicolor/48x48/apps/gnome-session-logout.png  | Bin 0 -> 2382 bytes
+ .../hicolor/48x48/apps/gnome-session-reboot.png  | Bin 0 -> 2082 bytes
+ .../hicolor/48x48/apps/gnome-session-suspend.png | Bin 0 -> 1869 bytes
+ .../hicolor/48x48/apps/gnome-session-switch.png  | Bin 0 -> 1833 bytes
+ src/icons/hicolor/48x48/apps/icewm.png           | Bin 0 -> 4478 bytes
+ src/icons/hicolor/48x48/apps/jwm.png             | Bin 0 -> 1196 bytes
+ src/icons/hicolor/48x48/apps/pekwm.png           | Bin 0 -> 1849 bytes
+ src/icons/hicolor/48x48/apps/twm.png             | Bin 0 -> 1957 bytes
+ src/icons/hicolor/48x48/apps/wmaker.png          | Bin 0 -> 2797 bytes
+ src/icons/hicolor/48x48/apps/xclock.png          | Bin 0 -> 1017 bytes
+ src/icons/hicolor/48x48/apps/xlogo.png           | Bin 0 -> 1775 bytes
+ .../hicolor/48x48/devices/ExpansionCard.png      | Bin 0 -> 5125 bytes
+ src/icons/hicolor/48x48/devices/Harddrive.png    | Bin 0 -> 4440 bytes
+ src/icons/hicolor/48x48/devices/Memory.png       | Bin 0 -> 2792 bytes
+ src/icons/hicolor/48x48/devices/Notebook.png     | Bin 0 -> 4450 bytes
+ src/icons/hicolor/48x48/devices/PLIP.png         | Bin 0 -> 1672 bytes
+ src/icons/hicolor/48x48/devices/USB.png          | Bin 0 -> 3520 bytes
+ src/icons/hicolor/48x48/devices/chip.png         | Bin 0 -> 2939 bytes
+ src/icons/hicolor/48x48/devices/plip.png         | Bin 0 -> 1820 bytes
+ src/icons/hicolor/48x48/status/aptdaemon-add.png | Bin 0 -> 2492 bytes
+ .../hicolor/48x48/status/aptdaemon-cleanup.png   | Bin 0 -> 2865 bytes
+ .../hicolor/48x48/status/aptdaemon-delete.png    | Bin 0 -> 2714 bytes
+ .../hicolor/48x48/status/aptdaemon-download.png  | Bin 0 -> 2524 bytes
+ .../hicolor/48x48/status/aptdaemon-resolve.png   | Bin 0 -> 3489 bytes
+ .../48x48/status/aptdaemon-update-cache.png      | Bin 0 -> 3283 bytes
+ .../hicolor/48x48/status/aptdaemon-upgrade.png   | Bin 0 -> 3336 bytes
+ .../hicolor/48x48/status/aptdaemon-wait.png      | Bin 0 -> 2765 bytes
+ .../hicolor/48x48/status/aptdaemon-working.png   | Bin 0 -> 3245 bytes
+ src/icons/hicolor/512x512/apps/GNUstep.png       | Bin 0 -> 19034 bytes
+ src/icons/hicolor/512x512/apps/GNUstep3D.png     | Bin 0 -> 121670 bytes
+ .../512x512/apps/archlinux-wm-blackbox.png       | Bin 0 -> 28048 bytes
+ .../512x512/apps/archlinux-wm-fluxbox.png        | Bin 0 -> 26740 bytes
+ .../hicolor/512x512/apps/archlinux-wm-icewm.png  | Bin 0 -> 34049 bytes
+ .../hicolor/512x512/apps/archlinux-wm-jwm.png    | Bin 0 -> 28794 bytes
+ .../512x512/apps/archlinux-wm-openbox.png        | Bin 0 -> 26402 bytes
+ .../hicolor/512x512/apps/archlinux-wm-pekwm.png  | Bin 0 -> 26235 bytes
+ src/icons/hicolor/512x512/apps/xlogo.png         | Bin 0 -> 22769 bytes
+ src/icons/hicolor/56x56/apps/AfterStep3.png      | Bin 0 -> 7658 bytes
+ src/icons/hicolor/56x56/apps/AfterStep4.png      | Bin 0 -> 4828 bytes
+ src/icons/hicolor/56x56/apps/GNUstep.png         | Bin 0 -> 2037 bytes
+ src/icons/hicolor/56x56/apps/GNUstep3D.png       | Bin 0 -> 5334 bytes
+ src/icons/hicolor/56x56/apps/arch-logo.png       | Bin 0 -> 2667 bytes
+ .../hicolor/56x56/apps/archlinux-wm-awesome.png  | Bin 0 -> 2661 bytes
+ .../hicolor/56x56/apps/archlinux-wm-base.png     | Bin 0 -> 2724 bytes
+ .../hicolor/56x56/apps/archlinux-wm-blackbox.png | Bin 0 -> 3080 bytes
+ .../hicolor/56x56/apps/archlinux-wm-dwm.png      | Bin 0 -> 2503 bytes
+ .../hicolor/56x56/apps/archlinux-wm-fluxbox.png  | Bin 0 -> 2908 bytes
+ .../hicolor/56x56/apps/archlinux-wm-fvwm.png     | Bin 0 -> 3456 bytes
+ .../hicolor/56x56/apps/archlinux-wm-gnome.png    | Bin 0 -> 2908 bytes
+ .../hicolor/56x56/apps/archlinux-wm-icewm.png    | Bin 0 -> 3503 bytes
+ .../hicolor/56x56/apps/archlinux-wm-jwm.png      | Bin 0 -> 3291 bytes
+ .../hicolor/56x56/apps/archlinux-wm-kde.png      | Bin 0 -> 3062 bytes
+ .../hicolor/56x56/apps/archlinux-wm-kde2.png     | Bin 0 -> 3040 bytes
+ .../hicolor/56x56/apps/archlinux-wm-kdemod.png   | Bin 0 -> 2867 bytes
+ .../hicolor/56x56/apps/archlinux-wm-openbox.png  | Bin 0 -> 2825 bytes
+ .../hicolor/56x56/apps/archlinux-wm-pekwm.png    | Bin 0 -> 3162 bytes
+ .../hicolor/56x56/apps/archlinux-wm-twm.png      | Bin 0 -> 3497 bytes
+ .../hicolor/56x56/apps/archlinux-wm-wmaker.png   | Bin 0 -> 3088 bytes
+ .../hicolor/56x56/apps/archlinux-wm-xfce.png     | Bin 0 -> 2717 bytes
+ .../hicolor/56x56/apps/archlinux-wm-xmonad.png   | Bin 0 -> 2900 bytes
+ src/icons/hicolor/56x56/apps/blackbox.png        | Bin 0 -> 3993 bytes
+ src/icons/hicolor/56x56/apps/ctwm.png            | Bin 0 -> 2823 bytes
+ src/icons/hicolor/56x56/apps/fluxbox.png         | Bin 0 -> 2248 bytes
+ src/icons/hicolor/56x56/apps/jwm.png             | Bin 0 -> 3008 bytes
+ src/icons/hicolor/56x56/apps/pekwm.png           | Bin 0 -> 3705 bytes
+ src/icons/hicolor/56x56/apps/start-here.png      | Bin 0 -> 4151 bytes
+ src/icons/hicolor/56x56/apps/twm.png             | Bin 0 -> 2343 bytes
+ src/icons/hicolor/56x56/apps/wmaker.png          | Bin 0 -> 3286 bytes
+ src/icons/hicolor/56x56/apps/xlogo.png           | Bin 0 -> 2019 bytes
+ src/icons/hicolor/56x56/devices/Computer.png     | Bin 0 -> 4462 bytes
+ src/icons/hicolor/56x56/devices/Harddrive2.png   | Bin 0 -> 5066 bytes
+ .../hicolor/64x64/actions/application-exit.png   | Bin 0 -> 4277 bytes
+ .../hicolor/64x64/actions/system-lock-screen.png | Bin 0 -> 4220 bytes
+ .../hicolor/64x64/actions/system-log-out.png     | Bin 0 -> 3577 bytes
+ .../hicolor/64x64/actions/system-reboot.png      | Bin 0 -> 4081 bytes
+ .../hicolor/64x64/actions/system-shutdown.png    | Bin 0 -> 4252 bytes
+ .../64x64/actions/system-suspend-hibernate.png   | Bin 0 -> 4140 bytes
+ .../hicolor/64x64/actions/system-suspend.png     | Bin 0 -> 4297 bytes
+ .../hicolor/64x64/actions/system-switch-user.png | Bin 0 -> 3940 bytes
+ src/icons/hicolor/64x64/apps/GNUstep.png         | Bin 0 -> 2356 bytes
+ src/icons/hicolor/64x64/apps/GNUstep3D.png       | Bin 0 -> 6282 bytes
+ src/icons/hicolor/64x64/apps/allin1.png          | Bin 0 -> 807 bytes
+ src/icons/hicolor/64x64/apps/arch-logo.png       | Bin 0 -> 3014 bytes
+ .../hicolor/64x64/apps/archlinux-wm-awesome.png  | Bin 0 -> 3175 bytes
+ .../hicolor/64x64/apps/archlinux-wm-base.png     | Bin 0 -> 3093 bytes
+ .../hicolor/64x64/apps/archlinux-wm-blackbox.png | Bin 0 -> 3560 bytes
+ .../hicolor/64x64/apps/archlinux-wm-dwm.png      | Bin 0 -> 2826 bytes
+ .../hicolor/64x64/apps/archlinux-wm-fluxbox.png  | Bin 0 -> 3428 bytes
+ .../hicolor/64x64/apps/archlinux-wm-fvwm.png     | Bin 0 -> 4073 bytes
+ .../hicolor/64x64/apps/archlinux-wm-gnome.png    | Bin 0 -> 3448 bytes
+ .../hicolor/64x64/apps/archlinux-wm-icewm.png    | Bin 0 -> 4210 bytes
+ .../hicolor/64x64/apps/archlinux-wm-jwm.png      | Bin 0 -> 3749 bytes
+ .../hicolor/64x64/apps/archlinux-wm-kde.png      | Bin 0 -> 3616 bytes
+ .../hicolor/64x64/apps/archlinux-wm-kde2.png     | Bin 0 -> 3667 bytes
+ .../hicolor/64x64/apps/archlinux-wm-kdemod.png   | Bin 0 -> 3462 bytes
+ .../hicolor/64x64/apps/archlinux-wm-openbox.png  | Bin 0 -> 3182 bytes
+ .../hicolor/64x64/apps/archlinux-wm-pekwm.png    | Bin 0 -> 3663 bytes
+ .../hicolor/64x64/apps/archlinux-wm-twm.png      | Bin 0 -> 4092 bytes
+ .../hicolor/64x64/apps/archlinux-wm-wmaker.png   | Bin 0 -> 3602 bytes
+ .../hicolor/64x64/apps/archlinux-wm-xfce.png     | Bin 0 -> 3164 bytes
+ .../hicolor/64x64/apps/archlinux-wm-xmonad.png   | Bin 0 -> 3392 bytes
+ src/icons/hicolor/64x64/apps/blackbox.png        | Bin 0 -> 4743 bytes
+ src/icons/hicolor/64x64/apps/ctwm.png            | Bin 0 -> 3366 bytes
+ src/icons/hicolor/64x64/apps/fluxbox.png         | Bin 0 -> 2492 bytes
+ src/icons/hicolor/64x64/apps/fvwm.png            | Bin 0 -> 3641 bytes
+ src/icons/hicolor/64x64/apps/gnome-logout.png    | Bin 0 -> 2570 bytes
+ .../hicolor/64x64/apps/gnome-session-halt.png    | Bin 0 -> 2694 bytes
+ .../64x64/apps/gnome-session-hibernate.png       | Bin 0 -> 3062 bytes
+ .../hicolor/64x64/apps/gnome-session-logout.png  | Bin 0 -> 3257 bytes
+ .../hicolor/64x64/apps/gnome-session-reboot.png  | Bin 0 -> 2837 bytes
+ .../hicolor/64x64/apps/gnome-session-suspend.png | Bin 0 -> 2500 bytes
+ .../hicolor/64x64/apps/gnome-session-switch.png  | Bin 0 -> 2371 bytes
+ src/icons/hicolor/64x64/apps/jwm.png             | Bin 0 -> 1540 bytes
+ src/icons/hicolor/64x64/apps/pekwm.png           | Bin 0 -> 4334 bytes
+ src/icons/hicolor/64x64/apps/start-here.png      | Bin 0 -> 2940 bytes
+ src/icons/hicolor/64x64/apps/twm.png             | Bin 0 -> 2680 bytes
+ src/icons/hicolor/64x64/apps/wmaker.png          | Bin 0 -> 3912 bytes
+ src/icons/hicolor/64x64/apps/xclock.png          | Bin 0 -> 1387 bytes
+ src/icons/hicolor/64x64/apps/xlogo.png           | Bin 0 -> 2245 bytes
+ src/icons/hicolor/72x72/apps/GNUstep.png         | Bin 0 -> 2599 bytes
+ src/icons/hicolor/72x72/apps/GNUstep3D.png       | Bin 0 -> 7515 bytes
+ src/icons/hicolor/72x72/apps/arch-logo.png       | Bin 0 -> 3458 bytes
+ .../hicolor/72x72/apps/archlinux-wm-awesome.png  | Bin 0 -> 3620 bytes
+ .../hicolor/72x72/apps/archlinux-wm-base.png     | Bin 0 -> 3503 bytes
+ .../hicolor/72x72/apps/archlinux-wm-blackbox.png | Bin 0 -> 4109 bytes
+ .../hicolor/72x72/apps/archlinux-wm-dwm.png      | Bin 0 -> 3144 bytes
+ .../hicolor/72x72/apps/archlinux-wm-fluxbox.png  | Bin 0 -> 3909 bytes
+ .../hicolor/72x72/apps/archlinux-wm-fvwm.png     | Bin 0 -> 4705 bytes
+ .../hicolor/72x72/apps/archlinux-wm-gnome.png    | Bin 0 -> 3823 bytes
+ .../hicolor/72x72/apps/archlinux-wm-icewm.png    | Bin 0 -> 4918 bytes
+ .../hicolor/72x72/apps/archlinux-wm-jwm.png      | Bin 0 -> 4301 bytes
+ .../hicolor/72x72/apps/archlinux-wm-kde.png      | Bin 0 -> 4107 bytes
+ .../hicolor/72x72/apps/archlinux-wm-kde2.png     | Bin 0 -> 4156 bytes
+ .../hicolor/72x72/apps/archlinux-wm-kdemod.png   | Bin 0 -> 3889 bytes
+ .../hicolor/72x72/apps/archlinux-wm-openbox.png  | Bin 0 -> 3681 bytes
+ .../hicolor/72x72/apps/archlinux-wm-pekwm.png    | Bin 0 -> 4155 bytes
+ .../hicolor/72x72/apps/archlinux-wm-twm.png      | Bin 0 -> 4716 bytes
+ .../hicolor/72x72/apps/archlinux-wm-wmaker.png   | Bin 0 -> 3957 bytes
+ .../hicolor/72x72/apps/archlinux-wm-xfce.png     | Bin 0 -> 3628 bytes
+ .../hicolor/72x72/apps/archlinux-wm-xmonad.png   | Bin 0 -> 3881 bytes
+ src/icons/hicolor/72x72/apps/blackbox.png        | Bin 0 -> 5521 bytes
+ src/icons/hicolor/72x72/apps/ctwm.png            | Bin 0 -> 3795 bytes
+ src/icons/hicolor/72x72/apps/fluxbox.png         | Bin 0 -> 2684 bytes
+ src/icons/hicolor/72x72/apps/jwm.png             | Bin 0 -> 4098 bytes
+ src/icons/hicolor/72x72/apps/pekwm.png           | Bin 0 -> 5149 bytes
+ src/icons/hicolor/72x72/apps/twm.png             | Bin 0 -> 2951 bytes
+ src/icons/hicolor/72x72/apps/wmaker.png          | Bin 0 -> 4456 bytes
+ src/icons/hicolor/72x72/apps/xlogo.png           | Bin 0 -> 2445 bytes
+ src/icons/hicolor/96x96/apps/GNUstep.png         | Bin 0 -> 3483 bytes
+ src/icons/hicolor/96x96/apps/GNUstep3D.png       | Bin 0 -> 11650 bytes
+ src/icons/hicolor/96x96/apps/arch-logo.png       | Bin 0 -> 4967 bytes
+ .../hicolor/96x96/apps/archlinux-wm-awesome.png  | Bin 0 -> 4997 bytes
+ .../hicolor/96x96/apps/archlinux-wm-base.png     | Bin 0 -> 4800 bytes
+ .../hicolor/96x96/apps/archlinux-wm-blackbox.png | Bin 0 -> 5858 bytes
+ .../hicolor/96x96/apps/archlinux-wm-dwm.png      | Bin 0 -> 4203 bytes
+ .../hicolor/96x96/apps/archlinux-wm-fluxbox.png  | Bin 0 -> 5649 bytes
+ .../hicolor/96x96/apps/archlinux-wm-fvwm.png     | Bin 0 -> 6866 bytes
+ .../hicolor/96x96/apps/archlinux-wm-gnome.png    | Bin 0 -> 5509 bytes
+ .../hicolor/96x96/apps/archlinux-wm-icewm.png    | Bin 0 -> 7170 bytes
+ .../hicolor/96x96/apps/archlinux-wm-jwm.png      | Bin 0 -> 5916 bytes
+ .../hicolor/96x96/apps/archlinux-wm-kde.png      | Bin 0 -> 5836 bytes
+ .../hicolor/96x96/apps/archlinux-wm-kde2.png     | Bin 0 -> 6064 bytes
+ .../hicolor/96x96/apps/archlinux-wm-kdemod.png   | Bin 0 -> 5521 bytes
+ .../hicolor/96x96/apps/archlinux-wm-openbox.png  | Bin 0 -> 5176 bytes
+ .../hicolor/96x96/apps/archlinux-wm-pekwm.png    | Bin 0 -> 5736 bytes
+ .../hicolor/96x96/apps/archlinux-wm-twm.png      | Bin 0 -> 6552 bytes
+ .../hicolor/96x96/apps/archlinux-wm-wmaker.png   | Bin 0 -> 5500 bytes
+ .../hicolor/96x96/apps/archlinux-wm-xfce.png     | Bin 0 -> 5106 bytes
+ .../hicolor/96x96/apps/archlinux-wm-xmonad.png   | Bin 0 -> 5465 bytes
+ src/icons/hicolor/96x96/apps/blackbox.png        | Bin 0 -> 8104 bytes
+ src/icons/hicolor/96x96/apps/ctwm.png            | Bin 0 -> 4816 bytes
+ src/icons/hicolor/96x96/apps/fluxbox.png         | Bin 0 -> 3321 bytes
+ src/icons/hicolor/96x96/apps/jwm.png             | Bin 0 -> 5990 bytes
+ src/icons/hicolor/96x96/apps/pekwm.png           | Bin 0 -> 7705 bytes
+ src/icons/hicolor/96x96/apps/twm.png             | Bin 0 -> 3932 bytes
+ src/icons/hicolor/96x96/apps/wmaker.png          | Bin 0 -> 6230 bytes
+ src/icons/hicolor/96x96/apps/xlogo.png           | Bin 0 -> 4187 bytes
+ .../hicolor/scalable/actions/unexicon-new.svg    | 119 ++++
+ .../hicolor/scalable/actions/window-close.svg    |  71 ++
+ .../hicolor/scalable/actions/window-close2.svg   |  70 ++
+ .../hicolor/scalable/actions/window-kill.svg     |  73 ++
+ .../hicolor/scalable/actions/window-kill2.svg    |  90 +++
+ .../scalable/actions/window-maximize-b.svg       |  87 +++
+ .../scalable/actions/window-maximize-b2.svg      | 204 ++++++
+ .../scalable/actions/window-maximize-h.svg       |  79 +++
+ .../scalable/actions/window-maximize-h2.svg      |  94 +++
+ .../scalable/actions/window-maximize-v.svg       |  77 +++
+ .../scalable/actions/window-maximize-v2.svg      |  94 +++
+ .../hicolor/scalable/actions/window-maximize.svg |  77 +++
+ .../scalable/actions/window-maximize2.svg        |  94 +++
+ .../hicolor/scalable/actions/window-minimize.svg |  77 +++
+ .../scalable/actions/window-minimize2.svg        |  81 +++
+ .../hicolor/scalable/actions/window-move.svg     |  71 ++
+ .../hicolor/scalable/actions/window-resize.svg   |  98 +++
+ .../hicolor/scalable/actions/window-sendto.svg   |  70 ++
+ .../hicolor/scalable/actions/window-shade.svg    |  77 +++
+ .../hicolor/scalable/actions/window-shade2.svg   |  82 +++
+ .../hicolor/scalable/actions/window-stick.svg    |  69 ++
+ src/icons/hicolor/scalable/apps/GNUstep.svg      |  77 +++
+ src/icons/hicolor/scalable/apps/arch-logo.svg    | 425 ++++++++++++
+ .../scalable/apps/archlinux-wm-awesome.svg       | 268 ++++++++
+ .../hicolor/scalable/apps/archlinux-wm-base.svg  | 277 ++++++++
+ .../scalable/apps/archlinux-wm-blackbox.svg      | 554 +++++++++++++++
+ .../hicolor/scalable/apps/archlinux-wm-dwm.svg   | 280 ++++++++
+ .../scalable/apps/archlinux-wm-fluxbox.svg       | 454 +++++++++++++
+ .../hicolor/scalable/apps/archlinux-wm-fvwm.svg  | 457 +++++++++++++
+ .../hicolor/scalable/apps/archlinux-wm-gnome.svg | 242 +++++++
+ .../hicolor/scalable/apps/archlinux-wm-icewm.svg | 352 ++++++++++
+ .../hicolor/scalable/apps/archlinux-wm-jwm.svg   | 282 ++++++++
+ .../hicolor/scalable/apps/archlinux-wm-kde.svg   | 211 ++++++
+ .../hicolor/scalable/apps/archlinux-wm-kde2.svg  | 303 +++++++++
+ .../scalable/apps/archlinux-wm-kdemod.svg        | 224 ++++++
+ .../scalable/apps/archlinux-wm-openbox.svg       | 302 +++++++++
+ .../hicolor/scalable/apps/archlinux-wm-pekwm.svg | 345 ++++++++++
+ .../hicolor/scalable/apps/archlinux-wm-twm.svg   | 296 ++++++++
+ .../scalable/apps/archlinux-wm-wmaker.svg        | 291 ++++++++
+ .../hicolor/scalable/apps/archlinux-wm-xfce.svg  | 284 ++++++++
+ .../scalable/apps/archlinux-wm-xmonad.svg        | 451 +++++++++++++
+ src/icons/hicolor/scalable/apps/blackbox.svg     | 147 ++++
+ src/icons/hicolor/scalable/apps/ctwm.svg         |  86 +++
+ src/icons/hicolor/scalable/apps/fluxbox.svg      | 449 ++++++++++++
+ src/icons/hicolor/scalable/apps/jwm.svg          |  88 +++
+ src/icons/hicolor/scalable/apps/makepngs         |  10 +
+ src/icons/hicolor/scalable/apps/pekwm.svg        | 296 ++++++++
+ src/icons/hicolor/scalable/apps/twm.svg          |  83 +++
+ src/icons/hicolor/scalable/apps/wmaker.svg       | 139 ++++
+ src/icons/hicolor/scalable/apps/xlogo.svg        |  96 +++
+ src/pixmaps/AfterStep.xpm                        | 215 ++++++
+ src/pixmaps/WindowMaker.png                      | Bin 0 -> 3265 bytes
+ src/pixmaps/archlinux-wm-fluxbox128x128.png      | Bin 0 -> 5660 bytes
+ src/pixmaps/archlinux-wm-fluxbox16x16.png        | Bin 0 -> 601 bytes
+ src/pixmaps/archlinux-wm-fluxbox22x22.png        | Bin 0 -> 872 bytes
+ src/pixmaps/archlinux-wm-fluxbox24x24.png        | Bin 0 -> 949 bytes
+ src/pixmaps/archlinux-wm-fluxbox256x256.png      | Bin 0 -> 12300 bytes
+ src/pixmaps/archlinux-wm-fluxbox32x32.png        | Bin 0 -> 1309 bytes
+ src/pixmaps/archlinux-wm-fluxbox36x36.png        | Bin 0 -> 1490 bytes
+ src/pixmaps/archlinux-wm-fluxbox48x48.png        | Bin 0 -> 2053 bytes
+ src/pixmaps/archlinux-wm-fluxbox512x512.png      | Bin 0 -> 26740 bytes
+ src/pixmaps/archlinux-wm-fluxbox64x64.png        | Bin 0 -> 2940 bytes
+ src/pixmaps/archlinux-wm-fluxbox72x72.png        | Bin 0 -> 2983 bytes
+ src/pixmaps/archlinux-wm-fluxbox96x96.png        | Bin 0 -> 4107 bytes
+ src/pixmaps/archlinux-wm-openbox128x128.png      | Bin 0 -> 6056 bytes
+ src/pixmaps/archlinux-wm-openbox16x16.png        | Bin 0 -> 622 bytes
+ src/pixmaps/archlinux-wm-openbox22x22.png        | Bin 0 -> 908 bytes
+ src/pixmaps/archlinux-wm-openbox32x32.png        | Bin 0 -> 1408 bytes
+ src/pixmaps/archlinux-wm-openbox48x48.png        | Bin 0 -> 2224 bytes
+ src/pixmaps/archlinux-wm-openbox56x56.png        | Bin 0 -> 2692 bytes
+ src/pixmaps/archlinux-wm-openbox64x64.png        | Bin 0 -> 3180 bytes
+ src/pixmaps/big-blackbox.xpm                     | 207 ++++++
+ src/pixmaps/blackbox.xpm                         | 172 +++++
+ src/pixmaps/blackbox_16x16.xpm                   | 110 +++
+ src/pixmaps/blackbox_22x22.xpm                   | 133 ++++
+ src/pixmaps/blackbox_32x32.xpm                   | 172 +++++
+ src/pixmaps/blackbox_48x48.xpm                   | 207 ++++++
+ src/pixmaps/fvwm.png                             | Bin 0 -> 9960 bytes
+ src/pixmaps/fvwm.xpm                             |  44 ++
+ src/pixmaps/fvwm_clipped.png                     | Bin 0 -> 10656 bytes
+ src/pixmaps/fvwm_noback.png                      | Bin 0 -> 10271 bytes
+ src/pixmaps/jwm.png                              | Bin 0 -> 488 bytes
+ src/pixmaps/jwm.xpm                              |  62 ++
+ src/pixmaps/lxde-icon.png                        | Bin 0 -> 4874 bytes
+ src/pixmaps/mini-blackbox.xpm                    | 110 +++
+ src/pixmaps/mini-start.xpm                       |  26 +
+ src/pixmaps/mini-twm.xpm                         |  24 +
+ src/pixmaps/mini.fvwm.xpm                        |  26 +
+ src/pixmaps/pekwm_logo.png                       | Bin 0 -> 8914 bytes
+ src/pixmaps/pekwm_logo2.png                      | Bin 0 -> 4161 bytes
+ src/pixmaps/redhat-starthere.png                 | Bin 0 -> 3190 bytes
+ src/pixmaps/small-blackbox.xpm                   | 133 ++++
+ src/pixmaps/start-menu.xpm                       | 119 ++++
+ src/pixmaps/window-above.xpm                     |  31 +
+ src/pixmaps/window-below.xpm                     |  31 +
+ src/pixmaps/window-border.xpm                    |  31 +
+ src/pixmaps/window-close.xpm                     |  31 +
+ src/pixmaps/window-command.xpm                   |  32 +
+ src/pixmaps/window-focus.xpm                     |  31 +
+ src/pixmaps/window-kill.xpm                      |  31 +
+ src/pixmaps/window-lower.xpm                     |  31 +
+ src/pixmaps/window-maximize-b.xpm                |  31 +
+ src/pixmaps/window-maximize-h.xpm                |  31 +
+ src/pixmaps/window-maximize-v.xpm                |  31 +
+ src/pixmaps/window-maximize.xpm                  |  31 +
+ src/pixmaps/window-menu.xpm                      |  31 +
+ src/pixmaps/window-minimize.xpm                  |  31 +
+ src/pixmaps/window-move.xpm                      |  31 +
+ src/pixmaps/window-raise.xpm                     |  31 +
+ src/pixmaps/window-resize.xpm                    |  31 +
+ src/pixmaps/window-sendto.xpm                    |  31 +
+ src/pixmaps/window-shade.xpm                     |  31 +
+ src/pixmaps/window-snap.xpm                      |  31 +
+ src/pixmaps/window-stick.xpm                     |  31 +
+ src/pixmaps/window-titlebar.xpm                  |  31 +
+ src/pixmaps/window-unshade.xpm                   |  31 +
+ 637 files changed, 14451 insertions(+)

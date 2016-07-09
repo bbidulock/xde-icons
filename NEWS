@@ -1,8 +1,73 @@
-xde-icons -- NEWS file.  2015-12-29
+xde-icons -- history of user-visible changes.  
 
-Release xde-icons-1.1.38
-===========================
+Release xde-icons-1.1.40 released 2016-03-15
+--------------------------------------------
 
-git shortlog -e -n -w80,6,8 ..0.1
+git shortlog -e -n -w80,6,8 1.1...HEAD
 
-initial release of this package
+Brian Bidulock <bidulock@openss7.org> (40):
+      reremove conflicting arch-logo files
+      add missing start-here
+      some adjustments
+      add icon for 2bwm
+      added a few missing icons
+      add icons for nano editor
+      added aterm icon
+      added fltk-editor icon
+      add xv.xpm
+      add gv icon
+      add eeschema icon
+      add icons for imagic and chbg
+      add some new window icons for libwnck+
+      add two missing window icons
+      added two uninstalled pixmaps to repo
+      add more wm icons ADWM, DWM and I3
+      add xdwm, also limit compressed material
+      more wm icons: larswm, yeahwm
+      more window manager icons: evilwm, wm2
+      add wmx and wmii window manager icons
+      more wm icons: pawm, spectrwm, velox, wind, metacity
+      added aewm icon
+      add in some new icons
+      remove some conflicting icons
+      remove conflicting dia icons
+      add svg for xterm
+      remove conflicting file-roller pngs
+      add svg icon for awesome into the mix
+      do not add unnecessary icons yet
+      add AfterStep svg icon
+      thicker characters
+      rename afterstep icon
+      overwrite with svg conversions
+      move afterstep icon back to AfterStep
+      kicad package now has this
+      note librsvg incompatability
+      add some category icons for menus
+      add category icons to package
+      minor updates to build system
+      add ignore files
+
+
+Release xde-icons-1.1 released 2013-12-29
+-----------------------------------------
+
+git shortlog -e -n -w80,6,8 1.0...1.1
+
+Brian Bidulock <bidulock@openss7.org> (7):
+      full build
+      remove conflicting arch-logo files
+      added mwm and vtwm icons
+      avoid unecessary commits
+      build pngs from svg icons instead of distributing
+      faster conversion
+      release files
+
+
+Release xde-icons-1.0 released 2013-11-12
+-----------------------------------------
+
+git shortlog -e -n -w80,6,8 1.0
+
+Brian Bidulock <bidulock@openss7.org> (1):
+      initial commit
+

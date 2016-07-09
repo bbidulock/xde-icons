@@ -1,8 +1,0 @@
-@PACKAGE@ -- NEWS file.  @DATE@
-
-Release @PACKAGE@-@VERSION@
-===========================
-
-git shortlog -e -n -w80,6,8 ..0.1
-
-initial release of this package

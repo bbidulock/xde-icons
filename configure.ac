@@ -1,7 +1,7 @@
 
 AC_PREREQ(2.69)
-AC_INIT([xde-icons],[1.1],[https://github.com/bbidulock/xde-icons],[xde-icons])
-AC_REVISION([1.1])
+AC_INIT([xde-icons],[1.1.40],[https://github.com/bbidulock/xde-icons],[xde-icons])
+AC_REVISION([1.1.40])
 
 AC_CONFIG_SRCDIR([configure.ac])
 AC_CONFIG_AUX_DIR([scripts])
