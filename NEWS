@@ -1,11 +1,11 @@
 xde-icons -- history of user-visible changes.  
 
-Release xde-icons-1.1.40 released 2016-03-15
---------------------------------------------
+Release xde-icons-1.2 released 2016-07-09
+-----------------------------------------
 
-git shortlog -e -n -w80,6,8 1.1...HEAD
+git shortlog -e -n -w80,6,8 1.1...1.2
 
-Brian Bidulock <bidulock@openss7.org> (40):
+Brian Bidulock <bidulock@openss7.org> (42):
       reremove conflicting arch-logo files
       add missing start-here
       some adjustments
@@ -46,6 +46,8 @@ Brian Bidulock <bidulock@openss7.org> (40):
       add category icons to package
       minor updates to build system
       add ignore files
+      simplify distribution
+      get distcheck working
 
 
 Release xde-icons-1.1 released 2013-12-29

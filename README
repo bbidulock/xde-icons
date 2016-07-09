@@ -1,7 +1,7 @@
 
 ## xde-icons
 
-Package xde-icons-1.1.40 was released under GPL license .
+Package xde-icons-1.2 was released under GPL license .
 
 This is a set of icons, primarily window manager icons and icons for
 shutdown and reboot of the system on logout, for the XDE (X Desktop
@@ -12,13 +12,11 @@ Note that this package will not build with librsvg-2.40.12.
 
 ### Release
 
-This is the `xde-icons-1.1.40` package, released .  This release,
+This is the `xde-icons-1.2` package, released .  This release,
 and the latest version, can be obtained from the GitHub repository at
 https://github.com/bbidulock/xde-icons, using a command such as:
 
-```bash
-git clone https://github.com/bbidulock/xde-icons.git
-```
+    git clone https://github.com/bbidulock/xde-icons.git
 
 Please see the [NEWS](NEWS) file for release notes and history of user visible
 changes for the current version, and the [ChangeLog](ChangeLog) file for a more
@@ -39,14 +37,12 @@ the file [COPYING](COPYING).
 The quickest and easiest way to get xde-icons up and running is to run
 the following commands:
 
-```bash
-git clone https://github.com/bbidulock/xde-icons.git xde-icons
-cd xde-icons
-./autogen.sh
-./configure --prefix=/usr
-make V=0
-make DESTDIR="$pkgdir" install
-```
+    $> git clone https://github.com/bbidulock/xde-icons.git xde-icons
+    $> cd xde-icons
+    $> ./autogen.sh
+    $> ./configure --prefix=/usr
+    $> make V=0
+    $> make DESTDIR="$pkgdir" install
 
 This will configure, compile and install xde-icons the quickest.  For
 those who would like to spend the extra 15 seconds reading `./configure
