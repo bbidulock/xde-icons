@@ -1759,5 +1759,37 @@ install-data-hook:
 		rsvg-convert -w 48 -h 48 -z 1.0 -f png "$$x$$g" -o "$$x$$p" ; \
 	done
 
+uninstall-hook:
+	$(NORMAL_UNINSTALL)
+	@x="$(DESTDIR)$(sharedir)/pixmaps/" ; \
+	list="$(hicolor_ICONS)" ; for f in $$list ; do \
+		p=`basename "$$f" .svg`.png ; \
+		g=`basename "$$f" .svg`.svg ; \
+		t="$(DESTDIR)$(sharedir)/icons/hicolor/scalable/apps/" ; \
+		rm -fv "$$t$$g" ; \
+		rm -fv "$$x$$g" ; \
+		if test "$$p" = "xlogo.png" -o "$$p" = "arch-logo.png"; then \
+			sizes="16 22 24 32 36 48 56 64 72 96 100 128 256" ; \
+		else \
+			sizes="16 24 32 48 56 64" ; \
+		fi ; \
+		for s in $$sizes ; do \
+			t="$(DESTDIR)$(sharedir)/icons/hicolor/$${s}x$${s}/apps/" ; \
+			rm -fv "$$t$$p" ; \
+		done ; \
+		rm -fv "$$x$$p" ; \
+	done ; \
+	list="$(pixmap_ICONS)" ; for f in $$list ; do \
+		case "$$f" in \
+		*.png) \
+			p=`basename "$$f"` ; rm -fv "$$x$$p" ;; \
+		*.xpm) \
+			p=`basename "$$f"` ; rm -fv "$$x$$p" ;; \
+		*.svg) \
+			p=`basename "$$f" .svg`.png ; rm -fv "$$x$$p" ; \
+			g=`basename "$$f" .svg`.svg ; rm -fv "$$x$$g" ;; \
+		esac ; \
+	done
+
 # rsvg-convert -w $$s -h $$s -f png "$$d$$f" -o "$$t/$$p"
 # convert -resize $${s}x$${s} -background None "$$d$$f" "$$t/$$p"
