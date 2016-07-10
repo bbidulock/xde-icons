@@ -1,63 +1,76 @@
+[xde-icons -- read me first file.  @DATE]: #
 
-## xde-icons
+xde-icons
+===============
 
-Package xde-icons-1.2 was released under GPL license .
+Package `xde-icons-1.2` was released under GPLv3 license .
 
 This is a set of icons, primarily window manager icons and icons for
-shutdown and reboot of the system on logout, for the XDE (X Desktop
-Environment).
+shutdown and reboot of the system on logout, for the XDE (_X Desktop
+Environment_).
 
-Note that this package will not build with librsvg-2.40.12.
+Note that this package will not build with `librsvg-2.40.12`.
 
 
-### Release
+Release
+-------
 
-This is the `xde-icons-1.2` package, released .  This release,
-and the latest version, can be obtained from the GitHub repository at
-https://github.com/bbidulock/xde-icons, using a command such as:
+This is the `xde-icons-1.2` package, released .  This
+release, and the latest version, can be obtained from the [GitHub
+repository][1], using a command such as:
 
-    git clone https://github.com/bbidulock/xde-icons.git
+    $> git clone https://github.com/bbidulock/xde-icons.git
 
-Please see the [NEWS](NEWS) file for release notes and history of user visible
-changes for the current version, and the [ChangeLog](ChangeLog) file for a more
-detailed history of implementation changes.  The [TODO](TODO) file lists
-features not yet implemented and other outstanding items.
+Please see the [NEWS][2] file for release notes and history of user
+visible changes for the current version, and the [ChangeLog][3]
+file for a more detailed history of implementation changes.  The
+[TODO][4] file lists features not yet implemented and other
+outstanding items.
 
-Please see the [INSTALL](INSTALL) file for installation instructions.
+Please see the [INSTALL][5] file for installation instructions.
 
-When working from `git(1)', please see the [README-git](README-git) file.  An
-abbreviated installation procedure that works for most applications
-appears below.
+When working from `git(1)`, please use this file.  An abbreviated
+installation procedure that works for most applications appears below.
 
-This release is published under the GPL license that can be found in
-the file [COPYING](COPYING).
+This release is published under GPLv3.  Please see the license in
+the file [COPYING][6].
 
-### Quick Start:
 
-The quickest and easiest way to get xde-icons up and running is to run
-the following commands:
+Quick Start
+-----------
 
-    $> git clone https://github.com/bbidulock/xde-icons.git xde-icons
+The quickest and easiest way to get `xde-icons` up and running
+is to run the following commands:
+
+    $> git clone https://github.com/bbidulock/xde-icons.git
     $> cd xde-icons
     $> ./autogen.sh
-    $> ./configure --prefix=/usr
+    $> ./configure --prefix=/usr --sysconfdir=/etc
     $> make V=0
     $> make DESTDIR="$pkgdir" install
 
-This will configure, compile and install xde-icons the quickest.  For
-those who would like to spend the extra 15 seconds reading `./configure
---help`, some compile time options can be turned on and off before the
-build.
+This will configure, compile and install `xde-icons` the quickest.
+For those who would like to spend the extra 15 seconds reading
+the output of `./configure --help`, some compile options can be
+turned on and off before the build.
 
-For general information on GNU's `./configure`, see the file [INSTALL](INSTALL).
+For general information on GNU's `./configure`, see the file
+[INSTALL][5].
 
-### Running xde-icons
 
-Read the manual pages after installation:
+Issues
+------
 
-    man xde-icons
+Report problems at GitHub [here][7].
 
-### Issues
 
-Report issues to https://github.com/bbidulock/xde-icons/issues.
 
+[1]: https://github.com/bbidulock/xde-icons
+[2]: NEWS
+[3]: ChangeLog
+[4]: TODO
+[5]: INSTALL
+[6]: COPYING
+[7]: https://github.com/bbidulock/xde-icons/issues
+
+[ vim: set ft=markdown sw=4 tw=72 nocin nosi fo+=tcqlorn spell: ]: #
