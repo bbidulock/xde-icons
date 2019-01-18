@@ -2,6 +2,6 @@ xde-icons -- TODO file.  2015-12-29
 
 Work to do on xde-icons:
 
-[ ] - fill out TODO file
+* [ ] fill out TODO file
 
-# vim: set ft=asciidoc tw=72 nocin nosi fo+=tcqlorn:
+// vim: set ft=asciidoc tw=72 nocin nosi fo+=tcqlorn spell:
