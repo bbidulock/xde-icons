@@ -1,4 +1,155 @@
-# created with git log --stat=76 -M -C|fmt -sct -w80
+# created with git log --stat=76 -M -C -500|fmt -sct -w80
+
+commit bd97f6fe9d9364955c3de56d6863b1180f01c5e5
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Sep 2 02:55:31 2019 -0600
+
+    update build add release notes to build
+
+ Makefile.am | 35 +++++++++++++++++++++++++----------
+ 1 file changed, 25 insertions(+), 10 deletions(-)
+
+commit 773fdd3ac1d98f3d1b2c499bb09c95d30ff96c69
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Sep 2 02:55:05 2019 -0600
+
+    update build process
+
+ configure.ac | 11 +++++++----
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+
+commit 89b342e673e93bd6a34152e86ad36d0ac6601948
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Sep 2 02:54:49 2019 -0600
+
+    put filename last in sed command
+
+ autogen.sh | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit 3c74ea036424f3a95bd6a31e6844e6fa7dc4217f
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Sep 2 02:54:24 2019 -0600
+
+    add release notes
+
+ .gitignore |  3 +++
+ RELEASE.md | 19 +++++++++++++++++++
+ 2 files changed, 22 insertions(+)
+
+commit 8cb46b0c851c33cc5b8c90197b009af42217c37d
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Sep 2 02:53:55 2019 -0600
+
+    specify man directory
+
+ configure.sh | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 2507aa5373d74e1e5e1c3ef77db23ee696e4c7b5
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Sep 2 02:53:40 2019 -0600
+
+    perform parallel distcheck
+
+ dist.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 3582f217987fbf5f6d7ac1df8bcdfcf82fe918f8
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Sep 2 02:53:13 2019 -0600
+
+    perform parallel build
+
+ rebuild.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 77518a52f472d5664e3ee1a4731e6372ec82ff63
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat Aug 31 01:47:31 2019 -0600
+
+    generate NEWS better
+
+ gennews.sh | 26 +++++++++++++++++++++-----
+ 1 file changed, 21 insertions(+), 5 deletions(-)
+
+commit 5fc5ead2ecdf5e7b4ebc9c022733f2aae58a96df
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Jun 17 23:05:00 2019 -0600
+
+    update for gettext 0.20.1
+
+ autogen.sh | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+
+commit 5a21d792fc2137c364e053095aaabfbbe44f8a23
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Fri Jan 18 10:51:22 2019 -0700
+
+    reformat TODO
+
+ TODO | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 64c1ff99b2f4fc550b25a8863812dea9e98671eb
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Sep 11 02:34:01 2017 -0600
+
+    update build system
+
+ INSTALL      | 320 +++++++++++++++++++++++++++----------------------------
+ Makefile.am  |  16 +--
+ README       |  65 ++++++-----
+ README.md    |  65 ++++++-----
+ README.md.in |  61 ++++++-----
+ autogen.sh   |   9 ++
+ configure.ac |  53 ++++++++-
+ configure.sh |  19 ++--
+ rebuild.sh   |   4 +-
+ 9 files changed, 348 insertions(+), 264 deletions(-)
+
+commit 343856ef9e19bfc4a61197c4be143a98f89295dd
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Jul 10 02:46:58 2016 -0600
+
+    limit changelog
+
+ Makefile.am | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+commit c2b0e2cd87861d3b92e2cd6d7bd821d6134be81d
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Jul 10 02:35:34 2016 -0600
+
+    better formatting
+
+ README       | 82 +++++++++++++++++++++++++++++++------------------------
+ README.md    | 83 ++++++++++++++++++++++++++++++++------------------------
+ README.md.in | 83 ++++++++++++++++++++++++++++++++------------------------
+ 3 files changed, 143 insertions(+), 105 deletions(-)
+
+commit fb2d34cc3089514d8efcccc89e0b5a4f841ab372
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sun Jul 10 02:35:25 2016 -0600
+
+    git hates trailing space
+
+ gennews.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit d9db752fde6ea70b36bbcad3672a04b24a9e0365
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat Jul 9 17:59:57 2016 -0600
+
+    update release files
+
+ ChangeLog    | 35 +++++++++++++++++++++++++++++++++++
+ NEWS         | 10 ++++++----
+ README       | 22 +++++++++-------------
+ README.md    | 22 +++++++++-------------
+ README.md.in | 18 +++++++-----------
+ configure.ac |  4 ++--
+ 6 files changed, 68 insertions(+), 43 deletions(-)
 
 commit d4185b8bd9b5249c7e447a9cc068ba6f097401c7
 Author: Brian Bidulock <bidulock@openss7.org>

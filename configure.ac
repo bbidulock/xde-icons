@@ -2,8 +2,8 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([xde-icons],[1.2],[https://github.com/bbidulock/xde-icons],[xde-icons])
-AC_REVISION([1.2])
+AC_INIT([xde-icons],[1.3],[https://github.com/bbidulock/xde-icons],[xde-icons])
+AC_REVISION([1.3])
 
 
 AC_CONFIG_SRCDIR([configure.ac])
@@ -12,17 +12,17 @@ AC_CONFIG_AUX_DIR([scripts])
 AC_USE_SYSTEM_EXTENSIONS
 AC_CANONICAL_TARGET
 
-DATE='2017-09-10'
+DATE='2019-09-02'
 AC_SUBST([DATE])
 
-MDOCDATE='September 10, 2017'
+MDOCDATE='September 2, 2019'
 AC_SUBST([MDOCDATE])
 
-BRANCH='master'
+BRANCH='1.3'
 AC_SUBST([BRANCH])
 
 # Initialize Automake
-AM_INIT_AUTOMAKE([1.16 dist-lzip no-dist-gzip std-options -Wall color-tests silent-rules tar-pax])
+AM_INIT_AUTOMAKE([gnits 1.16 dist-lzip no-dist-gzip std-options -Wall color-tests silent-rules tar-pax])
 AM_MAINTAINER_MODE
 AM_SILENT_RULES([yes])
 AC_PREFIX_DEFAULT([/usr])
