@@ -1,5 +1,83 @@
 # created with git log --stat=76 -M -C -500|fmt -sct -w80
 
+commit 9e6e49fe36f65aeabcdeed97cc495df088b7a35f
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Sep 3 06:22:15 2019 -0600
+
+    add license file to repository
+
+ .gitignore |   1 -
+ COPYING    | 701 ++++-----------------------------------------------------
+ 2 files changed, 45 insertions(+), 657 deletions(-)
+
+commit 901b4ca17ac070fbdf58babc171fda4be778614e
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Sep 3 06:17:30 2019 -0600
+
+    no c compiler necessary
+
+ configure.sh | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 0d84c7cf6971785ea83bfa8ba0a4c3a15b7d69f6
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Sep 3 06:16:41 2019 -0600
+
+    do not need c compiler
+
+ configure.ac | 2 --
+ 1 file changed, 2 deletions(-)
+
+commit 1d02e2af974935711d512e1881331e6518a7f1e6
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Sep 3 06:16:18 2019 -0600
+
+    build release notes with dist
+
+ dist.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 7595c17590c6b886853653e10e7a3b556f2f5d4c
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Sep 3 06:16:08 2019 -0600
+
+    better defaults now
+
+ configure.sh | 3 ---
+ 1 file changed, 3 deletions(-)
+
+commit b5451d1632079026f70b1bc98eafadd1227dfc22
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Sep 3 06:15:57 2019 -0600
+
+    provide better autoconf dir defaults
+
+ configure.ac | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+commit 705c5914054532b0531fed0255c2ee813bf63026
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Sep 3 06:15:44 2019 -0600
+
+    update release notes
+
+ RELEASE.md | 26 +++++++++++++-------------
+ 1 file changed, 13 insertions(+), 13 deletions(-)
+
+commit 64ddebc7c8c19b72dd42bb5004e2e0ee554fde12
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Sep 2 02:59:16 2019 -0600
+
+    update release files
+
+ AUTHORS      |   2 +-
+ ChangeLog    | 153 ++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ NEWS         |  44 +++++++++++++++-
+ README       |  20 ++++----
+ README.md    |  20 ++++----
+ configure.ac |  12 ++---
+ 6 files changed, 221 insertions(+), 30 deletions(-)
+
 commit bd97f6fe9d9364955c3de56d6863b1180f01c5e5
 Author: Brian Bidulock <bidulock@openss7.org>
 Date:   Mon Sep 2 02:55:31 2019 -0600
