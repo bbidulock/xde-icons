@@ -247,7 +247,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/32x32/apps/arach.png \
 	icons/hicolor/32x32/apps/ArmyOps.png \
 	icons/hicolor/32x32/apps/aterm.png \
-	icons/hicolor/32x32/apps/bluefish.png \
 	icons/hicolor/32x32/apps/cards.png \
 	icons/hicolor/32x32/apps/cdburner.png \
 	icons/hicolor/32x32/apps/cdrom.png \
@@ -293,7 +292,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/32x32/apps/home.png \
 	icons/hicolor/32x32/apps/ical.png \
 	icons/hicolor/32x32/apps/icewm.png \
-	icons/hicolor/32x32/apps/k3b.png \
 	icons/hicolor/32x32/apps/kedit.png \
 	icons/hicolor/32x32/apps/kfm.png \
 	icons/hicolor/32x32/apps/kppp.png \
@@ -308,7 +306,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/32x32/apps/ooffice.png \
 	icons/hicolor/32x32/apps/oowriter.png \
 	icons/hicolor/32x32/apps/paint.png \
-	icons/hicolor/32x32/apps/pan.png \
 	icons/hicolor/32x32/apps/pdf.png \
 	icons/hicolor/32x32/apps/penguin.png \
 	icons/hicolor/32x32/apps/print_printer.png \
@@ -329,7 +326,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/32x32/apps/WindowMaker.png \
 	icons/hicolor/32x32/apps/xclock.png \
 	icons/hicolor/32x32/apps/xemacs.png \
-	icons/hicolor/32x32/apps/xine.png \
 	icons/hicolor/32x32/apps/xkill.png \
 	icons/hicolor/32x32/apps/xmms.png \
 	icons/hicolor/32x32/apps/xpdf.png \
@@ -343,7 +339,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/48x48/apps/arach.png \
 	icons/hicolor/48x48/apps/ArmyOps.png \
 	icons/hicolor/48x48/apps/aterm.png \
-	icons/hicolor/48x48/apps/bluefish.png \
 	icons/hicolor/48x48/apps/cards.png \
 	icons/hicolor/48x48/apps/cdburner.png \
 	icons/hicolor/48x48/apps/cdrom.png \
@@ -390,7 +385,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/48x48/apps/home.png \
 	icons/hicolor/48x48/apps/ical.png \
 	icons/hicolor/48x48/apps/icewm.png \
-	icons/hicolor/48x48/apps/k3b.png \
 	icons/hicolor/48x48/apps/kedit.png \
 	icons/hicolor/48x48/apps/kfm.png \
 	icons/hicolor/48x48/apps/kppp.png \
@@ -405,7 +399,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/48x48/apps/ooffice.png \
 	icons/hicolor/48x48/apps/oowriter.png \
 	icons/hicolor/48x48/apps/paint.png \
-	icons/hicolor/48x48/apps/pan.png \
 	icons/hicolor/48x48/apps/pdf.png \
 	icons/hicolor/48x48/apps/penguin.png \
 	icons/hicolor/48x48/apps/postscript-viewer.png \
@@ -428,7 +421,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/48x48/apps/XApp.png \
 	icons/hicolor/48x48/apps/xclock.png \
 	icons/hicolor/48x48/apps/xemacs.png \
-	icons/hicolor/48x48/apps/xine.png \
 	icons/hicolor/48x48/apps/xkill.png \
 	icons/hicolor/48x48/apps/xmms.png \
 	icons/hicolor/48x48/apps/xpdf.png \
