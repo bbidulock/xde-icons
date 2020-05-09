@@ -1,5 +1,61 @@
 # created with git log --stat=76 -M -C -500|fmt -sct -w80
 
+commit 3c82ba0eef8c614571f935cb02d8eef82e704b65
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat May 9 00:30:13 2020 -0600
+
+    update release notes
+
+ RELEASE.md | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+commit 7dcd4ca66d828fb854a5536a1e104c9350fcea83
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Fri May 8 21:37:54 2020 -0600
+
+    remove more conflicting icons
+
+ src/Makefile.am | 8 --------
+ 1 file changed, 8 deletions(-)
+
+commit 63ff5fea6aeea5f9e3a7b9f94ebd7b2d94bb41f9
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Fri May 8 21:26:33 2020 -0600
+
+    remove unnecessary gnumeric kmail kwrite icons
+
+ src/Makefile.am | 8 --------
+ 1 file changed, 8 deletions(-)
+
+commit 6661235053c77f1e335f3163665e7fdfaa00dbbd
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue Feb 11 08:31:17 2020 -0700
+
+    whoops
+
+ autogen.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit c825e1ae48a649fd5bcdcd44543bc6ad7fed0b2e
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Mon Feb 10 23:40:09 2020 -0700
+
+    better cscope and MDOCDATE
+
+ autogen.sh   | 8 ++++++--
+ configure.sh | 7 ++-----
+ 2 files changed, 8 insertions(+), 7 deletions(-)
+
+commit fa93a00d902d97d0cbc07378748be41d383ba8b2
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Sep 5 05:14:06 2019 -0600
+
+    post-release update
+
+ ChangeLog | 14 ++++++++++++++
+ NEWS      |  3 ++-
+ 2 files changed, 16 insertions(+), 1 deletion(-)
+
 commit 22a5df78e4fbe5f914dd227a13eb6012945e10df
 Author: Brian Bidulock <bidulock@openss7.org>
 Date:   Tue Sep 3 06:34:32 2019 -0600

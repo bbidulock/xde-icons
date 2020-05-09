@@ -2,8 +2,8 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([xde-icons],[1.4],[https://github.com/bbidulock/xde-icons],[xde-icons])
-AC_REVISION([1.4])
+AC_INIT([xde-icons],[1.5],[https://github.com/bbidulock/xde-icons],[xde-icons])
+AC_REVISION([1.5])
 
 # set better defaults
 AC_PREFIX_DEFAULT([/usr])
@@ -17,13 +17,13 @@ AC_CONFIG_SRCDIR([configure.ac])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_AUX_DIR([scripts])
 
-DATE='2019-09-03'
+DATE='2020-05-09'
 AC_SUBST([DATE])
 
-MDOCDATE='September 3, 2019'
+MDOCDATE='May 9, 2020'
 AC_SUBST([MDOCDATE])
 
-BRANCH='1.4'
+BRANCH='1.5'
 AC_SUBST([BRANCH])
 
 # Initialize Automake

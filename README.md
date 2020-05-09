@@ -1,9 +1,9 @@
-[xde-icons -- read me first file.  2019-09-03]: #
+[xde-icons -- read me first file.  2020-05-09]: #
 
 xde-icons
 ===============
 
-Package `xde-icons-1.4` was released under GPLv3 license 2019-09-03.
+Package `xde-icons-1.5` was released under GPLv3 license 2020-05-09.
 
 This is a set of icons, primarily window manager icons and icons for
 shutdown and reboot of the system on logout, for the XDE (_X Desktop
@@ -15,7 +15,7 @@ Note that this package will not build with `librsvg-2.40.12`.
 Release
 -------
 
-This is the `xde-icons-1.4` package, released 2019-09-03.  This
+This is the `xde-icons-1.5` package, released 2020-05-09.  This
 release, and the latest version, can be obtained from [GitHub][1], using
 a command such as:
 
@@ -72,12 +72,12 @@ Report issues on GitHub [here][2].
 
 [1]: https://github.com/bbidulock/xde-icons
 [2]: https://github.com/bbidulock/xde-icons/issues
-[3]: https://github.com/bbidulock/xde-icons/blob/1.4/NEWS
-[4]: https://github.com/bbidulock/xde-icons/blob/1.4/ChangeLog
-[5]: https://github.com/bbidulock/xde-icons/blob/1.4/TODO
-[6]: https://github.com/bbidulock/xde-icons/blob/1.4/COMPLIANCE
-[7]: https://github.com/bbidulock/xde-icons/blob/1.4/INSTALL
-[8]: https://github.com/bbidulock/xde-icons/blob/1.4/LICENSE
-[9]: https://github.com/bbidulock/xde-icons/blob/1.4/COPYING
+[3]: https://github.com/bbidulock/xde-icons/blob/1.5/NEWS
+[4]: https://github.com/bbidulock/xde-icons/blob/1.5/ChangeLog
+[5]: https://github.com/bbidulock/xde-icons/blob/1.5/TODO
+[6]: https://github.com/bbidulock/xde-icons/blob/1.5/COMPLIANCE
+[7]: https://github.com/bbidulock/xde-icons/blob/1.5/INSTALL
+[8]: https://github.com/bbidulock/xde-icons/blob/1.5/LICENSE
+[9]: https://github.com/bbidulock/xde-icons/blob/1.5/COPYING
 
 [ vim: set ft=markdown sw=4 tw=72 nocin nosi fo+=tcqlorn spell: ]: #
