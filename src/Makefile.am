@@ -288,7 +288,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/32x32/apps/gnome-session-suspend.png \
 	icons/hicolor/32x32/apps/gnome-session-switch.png \
 	icons/hicolor/32x32/apps/gnome-terminal.png \
-	icons/hicolor/32x32/apps/gnumeric.png \
 	icons/hicolor/32x32/apps/gv.png \
 	icons/hicolor/32x32/apps/home-mdk.png \
 	icons/hicolor/32x32/apps/home.png \
@@ -297,9 +296,7 @@ nobase_dist_share_DATA += \
 	icons/hicolor/32x32/apps/k3b.png \
 	icons/hicolor/32x32/apps/kedit.png \
 	icons/hicolor/32x32/apps/kfm.png \
-	icons/hicolor/32x32/apps/kmail.png \
 	icons/hicolor/32x32/apps/kppp.png \
-	icons/hicolor/32x32/apps/kwrite.png \
 	icons/hicolor/32x32/apps/lime.png \
 	icons/hicolor/32x32/apps/mozilla-mail.png \
 	icons/hicolor/32x32/apps/mozilla.png \
@@ -385,7 +382,6 @@ nobase_dist_share_DATA += \
 	icons/hicolor/48x48/apps/gnome-session-suspend.png \
 	icons/hicolor/48x48/apps/gnome-session-switch.png \
 	icons/hicolor/48x48/apps/gnome-terminal.png \
-	icons/hicolor/48x48/apps/gnumeric.png \
 	icons/hicolor/48x48/apps/GNUStep3D.png \
 	icons/hicolor/48x48/apps/GNUStepGlow.png \
 	icons/hicolor/48x48/apps/GNUStep.png \
@@ -397,9 +393,7 @@ nobase_dist_share_DATA += \
 	icons/hicolor/48x48/apps/k3b.png \
 	icons/hicolor/48x48/apps/kedit.png \
 	icons/hicolor/48x48/apps/kfm.png \
-	icons/hicolor/48x48/apps/kmail.png \
 	icons/hicolor/48x48/apps/kppp.png \
-	icons/hicolor/48x48/apps/kwrite.png \
 	icons/hicolor/48x48/apps/lime.png \
 	icons/hicolor/48x48/apps/mozilla-mail.png \
 	icons/hicolor/48x48/apps/mozilla.png \
@@ -1098,7 +1092,6 @@ pixmap_ICONS =
 #	pixmaps/gnome-fs-bookmark.svg \
 #	pixmaps/gnome-gmenu.svg \
 #	pixmaps/gnome-gnomine.svg \
-#	pixmaps/gnome-gnumeric.svg \
 #	pixmaps/gnome-help.svg \
 #	pixmaps/gnome-logo-white.svg \
 #	pixmaps/gnome-mime-application-x-remote-connection.svg \
@@ -1146,7 +1139,6 @@ pixmap_ICONS =
 #	pixmaps/gnormalize.svg \
 #	pixmaps/gnote.svg \
 #	pixmaps/gnotski.svg \
-#	pixmaps/gnumeric.svg \
 #	pixmaps/gogglesmm.svg \
 #	pixmaps/goobox.svg \
 #	pixmaps/gparted.svg \
