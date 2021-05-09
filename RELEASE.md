@@ -1,9 +1,9 @@
-[xde-icons -- release notes.  2020-05-09]: #
+[xde-icons -- release notes.  2021-05-08]: #
 
-Maintenance Release 1.5
+Maintenance Release 1.6
 =======================
 
-This is the fifth release of the xde-icons package that provides
+This is the sixth release of the xde-icons package that provides
 desktop icons for the _XDE (X Desktop Environment)_.  It provides the
 necessary icon sets to work with XDE tools as well as supporting the
 desktop entries in the xde-helpers package.
