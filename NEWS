@@ -21,9 +21,10 @@ git tag -n100 -l 1.6
 
 git shortlog -e -n -w80,6,8 1.5...1.6
 
-Brian Bidulock <bidulock@openss7.org> (2):
+Brian Bidulock <bidulock@openss7.org> (3):
       post-release update
       remove more conflicting icons
+      update release files
 
 
 Release xde-icons-1.5 released 2020-05-09
