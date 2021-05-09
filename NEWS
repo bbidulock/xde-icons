@@ -1,4 +1,30 @@
-xde-icons -- history of user-visible changes.  2020-05-09
+xde-icons -- history of user-visible changes.  2021-05-08
+
+Release xde-icons-1.6 released 2021-05-08
+-----------------------------------------
+
+git tag -n100 -l 1.6
+
+1.6             Maintenance Release 1.6
+
+    This is the sixth release of the xde-icons package that provides
+    desktop icons for the XDE (X Desktop Environment). It provides the
+    necessary icon sets to work with XDE tools as well as supporting the
+    desktop entries in the xde-helpers package.
+
+    This release is a maintenance release that removes some unnecessary
+    icons that conflict with the packages that utilize them.
+
+    Included in the release is an autoconf tarball for building the package
+    from source. See the NEWS and TODO file in the release for more
+    information. Please report problems to the issues list on GitHub.
+
+git shortlog -e -n -w80,6,8 1.5...1.6
+
+Brian Bidulock <bidulock@openss7.org> (2):
+      post-release update
+      remove more conflicting icons
+
 
 Release xde-icons-1.5 released 2020-05-09
 -----------------------------------------

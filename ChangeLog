@@ -1,5 +1,25 @@
 # created with git log --stat=76 -M -C -500|fmt -sct -w80
 
+commit a3f088ea37fe5c3c6928e09725031a2695ccc4b9
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat May 8 21:20:21 2021 -0600
+
+    remove more conflicting icons
+
+ RELEASE.md      | 6 +++---
+ src/Makefile.am | 2 --
+ 2 files changed, 3 insertions(+), 5 deletions(-)
+
+commit cdf76954468e8a82ea3962aaede52b54df92d3d7
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat May 9 00:42:28 2020 -0600
+
+    post-release update
+
+ ChangeLog | 14 ++++++++++++++
+ NEWS      |  3 ++-
+ 2 files changed, 16 insertions(+), 1 deletion(-)
+
 commit 53dc680a35b30d9d63072b00917c738c71e40eaf
 Author: Brian Bidulock <bidulock@openss7.org>
 Date:   Sat May 9 00:35:22 2020 -0600
