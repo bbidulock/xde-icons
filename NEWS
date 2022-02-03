@@ -21,10 +21,11 @@ git tag -n100 -l 1.7
 
 git shortlog -e -n -w80,6,8 1.6...1.7
 
-Brian Bidulock <bidulock@openss7.org> (4):
+Brian Bidulock <bidulock@openss7.org> (5):
       post-release update
       update build flags
       add gh-pages
+      update release files
       update release files
 
 
