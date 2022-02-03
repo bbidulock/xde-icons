@@ -1,5 +1,40 @@
 # created with git log --stat=76 -M -C -500|fmt -sct -w80
 
+commit aeae1afbcc9e858d748c80e9b11b46b5edd27127
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Fri Jan 28 02:25:53 2022 -0700
+
+    add gh-pages
+
+ INSTALL      |  6 ++--
+ Makefile.am  |  7 +++--
+ README       | 55 ++++++++++++++++++---------------
+ README.md    | 55 ++++++++++++++++++---------------
+ README.md.in | 55 ++++++++++++++++++---------------
+ _config.yml  |  4 +++
+ index.md     | 93 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ logo.svg     | 91 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 8 files changed, 289 insertions(+), 77 deletions(-)
+
+commit 17c898c0c494ce6a98cef59195559395facf14e1
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Jan 27 21:05:09 2022 -0700
+
+    update build flags
+
+ configure.sh | 15 +++++++++------
+ 1 file changed, 9 insertions(+), 6 deletions(-)
+
+commit 5aa72fabfb2d253645f6633c46f4019954832e72
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Sat May 8 21:27:24 2021 -0600
+
+    post-release update
+
+ ChangeLog | 14 ++++++++++++++
+ NEWS      |  3 ++-
+ 2 files changed, 16 insertions(+), 1 deletion(-)
+
 commit c4d7745e6895d347237e3e5257606b9ec8f409b9
 Author: Brian Bidulock <bidulock@openss7.org>
 Date:   Sat May 8 21:25:42 2021 -0600
