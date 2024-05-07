@@ -1,5 +1,27 @@
 # created with git log --stat=76 -M -C -500|fmt -sct -w80
 
+commit 358c58af5015236780d29a0553752aea7a344e2f
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Tue May 7 01:38:50 2024 -0600
+
+    updates
+
+ Makefile.am     | 18 +++++++++++++++---
+ configure.ac    |  8 ++++----
+ configure.sh    | 18 ++++++++++++------
+ src/Makefile.am |  1 -
+ 4 files changed, 31 insertions(+), 14 deletions(-)
+
+commit d93cd9c6a428890dea7fd07a8b1bffcb8cd1b360
+Author: Brian Bidulock <bidulock@openss7.org>
+Date:   Thu Feb 3 00:22:34 2022 -0700
+
+    post-release update
+
+ ChangeLog | 15 +++++++++++++++
+ NEWS      |  3 ++-
+ 2 files changed, 17 insertions(+), 1 deletion(-)
+
 commit c39534d02428beeb0f587c55e40da5b36ee88a63
 Author: Brian Bidulock <bidulock@openss7.org>
 Date:   Thu Feb 3 00:20:54 2022 -0700

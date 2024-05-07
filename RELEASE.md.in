@@ -1,6 +1,6 @@
-[xde-icons -- release notes.  2024-05-07]: #
+[@PACKAGE@ -- release notes.  @DATE@]: #
 
-Maintenance Release 1.8
+Maintenance Release @VERSION@
 ===========================
 
 This is another release of the xde-icons package that provides
@@ -16,14 +16,14 @@ from source.  See the [NEWS][3] and [TODO][5] file in the release
 for more information.  Please report problems to the issues list on
 [GitHub][2].
 
-[1]: https://github.com/bbidulock/xde-icons
-[2]: https://github.com/bbidulock/xde-icons/issues
-[3]: https://github.com/bbidulock/xde-icons/blob/1.8/NEWS
-[4]: https://github.com/bbidulock/xde-icons/blob/1.8/ChangeLog
-[5]: https://github.com/bbidulock/xde-icons/blob/1.8/TODO
-[6]: https://github.com/bbidulock/xde-icons/blob/1.8/COMPLIANCE
-[7]: https://github.com/bbidulock/xde-icons/blob/1.8/INSTALL
-[8]: https://github.com/bbidulock/xde-icons/blob/1.8/LICENSE
-[9]: https://github.com/bbidulock/xde-icons/blob/1.8/COPYING
+[1]: https://github.com/bbidulock/@PACKAGE@
+[2]: https://github.com/bbidulock/@PACKAGE@/issues
+[3]: https://github.com/bbidulock/@PACKAGE@/blob/@BRANCH@/NEWS
+[4]: https://github.com/bbidulock/@PACKAGE@/blob/@BRANCH@/ChangeLog
+[5]: https://github.com/bbidulock/@PACKAGE@/blob/@BRANCH@/TODO
+[6]: https://github.com/bbidulock/@PACKAGE@/blob/@BRANCH@/COMPLIANCE
+[7]: https://github.com/bbidulock/@PACKAGE@/blob/@BRANCH@/INSTALL
+[8]: https://github.com/bbidulock/@PACKAGE@/blob/@BRANCH@/LICENSE
+[9]: https://github.com/bbidulock/@PACKAGE@/blob/@BRANCH@/COPYING
 
 [ vim: set ft=markdown sw=4 tw=72 nocin nosi fo+=tcqlorn spell: ]: #
