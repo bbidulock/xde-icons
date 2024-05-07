@@ -5,7 +5,7 @@ Release xde-icons-1.8 released 2024-05-07
 
 git tag -n100 -l 1.8
 
-1.8             Maintenance Release 1.7.2
+1.8             Maintenance Release 1.8
 
     This is another release of the xde-icons package that provides desktop
     icons for the XDE (X Desktop Environment). It provides the necessary
@@ -21,9 +21,10 @@ git tag -n100 -l 1.8
 
 git shortlog -e -n -w80,6,8 1.7...1.8
 
-Brian Bidulock <bidulock@openss7.org> (2):
+Brian Bidulock <bidulock@openss7.org> (3):
       post-release update
       updates
+      update release files
 
 
 Release xde-icons-1.7 released 2022-02-03
